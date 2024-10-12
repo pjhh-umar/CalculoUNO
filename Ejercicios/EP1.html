@@ -242,14 +242,23 @@
   </ol>
 </p>
 </div>
-<!-- 
+
+
+<div class="info-box"> <h2 class="title"> Definición</h2>
+  <p>Si $A$ es un conjunto se define el <b>conjunto potencia de $A$</b> como el conjunto formado por todos los posibles  subconjuntos del conjunto dado y se denota por $\mathcal{P}(A)$. Por ejemplo, dado el conjunto: 
+  
+  $$A: =\{1,2,3\}$$ 
+  
+  el conjunto potencia de $A$ es: $$\mathcal{P}(A) = \{\varnothing ,\{1\},\{2\},\{3\},\{1,2\},\{2,3\},\{1,3\},\{1,2,3\}\}$$</p>
+  </div>
+
 <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
   <p>
   Sean $A:=\{1,2,a,c \}$, $B :=\{2,3,4,a,b\}$, y $C:=\{1,a \}$. ¿Cuales de las siguientes proposiciones son verdaderas 
   y cuales son falsas?
   </p>
 
-<ol>
+<ol class="two-column">
   <li>$c \in A \cup B$  </li>
   <li>$2 \in A\cap B $</li>
   <li>$\{3,a \} \subseteq A \cup B$</li>
@@ -270,7 +279,7 @@
   <p>Considere los siguientes conjuntos $A:= \{a,b,c,d,1,2,5 \}$, $B:= \{a,c,1,3\}$ , $C:=\{a,b,c \}$, $D:=\{b,c,d,1,2 \}$ y 
   $E:=\{c,d \}$. Realice las siguientes operaciones de conjuntos:</p>
 
-  <ol>
+  <ol class="two-column">
     <li> $A\cap B$ </li>
     <li>$A\cap C$</li>
     <li>$C\cup B$</li>
@@ -289,17 +298,10 @@
     <li>$[C\cap (A -  D)]\cup B$</li>
     <li>$[C -  (D \cap (B -  C))] \cup (A  -  D)$</li>
     <li>$\mathcal{P}(C)  -  \mathcal{P}(E)$ </li>
-    <li>$\mathcal{P}(C -  E)$</li>
+    <li>$\mathcal{P}(C -  E)$</li> 
   </ol>
 </div>
 
-<div class="info-box"> <h2 class="title"> Definición</h2>
-<p>Si $A$ es un conjunto se define el <b>conjunto potencia de $A$</b> como el conjunto formado por todos los posibles  subconjuntos del conjunto dado y se denota por $\mathcal{P}(A)$. Por ejemplo, dado el conjunto: 
-
-$$A: =\{1,2,3\}$$ 
-
-el conjunto potencia de $A$ es: $$\mathcal{P}(A) = \{\varnothing ,\{1\},\{2\},\{3\},\{1,2\},\{2,3\},\{1,3\},\{1,2,3\}\}$$</p>
-</div>
 
 <div class="nota-box">
   <h1 class="number-title-practica"> Ejercicio</h1>
@@ -308,7 +310,7 @@ el conjunto potencia de $A$ es: $$\mathcal{P}(A) = \{\varnothing ,\{1\},\{2\},\{
   y cuales son falsas?
   </p>
 
-<ol>
+<ol class="two-column">
   <li>$c \in A \cup B$  </li>
   <li>$2 \in A\cap B $</li>
   <li>$\{3,a \} \subseteq A \cup B$</li>
@@ -328,7 +330,7 @@ el conjunto potencia de $A$ es: $$\mathcal{P}(A) = \{\varnothing ,\{1\},\{2\},\{
 <p>Dados el conjunto universal $U:= \{1,2,3,4,5,6,7,8,9 \}$ y los conjuntos $A:= \{1,3,5,9 \}$, 
   $B:= \{2,3,5,8\}$ y $C:=\{ 1,4,8,9 \}$. </p> Determine lo siguiente
   
-  <ol>
+  <ol class="two-column">
     <li>$(A^{c} \cup C) - (B - C^{c})$</li> 
     <li>$(A^{c} - (B^{c} \cap C) - (C^{c} \cap B)$</li>
     <li>$(A\cap B^{c})^{c} \cup (B^{c}-C)^{c}$</li>
@@ -339,10 +341,10 @@ el conjunto potencia de $A$ es: $$\mathcal{P}(A) = \{\varnothing ,\{1\},\{2\},\{
 <div class="nota-box">
   <h1 class="number-title-practica"> Ejercicio</h1>
 <p>
-  Sean  $A$ y $B$ subconjuntos arbitrarios de un conjunto universo $U$, demuestre  
-  las siguientes propiedades utilizando diagramas de Venn:
+  Sean  $A$ y $B$ subconjuntos arbitrarios de un conjunto universo $U$. Prueba que se cumplen
+  las siguientes propiedades:
  </p>
- <ol>
+ <ol class="two-column">
   <li>$A \subseteq A\cup B$</li>
   <li>$B \subseteq A\cup B$</li>
   <li>$A\cap B \subseteq A$</li>
@@ -355,15 +357,62 @@ el conjunto potencia de $A$ es: $$\mathcal{P}(A) = \{\varnothing ,\{1\},\{2\},\{
  </ol>
 </div>
 
+
 <div class="nota-box">
+  <h1 class="number-title-practica"> Ejercicio</h1>
+<p>
+  Sean  $A$ y $B$ subconjuntos arbitrarios de un conjunto universo $U$. Prueba las siguientes proposiciones: 
+ </p>
+ <p>
+  <ol >
+    <li>Si $A \subseteq B$ y $B \subseteq C$, entonces $A \subseteq C$.</li>
+    <li>Si $A \subseteq C$ y $B \subseteq D$, entonces $A \cap B  \subseteq C \cap D$.</li>
+    <li>Si $A \subseteq C$ y $B \subseteq D$, entonces $A \cup B  \subseteq C \cup D$.</li>
+    <!-- <li>$B \subseteq A\cup B$</li> -->
+  </ol>
+ </p>
+</div> 
+
+
+<div class="nota-box">
+  <h1 class="number-title-practica"> Ejercicio</h1>
+<p>
+  Sean  $A$ y $B$ subconjuntos arbitrarios de un conjunto universo $U$. Prueba que se cumplen
+  las siguientes propiedades:
+ </p>
+ <ol class="two-column">
+  <li>$A \subseteq A\cup B$</li>
+  <li>$B \subseteq A\cup B$</li>
+  <li>$A\cap B \subseteq A$</li>
+  <li>$A\cap B \subseteq B$</li>
+  <li>$A\cap B \subseteq A\cup B$</li>
+ </ol>
+</div>
+
+
+<div class="nota-box">
+  <h1 class="number-title-practica"> Ejercicio</h1>
+<p>
+  Sean  $A$ y $B$ subconjuntos arbitrarios de un conjunto universo $U$. Prueba que se cumplen
+  las siguientes propiedades:
+ </p>
+ <ol class="two-column">
+  <li>$(A^{c})^{c}=A$</li>
+  <li>$A - B = A \cap B^{c}$</li>
+  <li>$(A \cap B^{c})^{c} \subseteq (A - B)^c $</li>
+  <li>$(A\cap B) \cup A=  A$</li>
+ </ol>
+</div>
+
+<!-- <div class="nota-box">
   <h1 class="number-title-practica"> Ejercicio</h1>
   Si $A,B$ y $C$ son conjuntos arbitrarios, use Diagramas de Ven para simplificar:
   <ol>
     <li> $[(A^{c} \cap B^{c} ) \cup A^{c}]^{c}$</li>
     <li>$[A^{c} \cup  (B^{c} \cap A)]^{c}$</li>
   </ol>
-</div> -->
-<!-- 
+</div> 
+
 <div class="nota-box">
   <h1 class="number-title-practica"> Ejercicio</h1>
 <p>
@@ -371,20 +420,11 @@ el conjunto potencia de $A$ es: $$\mathcal{P}(A) = \{\varnothing ,\{1\},\{2\},\{
   las siguientes propiedades:
  </p>
 </div>
-
-<div class="nota-box">
-  <h1 class="number-title-practica"> Ejercicio</h1>
-<p>
-  Sean  $A$ y $B$ subconjuntos arbitrarios de un conjunto universo $U$. Demuestre  
-  $(A \cap B)^{c} = A^{c} \cup B^{c}$.<br>
- </p>
-</div> -->
+-->
 
 
-    <!-- <div class="nota-box"><h1 class="title"> Archivos</h1> 
-      <div class="links-box" style = "font-family: 'Oldenburg', cursive; font-size: 150%;">
-        <a href="../Archivos/EP1-GrupoA.xlsx" download> EP1-GrupoA.xlsx</a><br>
-        <a href="../Archivos/EP1-GrupoC.xlsx" download> EP1-GrupoC.xlsx</a>
-      </div>
-      </div> -->   
+
+
+
+   
     </body>
