@@ -455,6 +455,7 @@
   <li>$A \, \Delta\,  B = B \, \Delta\,  A$</li>
   <li>$A \cap  (B \Delta\,  C) = (A \cap B) \, \Delta \, (A \cap  C)$</li>
   <li>$A \setminus B = A \, \Delta\,  (A \cap B)$</li>
+  <li>$A \, \Delta\, B =   (A \setminus B) \cup  (B \setminus A) $</li>
   
  </ol>
 </div>
@@ -467,7 +468,10 @@
   Sean  $A$ y $B$ subconjuntos arbitrarios de un conjunto universo $U$. Prueba las siguientes proposiciones: 
  </p>
  <p>
-  <ol >
+  <ol>
+    <li>Si $A \cap B = \emptyset$, entonces $A \, \Delta\,  B = B\cup A$</li>
+    <li>Si $A \subseteq B$, entonces $A \, \Delta\,  B = B\setminus A$</li>
+    <li>Si $B \subseteq A$, entonces $A \, \Delta\,  B = A\setminus B$</li>
     <li>$A \, \Delta\,  B = \emptyset$ si y sólo si  $A=B$</li>
     <li>Si $A \, \Delta\,  B = A \, \Delta\,  C$, entonces $B=C$</li>
     <!-- <li>$B \subseteq A\cup B$</li> -->
