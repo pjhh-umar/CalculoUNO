@@ -1123,9 +1123,9 @@ img {
   padding: 1%;
   font-weight: 600;
   /* margin-bottom: 0px; */
-  /* display: flex;*/
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 
 }
 
@@ -1257,7 +1257,6 @@ font-weight: 600;
 .video a{
   text-decoration: none;
 }
-
 
 
 
