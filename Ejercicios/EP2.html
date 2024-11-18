@@ -41,7 +41,8 @@
       counter-reset: temaCounter 1 subsectioncounter ;
       } */
       body.fondo-body{
-        counter-reset: temaCounter 2 sectionCounter;
+        counter-reset: temaCounter 2 sectionCounter EjercicioResueltoCounter 1;
+        
       }
 
       /* h1.page-number-title
@@ -114,7 +115,7 @@
 
       <body class="fondo-body" ><h1 class="page-title-practica"> Prácticas Segundo Examen Parcial </h1>   
 
-    <!-- <div class="nota-box"><h1 class="title"> Archivos</h1> 
+    <!-- <div class="ejercicio-box"><h1 class="title"> Archivos</h1> 
       <div class="links-box" style = "font-family: 'Oldenburg', cursive; font-size: 150%;">
         <a href="../Archivos/EP1-GrupoA.xlsx" download> EP1-GrupoA.xlsx</a><br>
         <a href="../Archivos/EP1-GrupoC.xlsx" download> EP1-GrupoC.xlsx</a>
@@ -122,7 +123,7 @@
       </div> -->
 
         
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sea \(a\in \mathbb{R}^{+}\) arbitrario pero fijo. Utiliza el principio de inducción para probar que para todo 
           \(n\in \mathbb{N}\), se satisface la desigualdad: 
           $$a<(1+a)^n$$.
@@ -130,7 +131,7 @@
   
        </div>
     
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Si $A,B \subseteq \mathbb{R}$ son conjuntos no vacios acotados superiormente y $\gamma \in \mathbb{R}$ arbitrario pero fijo,
           prueba que los siguientes conjuntos son acotados superiormente.
            <ol>
@@ -144,7 +145,7 @@
         </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Si $A,B \subseteq \mathbb{R}$ son conjuntos no vacios acotados inferiormente y $\gamma \in \mathbb{R}$ arbitrario pero fijo,
           prueba que los siguientes conjuntos son acotados inferiormente.
            <ol>
@@ -158,14 +159,14 @@
         </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Si $A,B \subseteq \mathbb{R}$ son conjuntos no vacios acotados superiormente. ¿Qué puedes decir de 
           $A\setminus B$
         </p>
       </div>
       
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sea $A = \left\{ x\in \mathbb{R}\,\big| \, x \geq 0 \right\}$.</p>
         <p>
           <ol>
@@ -175,7 +176,7 @@
          <p>Justifica clara y detalladamente tu respuesta.</p>
        </div>
 
-       <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sea $A = \left\{ x\in \mathbb{R}\,\big| \, x > 0 \right\}$.</p>
         <p>
           <ol>
@@ -187,27 +188,21 @@
          <p>Justifica clara y detalladamente tu respuesta.</p>
        </div>
       
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
        Determine si el conjunto $\left\{ x\in \mathbb{R}\,\big| \, x^{2} - x + 1  < 0\right\}$ esta acotado superior 
        o inferiormente. Justificar clara y detalladamente tu respuesta.
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         Determine si el conjunto $\left\{ x\in \mathbb{R} \, \big|\, 3x + 5 < 4x -7 \right\}$ esta acotado superior 
         o inferiormente. Justificar clara y detalladamente tu respuesta.
        </div>
 
-       <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <ol>
-        <li>Prueba que el supremo de un conjunto (de existir) es único, es decir, demuestra que si \(\alpha\) y \(\beta\) son dos
-        números que satisfacen las dos condiciones de la
-        definición del supremo de un conjunto $A$ entonces  \(\alpha=\beta\).
-        </li>
-        <li>Prueba que el ínfimo de un conjunto (de existir) es único, es decir, demuestra que si \(\alpha\) y \(\beta\) son dos
-          números que satisfacen las dos condiciones de la
-          definición del ínfimo de un conjunto $A$ entonces  \(\alpha=\beta\).
-        </li>
-        </ol>
+       <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+        <p>Prueba que el supremo (infimo) de un conjunto (en caso de existir) es único, es decir,
+           demuestra que si \(\alpha\) y \(\beta\) son dos números que satisfacen las dos condiciones de la
+           definición del supremo (infimo) de un conjunto $A$ entonces  \(\alpha=\beta\).
+        </p>
         <center>
         <button class="respButton hvr-grow "> Respuesta para el supremo </button>
                     <div class="resp-box flexbox">
@@ -218,26 +213,26 @@
         </center>
         </div>
 
-       <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sea $A\colon = \displaystyle{\left \{ \frac{1}{2n} \,\, \big|\,\, n \in \mathbb{N}  \right\}} \subseteq \mathbb{R}$. 
          Prueba que $\inf(A) = 0$        
         </p>
        </div>
  
-       <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
          <p>Sea $A\colon = \displaystyle{\left \{ 1 +  \frac{1}{n} \,\, \big|\,\, n \in \mathbb{N}  \right\}} \subseteq \mathbb{R}$. 
           Prueba que $\inf(A) = 1$        
          </p>
         </div>
 
-       <div class="nota-box">
+       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean \(A\) un subconjunto no vacio de \(\mathbb{R}\) acotado superiormente. 
           Si existe $M\in A$ tal que $M$ es una cota superior de $A$, prueba que $\sup(A) = M$.
         </p>
        </div>
 
-       <div class="nota-box">
+       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean \(A\) un subconjunto no vacio de \(\mathbb{R}\) acotado inferiormente. 
           Si existe $m\in A$ tal que $m$ es una cota inferior de $A$, prueba que $\inf(A) = m$.
@@ -245,7 +240,7 @@
        </div>
 
 
-       <div class="nota-box">
+       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Demuestra que el supremo e infimo de un conjunto (en caso de existir) no necesariamente
           pertenecen al conjunto. (Da un ejemplo)
@@ -254,7 +249,7 @@
        </div>
 
   
-       <div class="nota-box">
+       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean $a,b \in \mathbb{R}$ con $a < b$. Prueba que $\inf((a,b)), \sup((a,b))$ existen y que 
           $\inf((a,b)) = a$ y $\sup((a,b)) = b$
@@ -264,7 +259,7 @@
 
        
 
-       <div class="nota-box">
+       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean \(A\) un subconjunto no vacio de \(\mathbb{R}\) y $u \in \mathbb{R}$. Prueba que las siguientes proposiciones 
           son equivalentes. 
@@ -278,7 +273,7 @@
       
 
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sea \(A,B \subseteq \mathbb{R}\) dos conjuntos no vacios tales que
           que \(A \subseteq B\). Prueba las siguientes proposiciones
         </p>
@@ -290,7 +285,7 @@
 
 
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>
           Sean \(A, B \subseteq \mathbb{R}\) dos conjuntos no vacíos y  acotados superior e inferiormente. Si
           $\inf(A)= \inf(B)$ y $\sup(A) = \sup(B)$, ¿Es cierto que $A=B$? Pruebalo o da un contraejemplo.
@@ -298,7 +293,7 @@
       </div>
 
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean \(A\) un subconjunto no vacio de \(\mathbb{R}\) acotado inferiormente. 
           Si  $\inf(A) > 0$ prueba las siguientes proposiciones
@@ -313,13 +308,13 @@
         </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sea $B\colon = \displaystyle{\left \{ \frac{n}{n+1} \,\, \big|\,\, n \in \mathbb{N}  \right\}} \subseteq \mathbb{R}$. 
         Prueba que $\sup(B) = 1$        
         </p>
       </div>
       
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sean $A,B \subseteq \mathbb{R}$ no vacios, \(\gamma \in \mathbb{R}\) y \(\beta \in \mathbb{R}^+\),
           arbitrarios pero fijos. Prueba las siguientes proposiciones:
         </p>
@@ -340,7 +335,7 @@
         </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sean $A,B \subseteq \mathbb{R}$ no vacios  y \(\lambda \in \mathbb{R}\),
           arbitrario pero fijo. Prueba que 
         </p>
@@ -353,7 +348,7 @@
         
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sean $A,B \subseteq \mathbb{R}$ no vacios, \(\gamma \in \mathbb{R}\) y \(\beta \in \mathbb{R}^+\),
           arbitrarios pero fijos. Prueba las siguientes proposiciones:
         </p>
@@ -376,22 +371,37 @@
         </p>
       </div>
 
-
-
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica" id="Ejer:unicidad_raiz_cuadrada_positivo"> Ejercicio resuelto</h1>
       
-        <p>Sea \(n\in \mathbb{N}\), \(n \geq 2\) arbitrario pero fijo  y
+        <p>Sea \(a>0\). Prueba que existe un único \(\alpha >0\) tal que \(\alpha^2=a\). Esto es,
+          todo número real positivo tiene una única raíz cuadrada no negativa.
+        </p>
+        <center>
+          <button class="respButton hvr-grow">Demostración</button>
+          <div class="resp-box flexbox">
+            <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/EtfvdikwfPo?si=rTqlaekrrhcVmCj2" title="YouTube video player" allowfullscreen="true"> 
+            </iframe>
+          </div>
+        </center>
+        </div>
+      </div>
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      
+        <p>Sea \(n\in \mathbb{N}\), \(n > 2\) arbitrario pero fijo  y
         \(a>0\). Define 
         $$S=\{ x \geq 0: x^n \leq a\}.$$
         Prueba que \(1+a\) es cota superior de \(S\).
         </p>
         <p>
-          Sugerencia: Sigue la misma  idea utilizada en clase para probar el caso $n=2$.
+          Sugerencia: Sigue la misma  idea utilizada que el <a href="#Ejer:unicidad_raiz_cuadrada_positivo">Ejercicio resuelto</a>.
         </p>
       </div>
       
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
       
         <p>Prueba que  para todo número real \(a>0\) y
           todo natural \(n\geq 2\), existe un único real positivo, denotado
@@ -402,7 +412,7 @@
         </p>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica"> Ejercicio </h1>
         <p>Sean \(a,b \in \mathbb{R}\). Prueba que $ |a| < |b| $ si y sólo si 
           \(a^{2} < b^{2}\).
@@ -410,21 +420,21 @@
         <p><b>Sugerencia:</b> Utiliza el ejercicio anterior.</p>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica"> Ejercicio </h1>
         <p>Sean \(a,b > 0\). Prueba que si $a < b $, entonces
           \(\sqrt{a} < \sqrt{b}\).
         </p>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica"> Ejercicio </h1>
         <p>Sean \(a,b > 0\) y $n \in \mathbb{N}$ con $n\geq 2$. Si $a < b $, prueba que
           \(0 < \sqrt[n]{a}< \sqrt[n]{b}\).
         </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
         <p>Sea \(A \subseteq \mathbb{R}^{+}\) un conjunto no vacío y acotado superiormente. Define el conjunto
           \[
           A^2:=\{a^2: a\in A\}.
@@ -440,13 +450,13 @@
          
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean $A$ y $B$ dos conjuntos de números reales. Si  para todo 
           $a \in A$ existe $b\in B$  tal que $a \leq  b$, prueba que $\sup(A) \leq  \sup(B)$.
         </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean $A,B, C$ dos conjuntos de números reales. Si  para cualesquiera 
           $a \in A$ y $b in B$ existe $c\in C$  tal que $a + b  \leq  c$, prueba que $\sup(A) + \sup(B) \leq \sup(C) $.
         </p>
@@ -454,14 +464,14 @@
 
 
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Prueba que el conjunto de los números reales no es acotado superiormente, i.e. demuestra que 
           no existe \(z \in \mathbb{R}\) tal que $x \leq z$ para todo $x \in \mathbb{R}$.</p>
         
       </div>
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Prueba que  el conjunto de los números reales no es acotado inferiormente, i.e. prueba que 
           no existe \(z \in \mathbb{R}\) tal que $x \geq z$ para todo $x \in \mathbb{R}$.
@@ -470,21 +480,21 @@
       </div>
       
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Si \(0 < a < b\), prueba que \(a < \sqrt{ab} < \displaystyle{\frac{a + b}{2}} < b\).</p>
         <p>A \(\sqrt{ab}\) se le llama el <b>Media Geométrica</b> de \(a\) y \(b\), y a 
           \( \displaystyle{\frac{a + b}{2}}\) se le llama el <b>media Aritmética</b> de \(a\) y \(b\).</p>
       </div>
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean $a,b,c,d \in \mathbb{R}^{+}$ tales que $\displaystyle{\frac{a}{b} < \frac{c}{d}}$. Prueba que 
           $$\displaystyle{\frac{a}{b} < \frac{a + c}{b+ d} < \frac{c}{d}}$$
         </p>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sea \( m \in \mathbb{N}, \, m > 1 \) arbitrario pero fijo. Prueba que para todo $n \in \mathbb{N}$, se satisface 
           \( m^n \geq n \).
@@ -492,26 +502,26 @@
         <p><b>Sugerencia:</b> Utiliza el Principio de Inducción Matemática o  la desigualdad de Bernoulli.</p>
       </div>
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p><p>Sea \( m \in \mathbb{N}, \, m > 1 \) arbitrario pero fijo. Pruébese que para todo \( \varepsilon > 0 \),
           existe \( n \in \mathbb{N} \) tal que \(\displaystyle{\frac{1}{m^n}} < \varepsilon \).</p>
       </div>
       <!-- 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Dados \( a, b \in \mathbb{R} \) con \( a \leq b \), pruébese que \( a \leq \frac{a + b}{2} \leq b \). Si la primera desigualdad es estricta, entonces las otras también lo son.</p>
       </div>
       
 
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Demuestre que si \(a, b \in \mathbb{R}\), entonces \(a^2 + b^2 = 0 \Leftrightarrow a = 0 = b\).</p>
       </div> -->
    
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean \(a, b \in \mathbb{R}\), prueba que se satisfacen las siguientes propiedades:</p>
         <ol class="two-column">
@@ -529,19 +539,19 @@
         </ol>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean \(x,y\in \mathbb{R}\). Prueba que $|x - y | \leq |x| + |y|$.
         </p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica">Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean \(x,y\in \mathbb{R}\). Prueba que $||x| - |y| | \leq |x - y|$.
         </p>
         <p>Esta desigualdad es conocida como la <b>Desigualdad inversa del Triángulo</b></p>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sea \(a\in \mathbb{R}\) tal que $a \geq 0$. Prueba las siguientes proposiciones:</p>
         <ol class="two-column">
@@ -550,40 +560,40 @@
         </ol>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sea \(x,y\in \mathbb{R}\). Prueba que $|xy | = x y$ si y sólo si $x$ y $y$ tienen el mismo signo.</p>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sea \(x,y\in \mathbb{R}\). Prueba que $|x + y | = |x| + |y|$ si y sólo si $xy \geq 0$.</p>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Utiliza el Principio de Inducción Matemática para probar que  si \(x_1, x_2, \dots, x_n \in \mathbb{R}\), entonces
            $$|x_1 + x_2 + \cdots + x_n| \leq |x_1| + |x_2| + \cdots + |x_n|.$$</p>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Demostrar usando el Principio de Inducción Matemática que $\displaystyle{\frac{1}{2^{n}} < \frac{1}{n}}$ para todo $n \in \mathbb{N}$.</p>
       </div>
 
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sea $x>0$. Prueba que existe $N\in \mathbb{N}$ tal que $\displaystyle{\frac{1}{2^{N}} < x}$.</p>
       </div>
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sea $\delta >0$ y $x,y \in \mathbb{R}$. Prueba que $|x - y | \leq \delta$ si y sólo si  $y - \delta \leq x \leq y +\delta$</p>
       </div>
 
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Resuélvanse las  siguientes desigualdades:</p>
         <ol class="two-column">
@@ -607,7 +617,7 @@
       </div>
 
          
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Determinar el conjunto solución de cada una de las siguientes desigualdades:</p>
         <ol class="two-column">
@@ -622,7 +632,7 @@
         </ol>
       </div>
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Determinar el conjunto solución de cada una de las siguientes desigualdades:</p>
         <ol class="two-column">
@@ -636,7 +646,7 @@
       </div>
       
 
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Resuélvanse las  siguientes desigualdades:</p>
         <ol class="two-column">
@@ -652,7 +662,7 @@
         </ol>
       </div>
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Demuéstrese que si \(|x| < 1\), entonces:</p>
         <ol class="two-column">
@@ -661,28 +671,28 @@
         </ol>
       </div>
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Demuéstrese que si \(|x - 2| < 1\), entonces \(|x^2 - 4| < 5\).</p>
       </div>
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Demuéstrese que si \(|x - 2| < 0.1\), entonces \(|x^2 - 4| < 0.41\).</p>
       </div>
       
-      <div class="nota-box">
+      <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Demuéstrese que si \(|x - 2| < a\), entonces \(|x^2 - 4| < 4a + a^2\).</p>
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Sean $x,y \in \mathbb{R}$  dos números reales arbitrarios pero fijos. Prueba que $x=y$  si y sólo si 
           para todo $\varepsilon > 0$ se satisface $|x - y | < \varepsilon$</p>
        
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
         <p>
           Considera la función \(f:[-2,2] \to \mathbb{R}\) dada por
           \begin{eqnarray*}
@@ -705,9 +715,9 @@
             <li> Define \(k(x)= g(x)+h(x)\). Describe
             el dominio y el rango de \(k\) y dibuja su gráfica.</li>
           </ol>
-        </p>
+        </p> 
         <center>
-          <button class="respButton hvr-grow">Demostración</button>
+          <button class="respButton hvr-grow">Solución</button>
           <div class="resp-box flexbox">
             <iframe width="95%" height="90%" class="video"
             src="https://www.youtube.com/embed/PI7BFxuh_80?si=Gba2ITu4dLGiEAIa" allowfullscreen="true"> 
@@ -728,31 +738,31 @@
 
       
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
        
       </div>
       
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
        
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
        
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
        
       </div>
       
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
        
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
        
       </div>
 
-      <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
        
       </div> -->
 
