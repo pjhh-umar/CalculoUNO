@@ -98,14 +98,14 @@ html, body{
   width: 8.5%;
 }
 
-.flexbox{
+/* .flexbox{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 align-content: flex-start;
 width: 100%;
-}
+} */
 
 .informacion_profesor{
   display: flex;
@@ -1008,39 +1008,39 @@ h1.title-practica::after{
   }
 
 .respuesta-box{
-  display: none;
-  /* background:  rgb(218, 237, 245); */
-  color: black;
-  border-radius: 15px;
-  border:  3px solid   rgb(176, 231, 255);
-  padding: 25px;
-  /* border-top:  0px solid   rgb(218, 237, 245); */
-  /* border-bottom:  0px solid   rgb(218, 237, 245); */
-  /* border-right:  10px solid   rgb(218, 237, 245); */
-  /* border-left:  0px solid   rgb(218, 237, 245); */
-  margin: auto;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  font-size: 20px;
-  width: 95%;
-  /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
+    border: 3px solid rgba(52, 173, 249, 0.718);
+    border-radius: 25px;
+    padding: 20px;
+    /*margin: auto; */
+    /* margin-bottom: 0px; */
+    /* margin-top: 0px; */
+    /*display: flex;
+    */justify-content: center;
+    /*align-items: center;
+    *//*max-width: 100%;
+     */:;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .resp-box{
   display: none;
   /* background:  rgb(218, 237, 245); */
   color: black;
-  /* border-radius: 15px; */
-  /* padding: 1px; */
+  border-radius: 15px;
+  /* border:  3px solid   rgb(176, 231, 255); */
+  /* padding:   0px; */
   /* border-top:  0px solid   rgb(218, 237, 245); */
   /* border-bottom:  0px solid   rgb(218, 237, 245); */
   /* border-right:  10px solid   rgb(218, 237, 245); */
   /* border-left:  0px solid   rgb(218, 237, 245); */
   margin: auto;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  /* margin-bottom: 0px; */
+  margin-top: 10px;
   font-size: 20px;
-  /* width: 85%; */
+  width: 100%;
   /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
 }
 
@@ -1202,9 +1202,6 @@ img {
 
 }
 
-
-
-
 .respButton:hover,.respButton:focus, .respButton:active{
 transition: background-color 0.75s ease;
 transition: font-size 5s ease;
@@ -1233,59 +1230,6 @@ transform: scale(1.1);
 font-weight: 600;
 }
 
-
-
-.respButtonCenter{
-  text-align: center;
-  display: block;
-  font-family: "Bitter", serif;
-  border-radius: 60px; 
-  border: 2.5px solid  rgba(52, 173, 249, 0.718) ;
-  /* background-color: rgb(255, 255, 255); */
-  background: rgb(252, 252, 244);
-  /* margin-right: auto; */
-  margin-left: 0%;
-  /* margin-top: 3%; */
-  margin-top: 0%;
-  font-size: 100%;
-  padding: 1%;
-  font-weight: 600;
-  /* margin-bottom: 0px; */
-}
-
-
-.respButtonCenter:hover,.respButtonCenter:focus, .respButtonCenter:active{
-  transition: background-color 0.75s ease;
-  transition: font-size 5s ease;
-  background-color: rgb(238, 250, 255);
-  /* font-size: 185%; */
-  /* font-weight: 550; */
-  /* color: rgb(25,25,112); */
-  /* width: 50%; */
-  
-  border-radius: 60px; 
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  transition-duration: 10s;
-  -webkit-transition-duration: 0s;
-    /* transform: perspective(1px) translateZ(0); */
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  font-weight: 600;
-  }
-  
-  .respButtonCenter:hover::after{
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  font-weight: 600;
-  }
-
-
-
-
-
 .hvr-grow {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -1305,12 +1249,12 @@ font-weight: 600;
 
 .video{
     display: none;
-    border: 5px solid rgba(52, 173, 249, 0.718);
+    border: 3px solid rgba(52, 173, 249, 0.718);
     border-radius: 25px;
-    padding: 10px;
+    padding: 5px;
     margin: auto;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
