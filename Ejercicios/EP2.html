@@ -700,8 +700,8 @@
           <!-- <li>\(|x^2 + 1| = 0\).</li><br> -->
           <li>\(|4x - 6| = 3x - 7\).</li><br>
           <li>$|x+1| - |x-1| = 0$</li><br>
-          <li>$|x+1|\cdot|x-1| = 1$</li><br>
           <li>$|x+1| +|x-1| = 2$</li><br>
+          <li>$|x+1|\cdot|x-1| = 1$</li>
         </ol>
       </div>
       
@@ -718,6 +718,7 @@
           <li>\(\displaystyle{\frac{|x|}{6 - 5x} \leq 2}\)</li><br>
           <li>\(\displaystyle{\frac{|x + 1|}{3x - 2} \leq 5}\)</li><br>
           <li>\(|2 + 5x| \leq 7\)</li><br>
+          <li>\(|4x - 2| \leq 10\)</li><br>
           <li>\(|x(x + 1)| < |x + 4|\)</li><br>
         </ol>
       </div>
@@ -858,37 +859,402 @@
             </div>
           </center>
         </div>
-      
-<!--       
 
-     
-      
+        <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+           Las estimaciones usando desigualdades pueden usarse
+           para resolver problemas de máximos y mínimos. La derivada
+           ayudará a resolver estos problemas de manera más ordenada,
+           pero este es una muestra de los problemas de que se
+           veran más adelante
+         </p>
+         <p>
+           
+         </p>
+         <ol>
+           <li>
+            Prueba que para todo \(x\in \mathbb{R}\)
+             \[
+             \frac{x^2}{1+x^4}\leq \frac{1}{2}
+             \]
+   
+             <p><b>Sugerencia:</b> Reescribir
+             \(\displaystyle{\frac{x^2}{1+x^4} = \frac{1}{\displaystyle{\frac{1}{x^2}}+ x^2}}\)
+             y utiliza la desigualdad de Korovkin en el denominador.
+            </p> 
+           </li>
+   
+           <li>
+             Considera la función
+             \(f:\mathbb{R} \to \mathbb{R}\) definida como
+             \(f(x)=\displaystyle{\frac{x^2}{1+x^4}}\). Encuentra los  puntos
+             \(x_{0} \in \mathbb{R}\) donde la función alcanza su máximo,
+             es decir \(x_{0}\) debe de satisfacer
+             \[
+             f(x) \leq f(x_{0}) \quad \textrm{ para todo \(x\in \mathbb{R}\)}
+             \]
+   
+             <p><b>Sugerencia:</b> Recuerda cuando se da la igualdad en
+             la desigualdad de Korovkin.
+            </p>
+           </li>
+         </ol>
+         </div>
+
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+           Esta es otra demostración de la desigualdad de Bernoulli.
+          </p>
+   
+          <ol>
+            <li> Demuestra que para \(n\in \mathbb{N}\) y \(y>-1\)
+              \[
+              (1+y)^{1/n}\leq 1+\frac{y}{n}
+              \]
+              <p><b>Sugerencia:</b> En la desigualdad Aritmético-Geométrica
+              toma \(a_1=1+y\) y \(a_2=\cdots =a_n=1\).</p>
+            </li>
     
-
-     
-     
-
-      
-
+            <li>
+              Luego, demuestra que si \(x>-\frac{1}{n}\) entonces
+              \[
+              (1+x)^n\geq 1+nx
+              \]
     
-      
-      
+              <p><b>Sugerencia:</b> Considera \(y=nx\) en la desigualdad del inciso anterior,
+              además puedes usar que  si \(0 \leq a \leq b  \) entonces
+              \(a^n \leq b^n\).
+              </p>
+            </li>
+          </ol>
+         </div>
 
-     
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+            Considera la función \(f:[0,3] \to \mathbb{R}\) dada por
+            \begin{eqnarray*}
+            f(x)=\left\{
+              \begin{array}{cc}
+              -1 &  0 \leq x  < 1 \\
+                0 &   1 \leq x  < 2 \\
+                2   &  2 \leq x \leq 3
+              \end{array}
+              \right.
+            \end{eqnarray*}
+          </p>
+          <p><b>Observación:</b> La función \(f\) no está definida para \(x< 0\) ó para \(x>3\).</p>
+          <p>
+            <ol>
+              <li> Dibuja la gráfica de \(f\) y determina su rango.</li>
+              <li> Define \(g(x)=f(3x)\). Describe
+              el dominio y el rango de \(g\) y dibuja su gráfica.</li>
+              <li> Define \(h(x)=f(x-3)\). Describe
+              el dominio y el rango de \(h\) y dibuja su gráfica.</li>
+              <li> Define \(k(x)= g(x)+h(x)\). Describe
+              el dominio y el rango de \(g\) y dibuja su gráfica.</li>
+            </ol>
+          </p>
+         </div>
+
 
       
-      
-      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-       
-      </div>
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+            Determina el dominio de las siguientes funciones:
+          </p>
+          <ol class="two-column">
+            <!-- <li> \(f(x)=\sqrt{\frac{4-x^2}{x^2-5x^6}}+\sqrt{\frac{4x}{x^2+1}}\) </li> -->
+            <li>$f(x)= \displaystyle{\frac{8}{x}}$</li><br>
+            <li>$f(x)= \displaystyle{\frac{4}{4x^{2} + 4x}}$</li><br> 
+            <li> \(f(x)= \displaystyle{\frac{x(x-1)(x-5)}{x^2+2x}}+\displaystyle{\frac{1}{(x^2-9)^2}}\) </li><br>
+            <li>\(f(x)=\sqrt{x^2-9}+\sqrt{4-x^2}\) </li><br>
+            <li>\( f(x) = \sqrt{-2x + 25} \)</li><br>
+            <li>\( f(x) = \displaystyle{\frac{x - 4}{x^2 - 6x - 16}} \)</li>
+          </ol>
+         </div>
 
-      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-       
-      </div>
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+            <p>Para cada una de las condiciones dadas, encuentra todos los polinomios \(p(x)\),
+              de grado menor o igual a 2 que satisfacen las condiciones dadas.
+            </p>
+            <ol>
+              <!-- <li> \(p(0)=p(1)=p(2)=3\). </li> -->
+              <li>  \(p(0)=p(1)\).      </li>
+              <li> \(p(5x)=5p(x)\). </li>
+              <li>  \(p(x-1)=p(x+1)\). </li>
+            </ol>
+         </div>
 
-      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-       
-      </div> -->
+
+         <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+          <p>
+            Demuestra que si \(f:\mathbb{R}\to \mathbb{R}\) es al mismo
+            tiempo una función par y una función impar entonces \(f\) es la
+            función constante cero.
+          </p>
+          <center>
+            <button class="respButton hvr-grow"> Solución</button>
+            <div class="resp-box flexbox">
+              <iframe width="95%" height="90%" class="video"
+              src="https://www.youtube.com/embed/hq4J_mOX3d4?si=b9yX91mRTfanEE5A" title="YouTube video player"  
+               allowfullscreen="true"> 
+              </iframe>
+            </div>
+          </center>
+        </div>
+
+
+        <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+          <p>
+            Sea \(F:\mathbb{R}\to \mathbb{R}\) una función arbitraria.
+            Supon que se puede escribir \(F\) de dos formas:
+          </p>
+          \[
+          F=f+g\quad \textrm{y} \quad F=h+k,
+          \]
+          <p>
+            donde \(f,h:\mathbb{R}\) son funciones pares y
+            \(g,k:\mathbb{R}\to \mathbb{R}\) son funciones impares.
+          </p>
+
+          <p>
+            Demuestra que \(f=h\) y \(g=k\).
+          </p>
+          <p>
+            Sugerencia: usa el ejercicio anterior.
+          </p>
+          <center>
+            <button class="respButton hvr-grow"> Solución</button>
+              <div class="resp-box flexbox">
+                <iframe width="95%" height="90%" class="video"
+                src="https://www.youtube.com/embed/Ocg4LMah0Ys?si=50vwSqP2njqm2Bm1" title="YouTube video player"  
+                allowfullscreen="true"> 
+                </iframe>
+              </div>
+          </center>
+        </div> 
+        
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+            Sea \(f:D \to \mathbb{R}\) una función arbitraria definida en $D \subseteq \mathbb{R}$. Define
+          </p>
+          \[
+          f_{\textrm{par}}(x):= \frac{f(x)+ f(-x) }{2}
+          \]
+          \[
+          f_{\textrm{impar}}(x):=
+          \frac{f(x)-f(-x)}{2}
+          \]
+          <p>
+          Demuestra que:
+          <ol>
+            <li>\(f_{\textrm{par}}\) es una función par, \(f_{\textrm{impar}}\)
+              es una función impar.</li><br>
+            <li>\(f=f_{\textrm{par}}+f_{\textrm{impar}}\).</li>
+          </ol>
+         </div>
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+            Sean \(m,b \in \mathbb{R}\) fijos y arbitrarios con \(m\ne 0\).
+            Considera la función
+            \(f(x)=mx+b\), con \(x\in \mathbb{R}\).
+          </p>
+          <ol>
+            <li>Demuestra que \(f\) es estrictamente creciente
+            si y sólo si \(m>0\)</li><br>
+            <li>Demuestra que \(f\) es estrictamente decreciente si y sólo si \(m < 0 \).</li>
+          </ol>
+          </p>
+         </div>
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+            Considera las funciones potencias,
+            \(f_n:\mathbb{R}\to \mathbb{R} \),
+            \(f(x)=x^n\), \(n\in \mathbb{N}\).
+          </p>
+          <p>
+            Demuestra que, para todo
+            \(n \geq 1\) , \(f_n\) es estrictamente creciente en
+            todo \([0,\infty)\).
+          </p>    
+         </div>
+         
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+            Sea \(\emptyset \ne I \subseteq \mathbb{R}\)
+            un invervalo y sean \(f,g: I \to \mathbb{R}\) dos funciones.
+            Demuestra que
+            </p>
+            <ol>
+              <li> Si \(f\) y \(g\) son monótonas crecientes/decrecientes
+                entonces \(f+g\) es monótona creciente/decreciente.
+              </li>
+              <li> Si \(f\) y \(g\) son estrictamente crecientes/decrecientes entonces
+                \(f+g\) es estrictamente creciente/decreciente.
+              </li>
+              <li> Si \(f\) y \(g\) son monótonas crecientes y ademáas
+                suponemos \(f(x) \geq 0\) y \(g(x) \geq 0\) para todo \(x\in I\),
+                demuestra que la función producto \(fg\) es monótona creciente.
+              </li>
+            </ol>
+         </div>
+
+         
+         <div class="ejercicio-box"><h1 class="number-title-practica" id="Eqn:Resolvent"> Ejercicio</h1>
+          <p>Este ejercicio generaliza la diferencia de cuadrados
+            y diferencia de cubos.
+          </p>
+
+          <p>Demuestra que para cualesquiera \(a,b \in \mathbb{R}\) y \(n \geq 2\):
+        \[
+        a^n-b^n=(a-b)\left( \sum_{k=0}^{n-1} a^kb^{n-1-k} \right)
+        \]
+      </p>
+         </div>
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+            Sean \(x,y\in \mathbb{R}\) tales que  \(0\leq y < x\).
+          </p>
+    
+        <ol>
+          <li>Prueba que:
+            \[
+            \sqrt{x}-\sqrt{y}=\frac{x-y}{\sqrt{x}+\sqrt{y}}
+            \]
+          </li>
+          <p><b>Sugerencia:</b> Usa diferencia de cuadrados.</p>
+    
+          <li> El inciso anterior se generaliza como sigue:
+            Para \(n \in \mathbb{N}\), con \(n \geq 3\), demuestra
+    
+            \[
+            \sqrt[n]{x}-\sqrt[n]{y}=\frac{x-y}{\displaystyle{\sum_{k=0}^{n-1} x^{\frac{k}{n}}y^{\frac{n-1-k}{n}}} }.
+            \]
+    
+            <p><b>Sugerencia:</b> Usa el <a href="#Eqn:Resolvent">Ejercicio 2.69</a>.</p>
+          </li>
+         </div>
+         
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>Sea $n\in \mathbb{N}$ con \(n \geq 2\) arbitrario pero fijo. Considera la correspondiente función 
+            <b>raíz \(n\)-ésima</b>, $g_n:[0,\infty) \to \mathbb{R},$ dada por:
+            $$g_n(x) := \sqrt[n]{x}$$
+            Demuestra que la función \(g_n\) es estrictamente creciente en \([0,\infty)\).
+            </p>
+            <p>
+              <b>Sugerencia:</b> Usa el ejercicio anterior.
+            </p>
+         </div>
+
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>Usando las simetrias de las funciones potencia y usando
+            el hecho de que son estrictamente crecientes en \([0,\infty)\)
+            demuestra que:
+          </p>
+          <ol>
+            <li>
+              Para \(n \geq 1\) y \(n\) impar, \(f_n(x):=x^n\) es estrictamente
+              creciente en todo \(\mathbb{R}\).
+            </li><br>
+            <li>
+              Para \(n \geq 1\) y \(n\) par, \(f_n(x):=x^n\) es estrictamente decreciente en
+              \((-\infty, 0]\) y estrictamente creciente en \([0,\infty)\).
+            </li>
+          </ol>
+         </div>
+
+
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+            Sea \(A \subseteq \mathbb{R}\) distinto del vacío y
+            \(f:A \to \mathbb{R}\) estrictamente decreciente  en \(A\).
+            Prueba que \(f\) es inyectiva en \(A\).
+          </p>
+         </div>
+
+         <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+            <p>
+              Prueba que la función  \(g(x)=\sqrt{x}\), es concava
+              hacia abajo en \([0,\infty)\).
+            </p>
+            
+            
+              <button class="respButton hvr-grow"> Solución</button>
+                <div class="respuesta-box flexbox">
+                  
+                  <p>
+                    Fijamos \(0 \leq x_0 < x_1\).
+                  </p>
+                  <p>
+                    Para \(t\in (0,1)\), definimos \(x_t=tx_0+(1-t)x_1\). Debemos probar:
+                  </p>
+                  \[
+                  t\sqrt{x_0}+ (1-t)\sqrt{x_1} \leq \sqrt{x_t}
+                  \]
+        
+                  <p>
+                    Escribiendo \(\sqrt{x_t}=t\sqrt{x_t}+(1-t)\sqrt{x_t}\), la desigualdad
+                    anterior es equivalente a probar (pasando lo que tiene
+                    \(1-t\) del lado izquierdo y los que tienen \(t\) del derechoß):
+                  </p>
+                  \begin{equation}\label{Eqn:AuxEjerRaizConcavaAbajo}
+                 (1-t) (\sqrt{x_1} - \sqrt{x_t}) \leq  t(\sqrt{x_t}-\sqrt{x_0})
+                  \end{equation}
+        
+                  <p>
+                    Ahora usamos el <a href="#Ejer:DiferenciaRaices">Ejercicio 4.17</a>
+                    para obtener
+                    \begin{eqnarray*}
+                    \sqrt{x_t}-\sqrt{x_0}=\frac{x_t-x_0}{\sqrt{x_t}+ \sqrt{x_0}} \\
+                    \sqrt{x_1}-\sqrt{x_t}=\frac{x_t-x_1}{\sqrt{x_1}+ \sqrt{x_t}}
+                    \end{eqnarray*}
+                    por lo que podemos substituir estas expresiones en
+                    \eqref{Eqn:AuxEjerRaizConcavaAbajo} para obtener
+                    \begin{equation}\label{Eqn:Aux2EjerRaizConcavaAbajo}
+                    (1-t)\frac{x_1-x_t}{\sqrt{x_1}+\sqrt{x_t}} \leq
+                    t \frac{x_t-x_0}{\sqrt{x_t}+\sqrt{x_0}}
+                    \end{equation}
+                    Un cálculo directo muestra que
+                    \[
+                    x_1-x_t=t(x_1-x_0), \quad x_t-x_0=(1-t)(x_1-x_0)
+                    \]
+                    Por lo tanto, se puede substituir esto en  \eqref{Eqn:Aux2EjerRaizConcavaAbajo}
+                    para llegar a
+                    \[
+                    t(1-t)\frac{x_1-x_0}{\sqrt{x_1}+\sqrt{x_t}} \leq
+                    t(1-t)\frac{x_1-x_0}{\sqrt{x_t}+\sqrt{x_0}}
+                    \]
+                    la cual se simplifica  a
+                    \begin{equation}\label{Eqn:Aux3EjerRaizConcavaAbajo}
+                    \frac{1}{\sqrt{x_1}+\sqrt{x_t}} \leq \frac{1}{\sqrt{x_t}+\sqrt{x_0}}
+                    \end{equation}
+                  </p>
+                  <p>
+                    Recapitulando hemos encontrado que \eqref{Eqn:AuxEjerRaizConcavaAbajo}
+                    es equivalente a \eqref{Eqn:Aux3EjerRaizConcavaAbajo}. Así, lo
+                    que resta probar es \eqref{Eqn:Aux3EjerRaizConcavaAbajo}. Para
+                    probar ésta última tenemos \(x_0< x_1\) implica \(\sqrt{x_0} < \sqrt{x_1}\)
+                    (al ser la función raíz estrictamente
+                    creciente). Si sumamos
+                    \(\sqrt{x_t}\) en ambos lados de la desigualdad enterior tenemos
+                    \[
+                    \sqrt{x_0}+\sqrt{x_t} < \sqrt{x_1}+\sqrt{x_t}
+                    \]
+                    y si scamos inversos multiplicativos concluimos
+                    \[
+                    \frac{1}{\sqrt{x_1}+\sqrt{x_t}} < \frac{1}{\sqrt{x_0}+\sqrt{x_t}}
+                    \]
+                    lo cual prueba \eqref{Eqn:Aux3EjerRaizConcavaAbajo}.
+                  </p>
+
+                </div>
+
+
+          
+         </div>
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+         </div>
+
 
       
    <!-- Donde aparecerá la fecha de la última modificación -->
