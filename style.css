@@ -1007,6 +1007,25 @@ h1.title-practica::after{
   box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);  
   }
 
+.respuesta-box{
+  display: none;
+  /* background:  rgb(218, 237, 245); */
+  color: black;
+  border-radius: 15px;
+  border:  3px solid   rgb(176, 231, 255);
+  padding: 25px;
+  /* border-top:  0px solid   rgb(218, 237, 245); */
+  /* border-bottom:  0px solid   rgb(218, 237, 245); */
+  /* border-right:  10px solid   rgb(218, 237, 245); */
+  /* border-left:  0px solid   rgb(218, 237, 245); */
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 20px;
+  width: 95%;
+  /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
+}
+
 .resp-box{
   display: none;
   /* background:  rgb(218, 237, 245); */
@@ -1025,25 +1044,6 @@ h1.title-practica::after{
   /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
 }
 
-.flex-box{
-  display: none;
-  /* background:  rgb(218, 237, 245); */
-  color: black;
-  /* border-radius: 15px; */
-  /* padding: 1px; */
-  /* border-top:  0px solid   rgb(218, 237, 245); */
-  /* border-bottom:  0px solid   rgb(218, 237, 245); */
-  /* border-right:  10px solid   rgb(218, 237, 245); */
-  /* border-left:  0px solid   rgb(218, 237, 245); */
-  margin: auto;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  text-align: left;
-  font-size: 20px;
-  /* width: 85%; */
-  /* box-shadow: 1px 1px 5px 1px  rgb(31, 147, 201); */
-}
 
 img {
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
@@ -1183,12 +1183,13 @@ img {
   display: block;
   font-family: "Bitter", serif;
   border-radius: 60px; 
+  margin: 0 auto; /* Centra horizontalmente */
   border: 2.5px solid  rgb(218,165,32);
   /* border: 2.5px solid  rgba(52, 173, 249, 0.718) ; */
   /* background-color: rgb(255, 255, 255); */
   background: rgb(252, 252, 244);
   /* margin-right: auto; */
-  margin-left: 0%;
+  /* margin-left: 0%; */
   /* margin-top: 3%; */
   margin-top: 0%;
   font-size: 85%;
@@ -1196,7 +1197,7 @@ img {
   font-weight: 600;
   /* margin-bottom: 0px; */
   /* display: flex;
-  justify-content: center;
+  
   align-items: center; */
 
 }
@@ -1303,7 +1304,8 @@ font-weight: 600;
 
 
 .video{
-  border: 5px solid rgba(52, 173, 249, 0.718);
+    display: none;
+    border: 5px solid rgba(52, 173, 249, 0.718);
     border-radius: 25px;
     padding: 10px;
     margin: auto;
