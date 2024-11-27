@@ -1278,7 +1278,7 @@
           </ol>
          </div>
 
-         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+         <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
           <p>
             Sean \(I,J\subseteq \mathbb{R}\) dos intervalos y
              \(g:I \to \mathbb{R}\) y \(f:J\to \mathbb{R}\) dos funciones
@@ -1406,17 +1406,158 @@
             </ol>
           </p>
         </div>
+
+        <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+          <p>
+            Sea \(f\) una función definida en una
+            vecindad agujereada $\hat{B}_{r}(a)$ de
+            \(a\) y tal que \(\displaystyle{\lim_{x\to a}}f(x)=L\).
+              Demuestra que existe \(\delta > 0 \) tal que para todo $x\in \hat{B}_{r}(a)$
+              se satisface 
+              $$|f(x)| \leq 1+|L|.$$
+            
+            </p>
+            <button class="respButton hvr-grow"> Demostración</button>
+                <div class="resp-box">
+                <div class="respuesta-box">
+
+                    <p>
+                      Por hipótesis
+                      \[
+                      \lim_{x\to x_0} f(x)=L
+                      \]
+                      Por definición de límite aplicado a 
+                      \(\varepsilon=1\) existe una \(\delta >0\) tal que,
+                      para toda \(x\) con \(0<|x-x_0| < \delta\) se satisface
+                      \(|f(x)-L|< 1\).
+                    </p>
+
+                    <p>
+                      Por la desigualdad inversa del
+                      triángulo </a> tenemos
+                      \[
+                      |f(x)-L| \geq ||f(x)|-|L||,
+                      \]
+                      por lo que
+                      \[
+                      1> ||f(x)|-|L||, \quad \textrm{para toda \(x\)
+                      con \(0< |x-x_0| < \delta\)}.
+                      \]
+                      Si abrimos el último valor absoluto llegamos a
+                      \[
+                      -1< |f(x)|-|L|< 1 \Rightarrow |f(x)|< 1+|L|.
+                      \]
+                    </p>
+                    <p>
+                      Por lo tanto, en la vecindad perforada
+                      \(V:=B_\delta(x_0)\setminus \{x_0\}\) se satisface
+                      \[
+                      |f(x)|< 1+|L|, \quad \textrm{para toda \(x\in V\).}
+                      \]
+                    </p>
+                    </div>
+                </div>
+          </div>
+
+
+          <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+            <p>
+              Sea \(f\colon A \to \mathbb{R}\) una función. Pruba que $f$ es acotada en $A$ si y sólo si existe 
+              $K>0$ tal que $|f(x)| \leq K$ para todo $x \in A$.
+              
+              </p>
+          </div>
+
+          <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+            <p>
+              Sea \(f\) una función definida en una
+              vecindad agujereada $\hat{B}_{r}(a)$ de
+              \(a\) y tal que \(\displaystyle{\lim_{x\to a}}f(x)=L\).
+                Demuestra que existe $\delta >0$ tal que $f$ es acotada en $\hat{B}_{\delta}(a)$.
+              
+              </p>
+          </div>
+
+          <div class="ejercicio-resuelto-box" id="Ejer:LimitLawsLinearComb"><h1 class="title-practica"> Ejercicio resuelto</h1>
+            <p> Sea \(f\) una función definida en una vecindad agujereada $\hat{B}_{r}(a)$ de
+              \(a\) tal que \(|\displaystyle{\lim_{x\to x_0}}f(x)=L\). Demuestra
+              que para todo \(n \in \mathbb{N}\)
+              \[
+              \lim_{x\to x_0} f^n(x)=L^n.
+              \]
+  
+              En particular, nota que \(\displaystyle{\lim_{x\to x_0}} x^n=x_0^n\).
+              </p>
+              <!-- <p>
+              Sugerencia: usa el ejercicio <a href="#Ejer:LimitLawProduct">Ejercicio 5.13</a>
+              e inducción.
+            </p> -->
+            <button class="respButton hvr-grow"> Solución</button>
+              <div class="resp-box" >
+                <iframe width="95%" height="90%" class="video"
+                src="https://www.youtube.com/embed/QQHr2fAkzAw?si=YYnHfDtrWkc4Xqba" title="YouTube video player"  
+                allowfullscreen="true"> 
+                </iframe>
+              </div>
+           </div>
+           <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+            <p> Sea
+              \(p(x)=\displaystyle{\sum_{k=0}^n a_kx^k}\) un polinomio en la variable $x$ de grado $n$.
+               Demuestra que, para todo \(x_0 \in \mathbb{R}\)
+              \[
+              \lim_{x\to x_0}p(x)=\sum_{k=0}^na_kx_0^k=p(x_0).
+              \]
+              <p><b>Sugerencia:</b> Usa el ejercicio
+              <a href="#Ejer:LimitLawsLinearComb">Ejercicio resuelto 2.13</a> y los resultados obtenidos en clase 
+              sobre el límite de una suma y el límite de un escalar por una función.
+              </p>
+         </div>
+
+         <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+          <p>
+            Sea \(g\) una función definida en una
+            vecindad agujereada $\hat{B}_{r}(a)$ de \(a\), tal que 
+            \(\displaystyle{\lim_{x\to a}}g(x)=L\) con \(L\ne 0\).
+            Demuestra que existe \(\delta >0 \) tal que \(\displaystyle{\frac{|L|}{2} } < |g(x)|\),
+            para todo \(x\in \hat{B}_{\delta}(a)\).
+            </p>
+            <button class="respButton hvr-grow"> Demostración</button>
+            <div class="resp-box">
+            <div class="respuesta-box">
+      
+            <p>
+              Ya que \(L\ne 0\), el número \(\displaystyle{\frac{|L|}{2}}\) es positivo
+              y aplicando la definición de límite a \(\varepsilon= \displaystyle{\frac{|L|}{2}}\)
+              podemos asegurar la existencia de una \(\delta > 0\) tal que para toda
+              \(x\) que satisface \(0<|x-x_0|< \delta \) se cumple
+              \[
+              |g(x)-L| < \frac{|L|}{2}
+              \]
+              Luego, de  la desigualdad inversa del triángulo</a> se 
+              tiene que  \(||g(x)|-|L|| \leq |g(x)-L|\), por lo que
+              abriendo el valor absoluto \(||g(x)|-|L|| < \frac{|L|}{2}\), resulta
+              \[
+               -\frac{|L|}{2} < |g(x)|-L
+              \Rightarrow -\frac{|L|}{2}+L=\frac{|L|}{2} < |g(x)|.
+              \]
+      
+            </p>
+            <p>
+              Por lo tanto, para todo 
+              \(x\in \hat{B}_\delta(a)\)  se satisface
+              \[
+              \frac{|L|}{2} < |G(x)|.
+              \]
+            </p>
+            </div>
+            </div>
+         </div>
         
 <!-- 
-         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-         </div>
+         
 
-         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-         </div>
+         
 
-
-         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-         </div>
 
          <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
          </div>
