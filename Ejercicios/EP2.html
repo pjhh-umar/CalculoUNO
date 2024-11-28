@@ -1111,7 +1111,7 @@
         \]
       </p>
          </div>
-         <div class="ejercicio-box" id="#Ejer:DiferenciaRaices"><h1 class="number-title-practica"> Ejercicio</h1>
+         <div class="ejercicio-box"><h1 class="number-title-practica" id="Ejer:DiferenciaRaices"> Ejercicio</h1>
           <p>
             Sean \(x,y\in \mathbb{R}\) tales que  \(0\leq y < x\).
           </p>
@@ -1501,7 +1501,7 @@
               </div>
            </div>
 
-           <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+           <div class="ejercicio-box" ><h1 class="number-title-practica" id="Ejer:LimitLawPoly"> Ejercicio</h1>
             <p> Sea
               \(p(x)=\displaystyle{\sum_{k=0}^n a_kx^k}\) un polinomio en la variable $x$ de grado $n$.
                Demuestra que, para todo \(x_0 \in \mathbb{R}\)
@@ -1512,85 +1512,156 @@
               <a href="#Ejer:LimitLawsLinearComb">Ejercicio resuelto 2.13</a> y los resultados obtenidos en clase 
               sobre el límite de una suma y el límite de un escalar por una función.
               </p>
-         </div>
-
-         <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
-          <p>
-            Sea \(g\) una función definida en una
-            vecindad agujereada $\hat{B}_{r}(a)$ de \(a\), tal que 
-            \(\displaystyle{\lim_{x\to a}}g(x)=L\) con \(L\ne 0\).
-            Demuestra que existe \(\delta >0 \) tal que \(\displaystyle{\frac{|L|}{2} } < |g(x)|\),
-            para todo \(x\in \hat{B}_{\delta}(a)\).
-            </p>
-            <button class="respButton hvr-grow"> Demostración</button>
-            <div class="resp-box">
-            <div class="respuesta-box">
-      
-            <p>
-              Ya que \(L\ne 0\), el número \(\displaystyle{\frac{|L|}{2}}\) es positivo
-              y aplicando la definición de límite a \(\varepsilon= \displaystyle{\frac{|L|}{2}}\)
-              podemos asegurar la existencia de una \(\delta > 0\) tal que para toda
-              \(x\) que satisface \(0<|x-x_0|< \delta \) se cumple
-              \[
-              |g(x)-L| < \frac{|L|}{2}
-              \]
-              Luego, de  la desigualdad inversa del triángulo</a> se 
-              tiene que  \(||g(x)|-|L|| \leq |g(x)-L|\), por lo que
-              abriendo el valor absoluto \(||g(x)|-|L|| < \frac{|L|}{2}\), resulta
-              \[
-               -\frac{|L|}{2} < |g(x)|-L
-              \Rightarrow -\frac{|L|}{2}+L=\frac{|L|}{2} < |g(x)|.
-              \]
-      
-            </p>
-            <p>
-              Por lo tanto, para todo 
-              \(x\in \hat{B}_\delta(a)\)  se satisface
-              \[
-              \frac{|L|}{2} < |G(x)|.
-              \]
-            </p>
-            </div>
-            </div>
-         </div>
-
-         
-         <div class="ejercicio-resuelto-box" id="Ejer:LimitLawQuotients"><h1 class="title-practica"> Ejercicio resuelto</h1>
-          <p>
-          Sea \(g\) una
-          función definida
-          en una vecindad agujereada $\hat{B}_{r}(a)$ de \(a\), tal que \(\displaystyle{\lim_{x\to a}} g(x) = L\)
-          con \(L \ne 0\). Demuestra que
-          \(\displaystyle{\lim_{x\to a} \frac{1}{g(x)}=\frac{1}{L}}\).
-          </p>
-          <button class="respButton hvr-grow"> Solución</button>
-              <div class="resp-box" >
-                <iframe width="95%" height="90%" class="video"
-                src="https://www.youtube.com/embed/IMw5pmleFDc?si=dKqud3tTMNzgWa7m" title="YouTube video player"  
-                allowfullscreen="true"> 
-                </iframe>
-              </div>
-        
           </div>
+
+          <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+            <p>
+              Sea \(g\) una función definida en una
+              vecindad agujereada $\hat{B}_{r}(a)$ de \(a\), tal que 
+              \(\displaystyle{\lim_{x\to a}}g(x)=L\) con \(L\ne 0\).
+              Demuestra que existe \(\delta >0 \) tal que \(\displaystyle{\frac{|L|}{2} } < |g(x)|\),
+              para todo \(x\in \hat{B}_{\delta}(a)\).
+              </p>
+              <button class="respButton hvr-grow"> Demostración</button>
+              <div class="resp-box">
+              <div class="respuesta-box">
         
+              <p>
+                Ya que \(L\ne 0\), el número \(\displaystyle{\frac{|L|}{2}}\) es positivo
+                y aplicando la definición de límite a \(\varepsilon= \displaystyle{\frac{|L|}{2}}\)
+                podemos asegurar la existencia de una \(\delta > 0\) tal que para toda
+                \(x\) que satisface \(0<|x-x_0|< \delta \) se cumple
+                \[
+                |g(x)-L| < \frac{|L|}{2}
+                \]
+                Luego, de  la desigualdad inversa del triángulo</a> se 
+                tiene que  \(||g(x)|-|L|| \leq |g(x)-L|\), por lo que
+                abriendo el valor absoluto \(||g(x)|-|L|| < \frac{|L|}{2}\), resulta
+                \[
+                -\frac{|L|}{2} < |g(x)|-L
+                \Rightarrow -\frac{|L|}{2}+L=\frac{|L|}{2} < |g(x)|.
+                \]
+        
+              </p>
+              <p>
+                Por lo tanto, para todo 
+                \(x\in \hat{B}_\delta(a)\)  se satisface
+                \[
+                \frac{|L|}{2} < |G(x)|.
+                \]
+              </p>
+              </div>
+              </div>
+          </div>
+
+          
+          <div class="ejercicio-resuelto-box" ><h1 class="title-practica" id="Ejer:LimitLawQuotients"> Ejercicio resuelto</h1>
+            <p>
+            Sea \(g\) una
+            función definida
+            en una vecindad agujereada $\hat{B}_{r}(a)$ de \(a\), tal que \(\displaystyle{\lim_{x\to a}} g(x) = L\)
+            con \(L \ne 0\). Demuestra que
+            \(\displaystyle{\lim_{x\to a} \frac{1}{g(x)}=\frac{1}{L}}\).
+            </p>
+            <button class="respButton hvr-grow"> Solución</button>
+                <div class="resp-box" >
+                  <iframe width="95%" height="90%" class="video"
+                  src="https://www.youtube.com/embed/IMw5pmleFDc?si=dKqud3tTMNzgWa7m" title="YouTube video player"  
+                  allowfullscreen="true"> 
+                  </iframe>
+                </div>
+          
+            </div>
+        
+            <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+              <p>
+                Sean \(p(x)\) y \(q(x)\) dos polinomios.
+                Si \(q(x_0)\ne 0\),
+                demuestra que
+                \[
+                \lim_{x\to x_0}\frac{p(x)}{q(x)}=\frac{p(x_0)}{q(x_0)}
+                \]
+                </p>
+                <p>
+                  <b>Sugerencia:</b> Usa el resultado obtenido en clase sobre el límite de un producto de funciones,
+                  <a href="#Ejer:LimitLawPoly"> Ejercicio 2.80</a> y
+                  <a href="#Ejer:LimitLawQuotients">Ejercicio resuelto 2.15</a>.
+                </p>
+            </div>
+            
+            <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+              <p>
+                Considera la función \(f(x)=\sqrt{x}\)
+                para \(x \geq 0\).
+                </p>
+                <ol>
+                <li>Para
+                \(\varepsilon > 0 \) encuentra una \(\delta >0\)
+                tal que si
+                \[
+                |x-4|<\delta \Rightarrow |f(x)-2|< \varepsilon.
+                \]
+                <p><b>Sugerencia:</b>  Utiliza el
+                <a href="#Ejer:DiferenciaRaices">Ejercicio 2.70</a>
+                para encontrar una vecindad agujerada de \(4\) donde
+                se cumpla  \(|f(x)-2|\leq c |x-4|\).
+                </p>
+                </li>
+                <li>
+                  Generaliza el ejercicio anterior probando que para
+                  toda \(a>0\) se cumple
+                  \[
+                  \lim_{x\to a} f(x)=f(a).
+                  \]
+                </li>
+          
+                </ol>
+            </div>
+            
+            <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+              <p>
+                Sea \(f\) una función definida en una
+                vecindad agujereada
+                de \(x_0\).
+                </p>
+                <p>
+                Asume que existen constantes \(m,M\) tales que
+                \(m  \leq f(x) \leq M\) para todo \(x\) en la vecinda y que existe
+                \(\lim_{x\to x_0} f(x)\). Demuestra que
+                \[m \leq \lim_{x\to x_0} f(x) \leq M.\]
+                </p>
+            </div>
+            
+            <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+              <p>
+                Sea \(f\) una función definida en una
+                vecindad agujereada de
+                \(x_0\), tal que \(f(x) \geq 0\) en dicha vecindad y tal que
+                \(\lim_{x\to x_0} f(x)=A\).
+                </p>
+                <p>
+                Demuestra que \(\lim_{x\to x_0}
+                \sqrt{f(x)}=\sqrt{A}\).
+                </p>
+                <p>
+                  Nota: en general se puede probar \(\lim_{x\to a}\sqrt[n]{f(x)}=\sqrt[n]{A}\),
+                  para todo \(n\in \mathbb{N}\).
+                </p>
+          </div>
 <!-- 
          
 
          
 
 
-         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-         </div>
+         
 
-         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-         </div>
+         
 
-         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-         </div>
+        
 
 
-         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-         </div>
+         
 
          <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
          </div>
