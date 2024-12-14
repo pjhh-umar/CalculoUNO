@@ -1,0 +1,953 @@
+
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1],
+            id: "\\operatorname{id}",
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title
+      {
+      counter-reset: temaCounter 1 subsectioncounter ;
+      } */
+      body.fondo-body{
+        counter-reset: temaCounter 3 sectionCounter EjercicioResueltoCounter 1;
+        
+      }
+
+      /* h1.page-number-title
+      {
+      counter-reset: sectionCounter 0;
+      }  */
+
+      h1.tema-number-title
+          {
+          counter-reset: sectionCounter 3;
+          } 
+
+      h1.number-title
+      {
+      counter-reset: subsectionCounter;
+      /* counter-reset: subsectionCounter; */
+      }
+
+    </style>
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Cálculo I</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría</div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Informacion_General.html"> Información</a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Notas.html"> Notas  </a> </li>
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Quizes.html"> Quizes  </a> </li>-->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Ejercicios.html">Ejercicios</a></li> 
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Examenes.html"> Archivos </a> </li> -->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Links.html"> Links</a> </li>
+          </ul>
+          </nav>
+       
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Ejercicios propuestos tercer examen parcial </title>
+      </head>  
+
+
+
+      <body class="fondo-body" ><h1 class="page-title-practica"> Ejercicios propuestos Tercer Examen Parcial </h1>   
+
+    <!-- <div class="ejercicio-box"><h1 class="title"> Archivos</h1> 
+      <div class="links-box" style = "font-family: 'Oldenburg', cursive; font-size: 150%;">
+        <a href="../Archivos/EP1-GrupoA.xlsx" download> EP1-GrupoA.xlsx</a><br>
+        <a href="../Archivos/EP1-GrupoC.xlsx" download> EP1-GrupoC.xlsx</a>
+      </div>
+      </div> -->
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p> Si $\displaystyle{\lim_{x\to -1}\frac{f(x)-2}{x+1}=7}$, encuentra $\displaystyle{\lim_{x\to -1}f(x)}$.
+        </p>
+      </div>
+
+       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Si $\displaystyle{\lim_{x\to 25} \left( \frac{2f(x)-3}{\sqrt{x}-5}+x \right)=2}$, 
+          encuentra $\displaystyle{\lim_{x\to 25}f(x)}$</p>
+       </div>
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sea $\rho >0$ y $f$ una función tal que para todo $x \in \hat{B}_{\rho}(2)$ se satisface
+          \[
+          \frac{3x^2-2x-8}{x-2}\leq f(x)\leq \frac{3x^2-5x-2}{x-2}+3
+          \]
+          encuentra $\displaystyle{\lim_{x\to 2}f(x)}$.
+        </p>
+      </div>
+
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Da un ejemplo de funciones \(f\) y \(g\), definidas en una vecindad
+          agujereada del \(0\), tales que \(\displaystyle{\lim_{x\to 0}(fg)(x)}\) existe pero algunos
+          de los límites \(\displaystyle{\lim_{x\to 0}f(x)}\) ó \(\displaystyle{\lim_{x\to 0}g(x)}\) no existe.
+        </p>
+       </div>
+
+      
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Da un ejemplo de funciones \(f\) y \(g\), definidas en una vecindad
+          agujereada del \(0\), tales que
+          \(\displaystyle{\lim_{x\to 0}(f+g)(x)}\) existe pero los límites \(\displaystyle{\lim_{x\to 0}f(x)}\) y
+          \(\displaystyle{\lim_{x\to 0} g(x)}\) no existe.</p>
+      </div>
+
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>
+          Sean \(f\) y \(g\) dos funciones definidas en una vecindad agujereada de \(a\).
+          <ol>
+          <li> Si \(\displaystyle{\lim_{x\to a}(f+g)(x)}\) existe y \(\displaystyle{\lim_{x\to a} f(x)}\) existe,
+            demuestra que \(\displaystyle{\lim_{x\to a}g(x)}\) también existe.
+          </li><br>
+          <li> Si \(\displaystyle{\lim_{x\to a} (fg)(x)}\) existe , \(\displaystyle{\lim_{x\to a} f(x)}\) existe
+             y es distinto de cero, demuestra que \(\displaystyle{\lim_{x\to a}g(x)}\) existe.
+          </li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+        <p>Utiliza la definición para calcular el  siguiente límite. Justifica clara y detalladamente tu respuesta.</p>
+        
+            \[
+              \displaystyle{\lim_{x\to 0^+} \sqrt{\displaystyle{\frac{1}{x}+1}}-\sqrt{\frac{1}{x}-1}}
+            \]
+            <center>
+              <button class="respButton hvr-grow"> Respuesta </button>
+              <div class="resp-box flexbox">
+                <iframe width="95%" height="90%" class="video"
+                src="https://www.youtube.com/embed/NGCZ9HufQdY?si=xvSndLpnXRXvcL4E" title="YouTube video player" allowfullscreen="true"> 
+                </iframe>
+              </div>
+            </center>
+      </div>
+        
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Utiliza la definición para calcular los siguientes límites. Justifica clara y detalladamente tu respuesta.</p>
+        <p>
+          <ol>
+          <li> Sean \(a,b \in \mathbb{R}^+\) fijos y arbitrarios pero fijos.
+    
+          \[
+          \displaystyle{\lim_{x\to 0^{+}} \sqrt{\frac{1}{x}+a}-\sqrt{\frac{1}{x}-b}}
+          \]
+          </li><br>
+          <li> Sean \(b_1,b_2,c_1,c_2 \in \mathbb{R}^+\).
+          \[
+          \displaystyle{\lim_{x\to 0} \sqrt{\frac{1}{x^4}+\frac{b_1}{x^2}+c_1}-
+          \sqrt{\frac{1}{x^4}+\frac{b_2}{x^2}+c_2}}
+          \]
+          </li><br>
+          <li> Sean \(a_1,a_2 \in \mathbb{R}^+\) con \(a_1\not= a_2\) y \(b_1,b_2 \in \mathbb{R}\).
+            \[\displaystyle{\lim_{x\to 0^+} \sqrt{\displaystyle{\frac{a_1}{x}} + b_1}}-\sqrt{\displaystyle{\frac{a_2}{x}}+b_2} \]
+
+            <b>Nota:</b> Considera los casos \(a_1 <  a_2\) y \( a_1 > a_2\).
+          </li><br>
+          <li>\(\displaystyle{ \lim_{x\to 0} \frac{\sqrt{\displaystyle{\frac{1}{x^4}}+1}}{\sqrt{\displaystyle{ \frac{1}{x^2}+1}}}}\)</li><br>
+          <li> Sean \(a,b \in \mathbb{R}^+\) fijos y arbitrarios pero fijos.
+          \[
+          \displaystyle{\lim_{x\to 0} \frac{\sqrt{\displaystyle{\frac{1}{x^2}}+a}} {\sqrt{\displaystyle{\frac{1}{x^4}}+b}}}
+          \]
+          </li><br>
+          <li> Sean \(p(x)\) y \(q(x)\) dos polinomios (arbitrarios). 
+          \[
+          \displaystyle{\lim_{x\to 0} \frac{\sqrt{\displaystyle{\frac{1}{x^4}}+p(x)}}{\sqrt{\displaystyle{\frac{1}{x^6}}+q(x)}}}
+          \]
+          </li><br>
+          <li>Sea \(a\in \mathbb{R}^+\) y \(p(x)\), \(q(x)\) dos polinomios.
+            \[\lim_{x\to 0^+} \sqrt{\frac{2a}{x^2}+p(x)} - \sqrt{\frac{a}{x^2}+q(x)}\]
+          </li>
+          </ol>
+         </p>
+       </div>
+
+       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Calcula los siguientes límites. Justifica clara y detalladamente tu respuesta.</p>
+
+        <ol class="two-column">
+          <li>\(\displaystyle{\lim_{x\to 2^-} \frac{|x^2-4|}{x-2}}\)</li><br>
+          <li>\(\displaystyle{\lim_{x\to 9^+} \frac{|81-x^2|}{\sqrt{x}-3}}\)</li><br>
+          <li>\(\displaystyle{\lim_{x\to 2^+} \frac{x-2}{\sqrt{x-2}-\sqrt{2x-4}}}\)</li><br>
+          <li>$\displaystyle{\lim_{x\to 7^+} \frac{|x-7|}{x^2-5x-14}}$</li><br>
+          <li>\(\displaystyle{\lim_{x\to 1^+}\sqrt{\frac{x-1}{|x^2-1|}}} \)</li><br>
+          <li>$\displaystyle{\lim_{x\to 3^+}\sqrt{\displaystyle{\frac{x^2+26x-87}{2x-6}}}}$</li>
+        </ol>
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sea \(f \) y \(g\) dos funciones definidas en una vecindad agujereada de \(x_0\).
+          Asume que \(\displaystyle{\lim_{x\to x_0} f(x)=L}\) con \(L>0\) y que
+          \(\displaystyle{\lim_{x\to x_0} g(x)=\infty}\). Demuestra que
+          \[
+          \displaystyle{\lim_{x\to x_0} f(x)g(x)=\infty}.
+          \]</p>
+      </div>
+
+        
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sean \(f,g\) dos funciones definidas en una vecindad de \(x_0\) con \(g(x)>0\)
+         para \(x\ne x_0\). Demuestra que si  \(\displaystyle{\lim_{x\to x_0} f(x)= L >0}\) y
+         \(\displaystyle{\lim_{x\to x_0} g(x)=0}\) entonces
+         \[
+         \lim_{x\to x_0} \frac{f(x)}{g(x)}=\infty
+         \]     
+        </p>
+       </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Demuestra que, para todo \(a\in \mathbb{R}\), con \(a\ne 0\) y todo \(n\in \mathbb{N}\),
+          \[\lim_{x\to \infty} \frac{a}{x^n}=0.\]
+        </p>
+       </div>
+
+       <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Sea \(p(x)\) un polinomio fijo de grado \(n\). Demuestra que
+          \[
+          \lim_{x\to +\infty} \frac{p(x)}{x^{n+1}}=0.
+          \]
+        </p>
+       </div>
+
+
+       <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Sea \(p(x)=a_nx^n+ \cdots +a_1x+a_0\) un polinomio de grado \(n\). Demuestra
+          \[
+          \displaystyle{\lim_{x\to +\infty} p(x)=\left\{
+          \begin{array}{cc}
+          + \infty & \textrm{si \(a_n>0\)}\\
+          -\infty & \textrm{si \(a_n < 0\)}
+          \end{array}
+          \right.}
+          \]
+        </p>
+       </div>
+
+  
+       <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Fija \(n\in \mathbb{N}\), impar.
+          <ol>
+          <li> Demuestra \(\displaystyle{\lim_{x\to -\infty} x^n = - \infty}\).</li>
+          <li> Considera el polinomio \(p(x)=x^n+a_{n-1}x^{n-1}+\cdots +a_1x+a_0\). Demuestra:
+          \[
+          \lim_{x\to -\infty} p(x)=-\infty.
+          \]
+          </li>
+          </ol>
+        </p>
+       </div>
+
+     
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Utiliza la definición para calcular los siguientes límites. Justifica clara y detalladamente tu respuesta.</p>
+
+        <ol class="two-column">
+          <li>
+            \(\displaystyle{\lim_{x\to 0^+} \frac{x}{|x|}}\)
+          </li><br>
+          <li>
+            \(\displaystyle{ \lim_{x\to 0^-} \frac{x}{|x|} }\)
+          </li><br>
+          <li>
+            \(\displaystyle{\lim_{x\to 0^+} \frac{|x|}{x}}\)
+          </li><br>
+          <li>
+            \(\displaystyle{ \lim_{x\to 0^-} \frac{|x|}{x} }\)
+          </li><br>
+          <li>\( \displaystyle{\lim_{x \to 0^+} \frac{\lfloor x \rfloor}{x}} \)</li><br>
+          <li>\( \displaystyle{\lim_{x \to 0^-} \frac{\lfloor x \rfloor}{x}} \)</li><br>
+          <li>\(\displaystyle{\lim_{x\to 0} \frac{1}{x^2}}\).</li><br>
+          <li>$\displaystyle{\lim_{x\to 0^+} \frac{1}{x}}$</li><br>
+          <li>$\displaystyle{\lim_{x\to 0^-} \frac{1}{x}}$</li><br>
+          <li> \( \displaystyle{\lim_{x\to 0^+} \frac{1}{\sqrt{x}}}\).</li>
+          
+        </ol>
+        </p>
+      </div>
+
+      
+
+
+       <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Calcula los siguientes límites. Justifica clara y detalladamente tu respuesta.</p>
+          <ol class="two-column">
+            
+            <li>\( \displaystyle{\lim_{t \to 5} \frac{t}{t - 5}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to 5} \frac{x^2}{(x - 5)(3 - x)}} \)</li><br>
+            <li>\( \displaystyle{\lim_{\theta \to 0} \frac{\pi \theta^5}{\theta^5 - 5\theta^4}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \frac{3x^3 - x^2}{3\sqrt{x^3} + 3x}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to 1} \frac{x^2 + x + 3}{(x - 1)(x + 1)}} \)</li><br>
+            <li>\( \displaystyle{\lim_{t \to 3^+} \frac{t^2 - 9}{t + 3}} \)</li><br>
+            <li>\( \displaystyle{\lim_{t \to 3^-} \frac{t^2}{9 - t^2}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to 5} \frac{x^2}{(x - 5)(3 - x)}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to 3} \frac{x^3}{x - 3}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to 3} \frac{x^2 - x - 6}{x - 3}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to 2^+} \frac{x^2 + 2x - 8}{x^2 - 4}} \)</li>
+        </ol>
+        </p>
+      </div>
+
+      <!-- <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Calcula los siguientes límites. Justifica clara y detalladamente tu respuesta.</p>
+          <ol class="two-column">
+            <li>\( \displaystyle{\lim_{\theta \to 0} \frac{\sin^2 \theta}{\theta^2 - 5}} \)</li><br> 
+            <li>\( \displaystyle{\lim_{\theta \to \pi^+} \frac{\theta^2}{\sin \theta}} \)</li><br>
+            <li>\( \displaystyle{\lim_{\theta \to (\pi/2)^+} \frac{\pi \theta}{\cos \theta}} \)</li><br>
+        </ol>
+        </p>
+      </div> -->
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Utiliza la definición para probar que: </p>
+          <ol>
+              <li>Si $b>0$, entonces
+                $$\displaystyle{\lim_{x\to a} \frac{b}{(x-a)^2}=+\infty}$$
+              </li>
+              <li>Si $b < 0$, entonces 
+                $$\displaystyle{\lim_{x\to a} \frac{b}{(x-a)^2}=-\infty}$$
+              </li>
+          </ol>
+        </p>
+      </div>
+
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sea \(m\in \mathbb{R}^+\) y \(b\in \mathbb{R}\). Utilizala definición para probar:
+            <ol>
+              <li>$\displaystyle{\lim_{x\to 0^+} \frac{m}{x}+b=+\infty}$</li><br>
+              <li>$\displaystyle{\lim_{x\to 0^+} \frac{-m}{x}+b=-\infty}$</li>
+            </ol>
+        </p>
+      </div>
+
+
+    
+      
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicios</h1>
+        <p>Calcula los siguientes límites. Justifica clara y detalladamente tu respuesta.</p>
+        <ol> 
+          <li>\( \displaystyle{\lim_{n \to \infty} \frac{2x + 1}{x^2 + 3}} \) <br>
+            <p><b>Sugerencia:</b> divida el numerador y el denominador entre \( x^2 \).</p></li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \sqrt{2x^2 + 3} - \sqrt{2x^2 - 5}} \)<br>
+              <p><b>Sugerencia:</b> multiplique y divida por \( \sqrt{2x^2 + 3} + \sqrt{2x^2 - 5} \).</p></li><br>
+            <li>\( \displaystyle{\lim_{y \to \infty} \frac{9y^3 + 1}{y^2 - 2y + 2}} \)<br>
+              <p><b>Sugerencia:</b> divida el numerador y el denominador entre \( y^2 \).</p></li><br>
+            <li>Sea \( a_0 \neq 0, b_0 \neq 0 \) y \( n \) es un número natural.
+              $$\displaystyle{\lim_{x \to \infty} \frac{a_0x^n + a_1x^{n-1} + \dots + a_n}{b_0x^n + b_1x^{n-1} + \dots + b_n}}$$
+                </li>
+           
+        </ol>
+    </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Calcula los siguientes límites. Justifica clara y detalladamente tu respuesta.</p>
+          <ol class="two-column">
+            <li>\( \displaystyle{\lim_{x \to \infty} \frac{x}{x - 5}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \frac{x^2}{5 - x^3}} \)</li><br>
+            <li>\( \displaystyle{\lim_{t \to \infty} \frac{t^2}{7 - t^2}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \frac{x^2}{x^2 - 8x + 15}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \frac{x^3}{3x^3 - 100x^2}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \frac{3x^3 - x^2}{3\sqrt{x^3} + 3x}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \frac{3\pi x^3 + 3x}{\sqrt{2x^3 + 7x}}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \sqrt[3]{\frac{1 + 8x^2}{x^2 + 4}}} \)</li><br>
+            <li>\( \displaystyle{\lim_{n \to \infty} \frac{n}{2n + 1}} \)</li><br>
+            <li>\( \displaystyle{\lim_{n \to \infty} \frac{n^2}{n^2 + 1}} \)</li><br>
+            <li>\( \displaystyle{\lim_{n \to \infty} \frac{n^2}{n + 1}} \)</li><br>
+            <li>\( \displaystyle{\lim_{n \to \infty} \frac{n}{n^2 + 1}} \)</li><br>
+            <li>\( \displaystyle{\lim_{n \to \infty} \frac{n}{\sqrt{n^2 + 1}}} \)</li><br>
+            <li>\( \displaystyle{\lim_{x \to \infty} \sqrt{x^2 + 2x - x}} \)</li><br>
+            <li>\( \displaystyle{\lim_{n \to \infty} \frac{n^2}{\sqrt{n^3 + 2n + 1}}} \)</li>
+            
+        </ol>
+        </p>
+      </div>
+
+     
+      <!-- <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>
+        </p>
+      </div> -->
+
+          <!-- <center>
+            <button class="respButton hvr-grow">Demostración</button>
+            <div class="resp-box flexbox">
+              <iframe width="95%" height="90%" class="video"
+              src="https://www.youtube.com/embed/niIVPTI8r3c?si=Zyqs5cYV8ZhtPodc" title="YouTube video player" allowfullscreen="true"> 
+              </iframe>
+            </div>
+          </center> -->
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+
+          <p>En la teoría de la relatividad, la masa de un objeto está dada por:
+            \[
+            m=\frac{m_0}{\sqrt{1-\displaystyle{\frac{v^2}{c^2}}}}
+            \]
+            donde \(m_0\) es la masa en reposo, \(v\) es su velocidad y \(c\) es la velocidad de la luz.
+            
+            Probar
+            \[
+            \lim_{v\to c^-}m=\infty.
+            \]
+          </p>
+          <!-- <center>
+            <button class="respButton hvr-grow">Demostración</button>
+            <div class="resp-box flexbox">
+              <iframe width="95%" height="90%" class="video"
+              src="https://www.youtube.com/embed/NOLZOPFQYaY?si=OLR2GyGHRTwfJcWG" title="YouTube video player" allowfullscreen="true"> 
+              </iframe>
+            </div>
+          </center> -->
+          </div>
+
+      
+
+
+       
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Supón que la
+          posición de una partícula está dada por \(x(t)=t^2\), \(t\geq 0\).
+          Prueba que la velocidad promedia en el intervalo \([t_1,t_2]\) está dada por
+          \[
+          t_1+t_2
+          \]
+        </p>
+      </div>
+
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+        <p>Asume que, en una fábrica, la cantidad de bienes producidos, al
+          tiempo \(t\), está dada por \(\sqrt{t+1}\). Prueba que el promedio de objetos
+          producidos en el intervalo  \([t_1,t_2]\) es:
+          \[
+          \frac{1}{\sqrt{t_1+1}+\sqrt{t_2+1}}.
+          \]
+          </p>
+          <button class="respButton hvr-grow">Demostración</button>
+          <div class="resp-box flexbox">
+            <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/CIE65tSmahw?si=01Jf1GuZeYt5OGxn" title="YouTube video player" allowfullscreen="true"> 
+            </iframe>
+          </div>
+
+      </div>
+      
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+        <p>
+          Considera la función \(f:[-1,1]\to \mathbb{R} \) dada por \(f(x)=|x|\).
+          Prueba que las pendientes de las rectas secantes a la gráfica de \(f\) caen
+          en el intervalo \([-1,1]\).
+          </p>
+          <button class="respButton hvr-grow"> Demostración</button>
+          <div class="resp-box">
+          <div class="respuesta-box">
+          <p>
+            Las pendientes de las rectas secantes son de la forma
+            \[
+            \frac{f(d)-f(c)}{d-c}=\frac{|d|-|c|}{d-c}
+            \]
+            donde \(c\) y \(d\) corren en el intervalo \([-1,1]\), con \(c\ne d\).
+          </p>
+          <p>
+          Observamos que siempre podemos suponer que \(c< d\) pues
+          \[
+            \frac{f(d)-f(c)}{d-c}=\frac{-(f(c)-f(d))}{-(c-d)}=\frac{f(c)-f(d)}{c-d}
+          \]
+          así que no importa cual de los \(c\) ó \(d\) es mayor o menor.
+          </p>
+          <p>
+            Así suponemos que \(c>d\). Entonces por la otra desigualdad del
+            triángulo:
+            \[
+            ||d|-|c|| \leq |d-c|=d-c.
+            \]
+            Dividiendo entre \(d-c\) llegamos a que
+            \[
+            \frac{||d|-|c||}{d-c} \leq 1.
+            \]
+            Finalmente, el cociente anterior es el valor absoluto del cociente diferencial
+            por lo tanto concluimos que
+            \[
+            -1 \leq \frac{|d|-|c|}{d-c} \leq 1.
+            \]
+          </p>
+          </div>
+          </div>
+        </p>
+      </div>
+
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+        <p>Sea \(f:[a,b]\to \mathbb{R}\) una función. Demuestra que la ecuación
+          de la recta secante a la gráfica de \(f\) que pasa por los puntos \((c,f(c))\)
+          y \((d, f(d))\) está dada por
+          \[
+          y-f(c)=\left( \frac{f(d)-f(c)}{d-c}\ \right) (x-c)
+          \]
+          </p>
+          <button class="respButton hvr-grow">Demostración</button>
+            <div class="resp-box flexbox">
+              <iframe width="95%" height="90%" class="video"
+              src="https://www.youtube.com/embed/68ssfMWlThI?si=hP1AV-_N7eyDeYMM" title="YouTube video player" allowfullscreen="true"> 
+              </iframe>
+            </div>
+      </div>
+
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
+        <p>Considera la función \(f(x)=x^3\). Demuestra que la ecuación de la
+          recta secante a la gráfica de \(f\) que pasa por los puntos \((a, f(a))\) y
+          \((b,f(b))\) está dada por
+          \[
+          y=mx-(a^2b+ab^2)
+          \]
+          donde \(m=a^2+ab+b^2 \).
+          </p>
+          <button class="respButton hvr-grow"> Demostración</button>
+          <div class="resp-box">
+          <div class="respuesta-box">
+          <p>
+          La ecuación general de la recta tangente que pasa por \((a,f(a))\)
+          y \((b,f(b))\) es:
+          \[
+          y-f(a)=m(x-a)
+          \]
+          donde la pendiente es \(m=\frac{f(b)-f(a)}{b-a}\). Simplificando
+          la pendiente usando diferencia de cubos tenemos
+          \[
+            m=\frac{b^3-a^3}{b-a}=\frac{(b-a)(a^2+ab+b^2)}{b-a}=a^2+ab+b^2
+          \]
+          Por lo que la ecuación de la recta secante  se simplifica a:
+          \begin{eqnarray*}
+          y&=&(a^2+ab+b^2)(x-a)+a^3 \\
+            &=&(a^2+ab+b^2)x-(a^2+ab+b^2)a +a^3\\
+            &=&(a^2+ab+b^2)x-a^3-a^2b-ab^2+a^3 \\
+            &=& mx-(a^2b+ab^2)
+          \end{eqnarray*}
+          </p>
+          </div></div>
+        </p>
+      </div>
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>
+          Sean \(f,g: I\to \mathbb{R}\) y toma \(a,b\in I\). Prueba las siguientes identidades.
+        </p>
+        <ol>
+          <li>
+            \[
+            \left. \frac{\Delta(f+g)}{\Delta x} \right|_{[a,b]}=
+            \left. \frac{\Delta f}{\Delta x} \right|_{[a,b]}+
+            \left. \frac{\Delta g}{\Delta x} \right|_{[a,b]}
+            \]
+          </li>
+          <li>
+            \[
+            \left. \frac{\Delta(fg)}{\Delta x} \right|_{[a,b]}=
+            f(b)\left. \frac{\Delta g}{\Delta x} \right|_{[a,b]}+
+            g(a) \left. \frac{\Delta f}{\Delta x} \right|_{[a,b]}
+            \]
+          </li>
+          <li>
+            Si \(g(a)\ne 0, g(b)\ne 0\),
+            \[
+            \left. \frac{\Delta\left(\displaystyle{\frac{1}{g}}\right)}{\Delta x} \right|_{[a,b]}=
+            \left(-\frac{1}{g(a)g(b)} \right) \left. \frac{\Delta g}{\Delta x}\right|_{[a,b]}
+            \]
+          </li>
+        </ol>
+      </div>
+      
+
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica" id="Ejer:unicidad_raiz_cuadrada_positivo"> Ejercicio resuelto</h1>
+        Demuestra que  \(f\) es diferenciable en \(a\) si el siguiente límite
+        existe
+        \[
+        \lim_{h\to 0}\frac{f(a+h)-f(a)}{h}
+        \]
+        </p>
+        <p>
+          <b>Observación:</b> Bajo la notación \(\Delta f=f(a+h)-f(a), \Delta x=(a+h)-a=h \),  lo anterior se puede expresar como:
+          \[
+          \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x}
+          \]
+        </p>
+        <center>
+          <button class="respButton hvr-grow">Demostración</button>
+          <div class="resp-box flexbox">
+            <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/8OupAhnquyc?si=6IzERJIs_l5jYBht" title="YouTube video player" allowfullscreen="true"> 
+            </iframe>
+          </div>
+        </center>
+          </div>
+
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+      
+        <p>Encuentra cuales de las fórmulas son ciertas y cuales son falsas.
+        </p>
+        <ol>
+        <li> \(f'(a)=\displaystyle{\lim_{h\to a} \frac{f(h)-f(a)}{h-a}}\)</li><br>
+        <li> \(f'(a)=\displaystyle{\lim_{h\to 0} \frac{f(a)-f(a-h)}{h}}\)</li><br>
+        <li> \(f'(a)=\displaystyle{\lim_{t\to 0} \frac{f(a+2t)-f(a)}{t}}\)</li><br>
+        <li> \(f'(a)=\displaystyle{\lim_{t\to 0} \frac{f(a+2t)-f(a+t)}{2t}}\)</li><br>
+        <li> \(f'(a)=\displaystyle{\lim_{t\to 0} \frac{f(a+t^2)-f(a)}{t^2}}\)</li>
+        </ol>
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica"> Ejercicio </h1>
+        <p>
+          Si \(f(x)=\displaystyle{\frac{1}{x}}\), \(x\ne 0\), probar que para \(a\ne 0\),
+          \(f'(a)=-\displaystyle{\frac{1}{a^2}}\).
+          </p>
+          <center>
+            <button class="respButton hvr-grow">Demostración</button>
+            <div class="resp-box flexbox">
+              <iframe width="95%" height="90%" class="video"
+              src="https://www.youtube.com/embed/s6NaEQtCgU0?si=85frjQV54-850KWW" title="YouTube video player" allowfullscreen="true"> 
+              </iframe>
+            </div>
+          </center>
+          
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica"> Ejercicio </h1>
+        <p>
+          Considera \(f:[0,\infty) \to \mathbb{R}\) la función
+          \(f(x)=\sqrt[n]{x}=x^{\frac{1}{n}}\), \(n\geq 2\).
+          </p>
+          <ol>
+          <li>
+          <p>
+          Probar que para toda \(a>0\)
+          \[
+          f'(a)=\frac{1}{n}a^{\frac{1}{n}-1}
+          \]
+          </p>
+          <p>
+            <b>Sugerencia:</b> Usa el <a href="./S4.html#Ejer:DiferenciaRaices">Ejercicio 4.17</a> para obtener
+          \[
+          \sqrt[n]{b}-\sqrt[n]{a}= \frac{b-a}{\displaystyle{\sum_{k=0}^{n-1}b^{\frac{k}{n}}a^{\frac{n-1-k}{n}}}}
+          \]
+          para todos \(a,b \geq 0\).
+          </p>
+          </li>
+          <li>
+            \(f\) no es diferenciable en \(a=0\).
+          </li>
+          </ol>
+      </div>
+
+      <!-- <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio </h1>
+        <p>
+          Sea \(g\) una función definida en una vecindad de \(a\) y supón que \(g\) es diferenciable en \(a\).
+        </p>
+        <p>
+          Si \(g(a)\ne 0\) prueba que existe \(V\), una vecindad alrededor de \(a\), tal que
+          \(g(x)\ne 0\) para toda \(x\in V\).
+        </p>
+      </div> 
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(f\) y \(g\) funciones definidas en una vecindad de \(a\),
+          ambas diferenciables en \(a\). Demuestra
+          </p>
+          <ol>
+          <li> \(f+g\) es diferenciable en \(a\) y  \((f+g)'(a)=f'(a)+g'(a)\).</li>
+          <li> Si \(c\in \mathbb{E}\), \(cf\) es diferenciable en \(a\) y
+            \((cf)'(a)=cf'(a)\).</li>
+          <li> \(fg\) es diferenciable en \(a\) y \((fg)'(a)=f(a)g'(a)+f'(a)g(a)\).</li>
+          <li> Si \(g(a)\ne 0\), \(\frac{1}{g}\) es diferenciable y
+            \(\left( \frac{1}{g}\right)'(a)=\frac{-g'(a)}{g^2(a)}\)</li>
+          <li> Si \(g(a)\ne 0\), \(\frac{f}{g}\) es diferenciable y
+            \(\left( \frac{f}{g}\right)'(a)=\frac{f'(a)g(a)-f(a)g'(a)}{g^2(a)}\)</li>
+          </ol>
+      </div>
+      -->
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Si \(p(x)=\displaystyle{\sum_{k=0}^n a_kx^k}\), demuestra que \(p\) es diferenciable en
+          todo \(\mathbb{R}\) y
+          \[
+          p'(x)=\sum_{k=1}^{n} a_kkx^{k-1}
+          \]
+          </p>
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        Sea \(p\) un polinomio, \(a\in \mathbb{R}\) fijo y arbitrario  y sea
+        \(n\in \mathbb{N}\). Demuestra que \(p^n\) es diferenciable en  \(a\) con
+        \[
+        \frac{dp^n}{dx}(a)=np^{n-1}(a)p'(a)
+        \]
+        </p>
+        
+        <p>
+          <b>Sugerencia:</b> Usa que, para cualesquiera \(c, d \in \mathbb{R}\), se cumple
+        \[
+        p^n(c)-p^n(c)=(p(c)-p(d))\left( \sum_{k=0}^{n-1}p(c)^kp^{n-k-1}(d)\right)
+        \]
+        </p>
+      </div>
+
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Encuentra los puntos \(c\in \mathbb{R}\) tales que \(p'(c)=0\) para:
+          <ol>
+          <li>\(p(x)=x^3-\displaystyle{\frac{x^2}{2}}-\displaystyle{\frac{x^4}{2}}\).</li><br>
+          <li> \(p(x)=(4+x)^3-3(x+3)\).</li><br>
+          <li> \(p(x)=(1+x)^n-1-nx\).</li><br>
+          <li> \(p(x)=ax^2+bx+c\), donde \(a,b,c\in \mathbb{R}\) son parámetros
+            fijos.</li>
+          </ol>
+        </p>
+      </div>
+      
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Dada la fórmula
+          \[
+          1+x+x^2+\cdots +x^n= \frac{x^{n+1}-1}{x-1}, \quad \textrm{para \(x\ne 1\)}
+          \]
+          determina, diferenciando, fórmulas para
+          </p>
+          <ol>
+          <li> \(1+2x+3x^2+\cdots +nx^{n-1}\).</li><br>
+          <li> \(1^2x+2^2x^2+3^2x^3+\cdots + n^2x^2\).</li><br>
+          <li> \(\displaystyle{\frac{1}{x}} + \displaystyle{\frac{2}{x^2}} + \cdots + \displaystyle{\frac{n}{x^{n}}}\).</li>
+          </ol>  
+      </div>
+      
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          La función \(f(x)=\displaystyle{\frac{1}{x^n}}=x^{-n}\) es diferenciable
+          para \(x\ne 0\) y
+          \[
+          f'(x)=-\frac{n}{x^{n+1}}=(-n)x^{-n-1}
+          \]
+          </p>
+      </div>
+      
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(f\) una función definida en una vecindad de \(a\) y supón que 
+          \(f\) es diferenciable en \(a\). Prueba que 
+          \[
+            \lim_{x\to a} f(x)=f(a)
+          \]
+        </p>
+      </div>
+
+      
+      <!-- 
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Dados $ a, b \in \mathbb{R} $ con $ a \leq b $, pruébese que $ a \leq \frac{a + b}{2} \leq b $. Si la primera desigualdad es estricta, entonces las otras también lo son.</p>
+      </div>
+      
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Demuestre que si $a, b \in \mathbb{R}$, entonces $a^2 + b^2 = 0 \Leftrightarrow a = 0 = b$.</p>
+      </div> -->
+   
+      
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Supon que la altura de un proyectil se modela con la función \(f(t)\),
+          donde \(t\) representa los segundos despúes de que el proyectil se dispara de
+          manera vertical desde el suelo. La velocidad inicial del proyectil es \(v_0\)
+          y \(f\) está dada por
+          \[
+          f(t)=v_0t-5t^2
+          \]
+          <ol>
+          <li>
+              Encuentra la velocidad instantánea el tiempo \(t\).
+          </li><br>
+          <li>
+            Calcula, en términos de \(v_0\), el tiempo requerido para que la
+          velocidad sea cero.
+          </li><br>
+          <li>
+            ¿ Cuál es la velocidad cuando regresa al suelo ?
+          </li><br>
+          <li>
+            ¿ Cuál es la velocidad inicial requerida para que
+          el proyectil regrese después de 1 segundo, 10 segundos ?
+          </li>
+          </ol>
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          El costo de fabricación de \(q\) automóbiles eléctricos es
+          \(C(q)=5q^3+13q^2+14\), medido en miles de dólares, mientras que el
+          ingreso correspondiente es \(I(q)=q^4-5q\) miles de dólares.
+          <ol>
+          <li> Demuestra que existe un valor de \(q\), entre 2 y 10, en el que
+          la fabrica sale a mano, es decir la utilidad es igual a \(0\).<br>  
+          <b>Sugerencia:</b> usa el teorema de Bolzano.  
+          </li><br>
+          <li>
+            Encuentra la razón de cambio instantánea de \(C\) y encuentra
+          los puntos \(q_0\) para los cuales \(C'(q_0)=0\).
+          </li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Sea $f$ una función diferenciable en $a$. 
+          Calcula $\displaystyle{\lim_{h\to 0}\frac{f(3(a+h))-f(3a)}{h}}$.</p>
+      </div>
+
+      
+
+      <div class="ejercicio-resuelto-box"><h1 class="title-practica" id="Ejer:SandwichDesigualdades"> Ejercicio resuelto</h1>
+        <p>Sea $f$ una función diferenciable en $a$ que satisface $\displaystyle{\lim_{x\to a}}f(x)=f(a)$. 
+          Calcula $\displaystyle{\lim_{h\to 0}\frac{f^2(a+h)-f^2(a)}{h}}$. 
+        </p>
+          
+        <p><b>Sugerencia:</b> Aplica diferencia de cuadrados.</p>
+  
+        <!-- <p>
+          Sugerencia: considera los casos $L\leq a$,
+          $a< L < c $ y $c \leq L$ junto con la desigualdad del triángulo.
+        </p> -->
+        <center>
+          <button class="respButton hvr-grow">Demostración</button>
+          <div class="resp-box flexbox">
+            <iframe width="95%" height="90%" class="video"
+            src="https://www.youtube.com/embed/pcmgRNyOOtw?si=9O-MYtaEW40Fg1HH" title="YouTube video player" allowfullscreen="true"> 
+            </iframe>
+          </div>
+        </center>
+      </div>
+<!-- 
+         
+
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+         </div>
+
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+         </div>
+
+         <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+         </div>
+
+-->
+
+      
+   <!-- Donde aparecerá la fecha de la última modificación -->
+   <footer>
+    <center>
+     <p id="ultima-actualizacion"></p>
+    </center>
+</footer>
+<script>
+  // Obtenemos la fecha y hora de la última modificación del documento
+  const fechaModificacion = new Date(document.lastModified);
+  
+  // Opciones para formatear la fecha (por ejemplo, DD/MM/AAAA)
+  const opcionesFecha = { day: '2-digit', month: '2-digit', year: 'numeric' };
+  const fechaFormateada = fechaModificacion.toLocaleDateString('es-ES', opcionesFecha);
+
+  // Obtenemos la hora (HH:MM:SS)
+  const horaFormateada = fechaModificacion.toLocaleTimeString('es-ES', {
+      hour: '2-digit', minute: '2-digit'
+  });
+
+  // Insertamos la fecha y la hora en el elemento con el ID "ultima-modificacion"
+  document.getElementById("ultima-actualizacion").textContent = `Última actualización: ${fechaFormateada}`;
+</script>
+
+
+    
+    
+
+</body>
