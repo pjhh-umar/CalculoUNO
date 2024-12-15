@@ -143,27 +143,6 @@
         </p>
       </div>
 
-
-
-      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
-        <p>Da un ejemplo de funciones \(f\) y \(g\), definidas en una vecindad
-          agujereada del \(0\), tales que \(\displaystyle{\lim_{x\to 0}(fg)(x)}\) existe pero algunos
-          de los límites \(\displaystyle{\lim_{x\to 0}f(x)}\) ó \(\displaystyle{\lim_{x\to 0}g(x)}\) no existe.
-        </p>
-       </div>
-
-      
-
-
-      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Da un ejemplo de funciones \(f\) y \(g\), definidas en una vecindad
-          agujereada del \(0\), tales que
-          \(\displaystyle{\lim_{x\to 0}(f+g)(x)}\) existe pero los límites \(\displaystyle{\lim_{x\to 0}f(x)}\) y
-          \(\displaystyle{\lim_{x\to 0} g(x)}\) no existe.</p>
-      </div>
-
-
-
       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>
           Sean \(f\) y \(g\) dos funciones definidas en una vecindad agujereada de \(a\).
@@ -177,6 +156,118 @@
           </ol>
         </p>
       </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Da un ejemplo de funciones \(f\) y \(g\), definidas en una vecindad
+          agujereada del \(0\), tales que \(\displaystyle{\lim_{x\to 0}(fg)(x)}\) existe pero algunos
+          de los límites \(\displaystyle{\lim_{x\to 0}f(x)}\) ó \(\displaystyle{\lim_{x\to 0}g(x)}\) no existe.
+        </p>
+       </div>
+
+       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Da un ejemplo de funciones \(f\) y \(g\), definidas en una vecindad
+          agujereada del \(0\), tales que
+          \(\displaystyle{\lim_{x\to 0}(f+g)(x)}\) existe pero los límites \(\displaystyle{\lim_{x\to 0}f(x)}\) y
+          \(\displaystyle{\lim_{x\to 0} g(x)}\) no existe.</p>
+      </div>
+
+
+       
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>En clase se ha  presentado la definición y se ha dado sentido a la notación
+          $$\displaystyle{\lim_{x \to A} f(x)}$$ 
+          en los casos cuando \( A = a, a^-, a^{+}, -\infty, +\infty \). Además, en cada caso, este 
+          límite puede ser \( L \in \mathbb{R}\) (finito), \( -\infty \), \( +\infty \), o es posible que no exista. 
+          Construye una tabla que contenga la definición e ilustrecon un ejemplo cada uno de los $20$ casos posibles.
+        </p>
+      
+          <!-- <button class="respButton hvr-grow"> Tabla de Límites</button>
+            <div class="resp-box">
+              <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de límite</th>
+                        <th>Definición formal rigurosa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to a} f(x) = L}$ (finito)</td>
+                        <td>$\displaystyle{\forall \varepsilon > 0, \exists \delta > 0 : 0 < |x - a| < \delta \implies |f(x) - L| < \varepsilon}$</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to a} f(x) = +\infty}$</td>
+                        <td>$\displaystyle{\forall M > 0, \exists \delta > 0 : 0 < |x - a| < \delta \implies f(x) > M}$</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to a} f(x) = -\infty}$</td>
+                        <td>$\displaystyle{\forall M < 0, \exists \delta > 0 : 0 < |x - a| < \delta \implies f(x) < M}$</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to a} f(x)}$ no existe</td>
+                        <td>No existe un $\displaystyle{L \in \mathbb{R} \cup \{-\infty, +\infty\}}$ que satisfaga las definiciones anteriores.</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to {+\infty}} f(x) = L}$ (finito)</td>
+                        <td>$\displaystyle{\forall \varepsilon > 0, \exists \delta > 0 : 0 < x - a < \delta \implies |f(x) - L| < \varepsilon}$</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to {+\infty}} f(x) = +\infty}$</td>
+                        <td>$\displaystyle{\forall M > 0, \exists \delta > 0 : 0 < x - a < \delta \implies f(x) > M}$</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to {+\infty}} f(x) = -\infty}$</td>
+                        <td>$\displaystyle{\forall M < 0, \exists \delta > 0 : 0 < x - a < \delta \implies f(x) < M}$</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to a^-} f(x) = L}$ (finito)</td>
+                        <td>$\displaystyle{\forall \varepsilon > 0, \exists \delta > 0 : 0 < a - x < \delta \implies |f(x) - L| < \varepsilon}$</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to -\infty} f(x) = L}$ (finito)</td>
+                        <td>$\displaystyle{\forall \varepsilon > 0, \exists N > 0 : x < -N \implies |f(x) - L| < \varepsilon}$</td>
+                    </tr>
+                    <tr>
+                        <td>$\displaystyle{\lim_{x \to +\infty} f(x) = L}$ (finito)</td>
+                        <td>$\displaystyle{\forall \varepsilon > 0, \exists N > 0 : x > N \implies |f(x) - L| < \varepsilon}$</td>
+                    </tr>
+                </tbody>
+              </table>          
+            </div> -->
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Sean $f$ y $g$ dos funciones definidas en $(a,\infty)$
+          Si \(\displaystyle{\lim_{x \to a^{+}} f(x) = L_1 }\) y \(\displaystyle{\ \lim_{x \to a^{+}} g(x) = L_2 }\), prueba que:
+
+          <ol>
+            <li>$\displaystyle{\lim_{x \to a^{+}} (f + g)(x) = L_1 + L_2}$</li><br>
+            <li>Si $\alpha \in \mathbb{R}$, entonces $\displaystyle{\lim_{x \to a^{+}} (\alpha f)(x) = \alpha \cdot L_1}$</li><br>
+            <li>$\displaystyle{\lim_{x \to a^{+}} (f - g)(x) = L_1 - L_2}$</li><br>
+            <li>$\displaystyle{\lim_{x \to a^{+}} (f \cdot g)(x) = L_1 \cdot L_2}$</li><br>
+            <li>Si $\displaystyle{\lim_{x \to a^{+}} g(x) = L_2 \neq 0 }$, entonces $\displaystyle{\lim_{x \to a^{+}} \left(\frac{f}{g}\right) (x) = \frac{L_1}{L_2}}$</li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Sean $f$ y $g$ dos funciones definidas en $(-\infty,a)$. Si \(\displaystyle{\ \lim_{x \to a^-} f(x) = L_1} \) 
+          y \(\displaystyle{\ \lim_{x \to a^-} g(x) = L_2 }\), prueba que:
+          <ol>
+            <li>$\displaystyle{\lim_{x \to a^-} (f + g)(x) = L_1 + L_2}$</li><br>
+            <li>Si $\alpha \in \mathbb{R}$, entonces $\displaystyle{\lim_{x \to a^-} (\alpha f)(x) = \alpha \cdot L_1}$</li><br>
+            <li>$\displaystyle{\lim_{x \to a^-} (f - g)(x) = L_1 - L_2}$</li><br>
+            <li>$\displaystyle{\lim_{x \to a^-} (f \cdot g)(x) = L_1 \cdot L_2}$</li><br>
+            <li>Si $\displaystyle{\lim_{x \to a^-} g(x) = L_2 \neq 0 }$, entonces $\displaystyle{\lim_{x \to a^-} \left(\frac{f}{g}\right) (x) = \frac{L_1}{L_2}}$</li>
+
+            <!-- <li></li> -->
+          </ol>
+        </p>
+      </div>
+
+       
+
+     
 
       <div class="ejercicio-resuelto-box"><h1 class="title-practica"> Ejercicio resuelto</h1>
         <p>Utiliza la definición para calcular el  siguiente límite. Justifica clara y detalladamente tu respuesta.</p>
@@ -235,6 +326,8 @@
          </p>
        </div>
 
+       
+
        <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
         <p>Calcula los siguientes límites. Justifica clara y detalladamente tu respuesta.</p>
 
@@ -249,29 +342,61 @@
         </p>
       </div>
 
-      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Sea \(f \) y \(g\) dos funciones definidas en una vecindad agujereada de \(x_0\).
-          Asume que \(\displaystyle{\lim_{x\to x_0} f(x)=L}\) con \(L>0\) y que
-          \(\displaystyle{\lim_{x\to x_0} g(x)=\infty}\). Demuestra que
-          \[
-          \displaystyle{\lim_{x\to x_0} f(x)g(x)=\infty}.
-          \]</p>
-      </div>
+      
 
-        
-      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Sean \(f,g\) dos funciones definidas en una vecindad de \(x_0\) con \(g(x)>0\)
-         para \(x\ne x_0\). Demuestra que si  \(\displaystyle{\lim_{x\to x_0} f(x)= L >0}\) y
-         \(\displaystyle{\lim_{x\to x_0} g(x)=0}\) entonces
-         \[
-         \lim_{x\to x_0} \frac{f(x)}{g(x)}=\infty
-         \]     
+
+       <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Sean $f$ y $g$ dos funciones definidas en $\mathbb{R}^{+}$.  
+          Si \(\displaystyle{\lim_{x \to {+\infty}} f(x) = L_1 }\) y \(\displaystyle{\ \lim_{x \to {+\infty}} g(x) = L_2 }\), prueba que:
+
+          <ol>
+            <li>$\displaystyle{\lim_{x \to {+\infty}} (f + g)(x) = L_1 + L_2}$</li><br>
+            <li>Si $\alpha \in \mathbb{R}$, entonces $\displaystyle{\lim_{x \to {+\infty}} (\alpha f)(x) = \alpha \cdot L_1}$</li><br>
+            <li>$\displaystyle{\lim_{x \to {+\infty}} (f - g)(x) = L_1 - L_2}$</li><br>
+            <li>$\displaystyle{\lim_{x \to {+\infty}} (f \cdot g)(x) = L_1 \cdot L_2}$</li><br>
+            <li>Si $\displaystyle{\lim_{x \to {+\infty}} g(x) = L_2 \neq 0 }$, entonces $\displaystyle{\lim_{x \to {+\infty}} \left(\frac{f}{g}\right) (x) = \frac{L_1}{L_2}}$</li>
+          </ol>
         </p>
-       </div>
+      </div>
+      
 
       <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
-        <p>Demuestra que, para todo \(a\in \mathbb{R}\), con \(a\ne 0\) y todo \(n\in \mathbb{N}\),
-          \[\lim_{x\to \infty} \frac{a}{x^n}=0.\]
+        <p>Sean $f$ y $g$ dos funciones definidas en $\mathbb{R}^{-}$.  
+          Si \(\displaystyle{\lim_{x \to {-\infty}} f(x) = L_1 }\) y \(\displaystyle{\ \lim_{x \to {-\infty}} g(x) = L_2 }\), prueba que:
+
+          <ol>
+            <li>$\displaystyle{\lim_{x \to {-\infty}} (f + g)(x) = L_1 + L_2}$</li><br>
+            <li>Si $\alpha \in \mathbb{R}$, entonces $\displaystyle{\lim_{x \to {-\infty}} (\alpha f)(x) = \alpha \cdot L_1}$</li><br>
+            <li>$\displaystyle{\lim_{x \to {-\infty}} (f - g)(x) = L_1 - L_2}$</li><br>
+            <li>$\displaystyle{\lim_{x \to {-\infty}} (f \cdot g)(x) = L_1 \cdot L_2}$</li><br>
+            <li>Si $\displaystyle{\lim_{x \to {-\infty}} g(x) = L_2 \neq 0 }$, entonces $\displaystyle{\lim_{x \to {-\infty}} \left(\frac{f}{g}\right) (x) = \frac{L_1}{L_2}}$</li>
+          </ol>
+        </p>
+      </div>
+
+
+      <!-- <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+       <p>Si \( \displaystyle{\lim_{x \to +\infty} f(x) = A} \) y 
+        \( \displaystyle{\lim_{x \to +\infty} g(x) = B} \),
+        entonces \( \displaystyle{\lim_{x \to +\infty} [f(x) + g(x)] = A + B} \)
+       </p>
+      </div>
+      
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Si \( \displaystyle{\lim_{x \to -\infty} f(x) = A} \) y 
+         \( \displaystyle{\lim_{x \to -\infty} g(x) = B} \),
+         entonces \( \displaystyle{\lim_{x \to -\infty} [f(x) + g(x)] = A + B} \)
+        </p>
+       </div> -->
+    
+    
+
+
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Demuestra que, para todo \(\alpha\in \mathbb{R}\), con \(\alpha\ne 0\) y todo \(n\in \mathbb{N}\),
+          \[\lim_{x\to \infty} \frac{\alpha}{x^n}=0.\]
         </p>
        </div>
 
@@ -282,6 +407,94 @@
           \]
         </p>
        </div>
+
+       <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Sean $f$ y $g$ dos funciones definidas en una vecindad agujerada de $\hat{B}_{\rho}(a)$.
+          Si \(\displaystyle{\lim_{x \to a} f(x) = +\infty }\) y \(\displaystyle{\ \lim_{x \to a} g(x) = +\infty }\), prueba que:
+          <ol>
+            <li>$\displaystyle{\lim_{x \to a} (f + g)(x) = +\infty}$</li><br>
+            <li>Si $\alpha \in \mathbb{R}^{+}$, entonces $\displaystyle{\lim_{x \to a} (\alpha f)(x) = + \infty}$</li><br>
+            <li>$\displaystyle{\lim_{x \to a} (f \cdot g)(x) = +\infty }$</li><br>
+            <li>Si $n\in \mathbb{N}$, entonces $\displaystyle{\lim_{x \to a} (f^{n})(x) = +\infty }$</li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
+        <p>Sean $f$ y $g$ dos funciones definidas en una vecindad agujerada de $\hat{B}_{\rho}(a)$.
+          Si \(\displaystyle{\lim_{x \to a} f(x) = -\infty }\) y \(\displaystyle{\ \lim_{x \to a} g(x) = -\infty }\), prueba que:
+          <ol>
+            <li>$\displaystyle{\lim_{x \to a} (f + g)(x) = -\infty}$</li><br>
+            <li>Si $\alpha \in \mathbb{R}^{+}$, entonces $\displaystyle{\lim_{x \to a} (\alpha f)(x) = - \infty}$</li><br>
+            <li>$\displaystyle{\lim_{x \to a} (f \cdot g)(x) = -\infty }$</li>
+          </ol>
+        </p>
+      </div>
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Utiliza la definición para probar que: </p>
+          <ol>
+              <li>Si $b>0$, entonces
+                $$\displaystyle{\lim_{x\to a} \frac{b}{(x-a)^2}=+\infty}$$
+              </li>
+              <li>Si $b < 0$, entonces 
+                $$\displaystyle{\lim_{x\to a} \frac{b}{(x-a)^2}=-\infty}$$
+              </li>
+          </ol>
+        </p>
+      </div>
+
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sea \(m\in \mathbb{R}^+\) y \(b\in \mathbb{R}\). Utilizala definición para probar:
+            <ol>
+              <li>$\displaystyle{\lim_{x\to 0^+} \frac{m}{x}+b=+\infty}$</li><br>
+              <li>$\displaystyle{\lim_{x\to 0^+} \frac{-m}{x}+b=-\infty}$</li>
+            </ol>
+        </p>
+      </div>
+      
+      
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sean \(f \) y \(g\) dos funciones definidas en una vecindad agujereada de \(a\).
+          Si \(\displaystyle{\lim_{x\to a} f(x)=L}\) con \(L>0\), prueba que
+          \(\displaystyle{\lim_{x\to a} g(x)=\infty}\). Demuestra que
+          \[
+          \displaystyle{\lim_{x\to a} f(x)g(x)=+\infty}.
+          \]</p>
+      </div>
+
+
+    
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sean \(f \) y \(g\) dos funciones definidas en una vecindad agujereada de \(a\).
+          Si \(\displaystyle{\lim_{x\to a} f(x)=L}\) con \(L < 0\), prueba que
+          \(\displaystyle{\lim_{x\to a} g(x)=\infty}\). Demuestra que
+          \[
+          \displaystyle{\lim_{x\to a} f(x)g(x)=-\infty}.
+          \]</p>
+      </div>
+
+        
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sean \(f,g\) dos funciones definidas en una vecindad agujerada de \(a\), $\hat{B}_{\rho}(0)$, con 
+          $g(x) >0$ para todo $x \in \hat{B}_{\rho}(0)$. Si \(\displaystyle{\lim_{x\to a} f(x)= L >0}\) y
+         \(\displaystyle{\lim_{x\to a} g(x) = 0}\) entonces
+         \[
+         \lim_{x\to a} \frac{f(x)}{g(x)}=+\infty
+         \]     
+        </p>
+       </div>
+
+       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sea \(f \) una función definida en  \((a,+\infty)\).
+          Si  \(\displaystyle{\lim_{x\to +\infty} g(x) = +\infty}\). Prueba que
+          \[
+          \displaystyle{\lim_{x\to +\infty} \frac{1}{g(x)} = 0}.
+          \]</p>
+      </div>
 
 
        <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
@@ -296,6 +509,15 @@
           \]
         </p>
        </div>
+
+       <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Sean \(f \) y \(g\) dos funciones definidas en  \((a,+\infty)\)  y $L \in \mathbb{R}$.
+          Si \(\displaystyle{\lim_{x\to +\infty} f(x) = L}\) y
+          \(\displaystyle{\lim_{x\to +\infty} g(x) = +\infty}\). Prueba que
+          \[
+          \displaystyle{\lim_{x\to +\infty} \frac{f(x)}{g(x)} = 0}.
+          \]</p>
+      </div>
 
   
        <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
@@ -371,31 +593,7 @@
         </p>
       </div> -->
 
-      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Utiliza la definición para probar que: </p>
-          <ol>
-              <li>Si $b>0$, entonces
-                $$\displaystyle{\lim_{x\to a} \frac{b}{(x-a)^2}=+\infty}$$
-              </li>
-              <li>Si $b < 0$, entonces 
-                $$\displaystyle{\lim_{x\to a} \frac{b}{(x-a)^2}=-\infty}$$
-              </li>
-          </ol>
-        </p>
-      </div>
-
-
-
-      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
-        <p>Sea \(m\in \mathbb{R}^+\) y \(b\in \mathbb{R}\). Utilizala definición para probar:
-            <ol>
-              <li>$\displaystyle{\lim_{x\to 0^+} \frac{m}{x}+b=+\infty}$</li><br>
-              <li>$\displaystyle{\lim_{x\to 0^+} \frac{-m}{x}+b=-\infty}$</li>
-            </ol>
-        </p>
-      </div>
-
-
+  
     
       
       <div class="ejercicio-box">
@@ -477,10 +675,8 @@
           </center> -->
           </div>
 
-      
+   
 
-
-       
 
       <div class="ejercicio-box"><h1 class="number-title-practica">Ejercicio</h1>
         <p>Supón que la
