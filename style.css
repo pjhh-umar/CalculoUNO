@@ -265,7 +265,18 @@ body {
 }
 
 .titulo {
-  font-size: 170%;
+  font-size: 160%;
+  font-weight: 600;
+  margin: 0 0 5em 0;
+  padding: 1%;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  color: rgb(3, 89, 165);
+  display: inline;
+}
+
+.subtitulo {
+  font-size: 150%;
   font-weight: 600;
   margin: 0 0 5em 0;
   padding: 1%;
@@ -335,13 +346,6 @@ body {
 
 
 
-/* Títulos con numeración */
-h1.title { font-size: 170%; font-family: 'EB Garamond', serif; color: rgb(3, 89, 165); margin: 0 0 3.5% 0; }
-h2.title { font-size: 160%; font-family: 'Hina Mincho', serif; color: rgb(3, 89, 165); margin: 2.5% 0 3.5% 0; }
-h3.title { font-size: 160%; font-family: 'Hina Mincho', serif; color: rgb(3, 89, 165); margin: 2.5% 0 2.5% 0; }
-h4.title { font-size: 145%; font-family: 'Hina Mincho', serif; color: rgb(3, 89, 165); margin: 2.5% 0 2.5% 0; }
-h5.title { font-size: 130%; font-family: 'Hina Mincho', serif; color: rgb(0, 0, 0); margin: 2.5% 0 2.5% 0; }
-h6.title { font-size: 100%; font-family: 'Hina Mincho', serif; color: rgb(0, 0, 0); margin: 2.5% 0 2.5% 0; }
 
 /* Títulos numerados */
 body.card {
@@ -349,7 +353,7 @@ body.card {
 }
 
 h1.page-title, h1.page-number-title {
-  font-size: 150%;
+  font-size: 140%;
   text-align: center;
   font-family: 'Gelasio', serif;
   margin: 1% 0 0 0;
