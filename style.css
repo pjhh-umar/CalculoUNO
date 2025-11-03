@@ -753,6 +753,8 @@ h1.number-title-practica{
   /* color: rgb(3, 89, 165);  */
 }
 
+
+
 h1.number-title-practica::after{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;  
@@ -778,12 +780,11 @@ h1.title-practica{
   /* color: rgb(3, 89, 165);  */
 }
 
-h1.title-practica::after{
-  /* font-family: "Roboto"; */
+/* h1.title-practica::after{
   font-family: 'Hina Mincho', serif;  
   counter-increment: EjercicioResueltoCounter;
   content: " " counter(temaCounter)"."counter(EjercicioResueltoCounter) ".";
-}
+} */
 
 h1.title-definicion{
   font-size: 160%;
@@ -997,7 +998,7 @@ h1.title-definicion{
   -o-border-radius: 20px;
 }
 
-.nota-box {
+/* .nota-box {
   color: black;
   border: 0px solid rgb(0, 78, 148); 
   margin: 50px auto;
@@ -1005,7 +1006,7 @@ h1.title-definicion{
   text-align: justify;
   width: 90%;
   box-shadow: 0px 0px 10px 0px rgb(0, 166, 255); 
-}
+} */
 
 .nota-boxRespaldo{
   /* background:  rgb(218, 237, 245); */
