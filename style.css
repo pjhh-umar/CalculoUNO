@@ -685,6 +685,8 @@ h1.number-title::before{
   content: counter(temaCounter)"."counter(sectionCounter)".";
 }
 
+
+
 h2.number-title{
   font-size: 160%;
   font-weight: 600;
@@ -761,6 +763,36 @@ h1.number-title-practica::after{
   counter-increment: sectionCounter;
   content: " " counter(temaCounter)"."counter(sectionCounter) ".";
 }
+
+
+h1.title-ejercicio-resuelto{
+  font-size: 160%;
+  margin-top: -1.75%;
+  padding: 0.25%;
+  text-align: center;
+  font-weight: 800;
+  /* font-family: "Muli"; */
+  font-family: 'Hina Mincho', serif;
+  /* color: rgb(169, 90, 0); */
+  color: rgb(0, 78, 148); 
+
+  
+  /* font-size: 33px; */
+  /* color: rgb(0, 124, 191);  */
+  
+  /* color: rgb(3, 89, 165);  */
+}
+
+
+
+h1.title-ejercicio-resuelto::after{
+  /* font-family: "Roboto"; */
+  font-family: 'Hina Mincho', serif;  
+  counter-increment: resueltoCounter;
+  content: " " counter(temaCounter)"."counter(resueltoCounter) ".";
+}
+
+
 
 h1.title-practica{
   font-size: 160%;
