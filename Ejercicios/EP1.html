@@ -122,7 +122,7 @@
         \]
         <p>
           En particular, \(a^1=a\). Si \(a\neq 0\), se definen además las
-          potencias de exponente cero y de exponente entero negativo mediante
+          potencias de exponente cero y de exponente entero negativo como
         </p>
         \[
           a^0:=1,
@@ -195,13 +195,13 @@
         </p>
         <ol class="two-column">
           <li>
-            \(a-(b+c)=(a-b)-c\).<br><br>
+            \(a-(b+c)=(a-b)-c\).
           </li>
           <li>
-            \(a-(b-c)=(a-b)+c\).<br><br>
+            \(a-(b-c)=(a-b)+c\).
           </li>
           <li>
-            \((a-b)+(b-c)=a-c\).<br><br>
+            \((a-b)+(b-c)=a-c\).
           </li>
           <li>
             \((a-b)\cdot c=a\cdot c-b\cdot c\).
@@ -212,17 +212,17 @@
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
-          Sean \(a,b,c,d\in\mathbb{R}\). Determina todas las soluciones \(x\in\mathbb{R}\) de la
-          ecuación
+          Sean \(a,b,c,d\in\mathbb{R}\). Determina todos los números reales \(x\) que
+          satisfacen la ecuación
           \[
             a\cdot x+b=c\cdot x+d.
           \]
-          Explica en qué casos existe una única solución, no existe solución o todo número real es
-          solución. Justifica tu clasificación.
+          ¿En qué casos existe una única solución, no existe solución o todo número real es
+          solución? Justifica detalladamente tu respuesta.
         </p>
       </div>
 
-      <div class="ejercicio-box">
+      <!-- <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
           Para cada \(t\in\mathbb{R}\), determina todas las soluciones \(x\in\mathbb{R}\) de las
@@ -231,10 +231,10 @@
         </p>
         <ol>
           <li>
-            \((t-1)\cdot x=t-1\).<br><br>
+            \((t-1)\cdot x=t-1\).
           </li>
           <li>
-            \((t-1)\cdot x=1\).<br><br>
+            \((t-1)\cdot x=1\).
           </li>
           <li>
             \((t-1)\cdot x=t\).
@@ -250,50 +250,32 @@
         </p>
         <ol>
           <li>
-            \(a\cdot b=a\).<br><br>
+            \(a\cdot b=a\).
           </li>
           <li>
-            \(a\cdot b=b\).<br><br>
+            \(a\cdot b=b\).
           </li>
           <li>
             \(a\cdot b=a\) y \(a\cdot b=b\) simultáneamente.
           </li>
         </ol>
-      </div>
+      </div> 
+      -->
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
-          Sean \(a,b\in\mathbb{R}\). Encuentra todos los números reales \(x\) que
+          Sean \(a,b\in\mathbb{R}\) arbitrarios pero fijos. Encuentra todos los números reales \(x\) que
           satisfacen
           \[
             x^2-(a+b)\cdot x+a\cdot b=0.
           \]
-          Resuelve mediante una factorización y la propiedad del producto cero. ¿Cuántas soluciones
-          distintas hay cuando \(a=b\)? ¿Y cuando \(a\neq b\)?
+         ¿Cuántas soluciones distintas hay cuando \(a=b\)? ¿Y cuando \(a\neq b\)?
         </p>
+        <p><b>Hint:</b> Use una <i>factorización</i></p>
       </div>
 
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(a,b\in\mathbb{R}\). Demuestra las siguientes identidades:
-        </p>
-        <ol>
-          <li>
-            \[
-              a^3+b^3=(a+b)\cdot (a^2-a\cdot b+b^2).
-            \]
-          </li>
-          <li>
-            \[
-              a^4-b^4=(a-b)\cdot (a+b)\cdot (a^2+b^2).
-            \]
-          </li>
-        </ol>
-      </div>
-
-      <div class="ejercicio-box">
+      <!-- <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
           Sean \(a,b,c,d\in\mathbb{R}\). Demuestra que
@@ -302,7 +284,94 @@
           \]
           Indica qué términos se cancelan al desarrollar el lado izquierdo.
         </p>
-      </div>
+      </div> -->
+<div class="definicion-box">
+  <h1 class="title-practica">Definición</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Se define la <b>diferencia</b> de \(a\)
+    y \(b\), denotada por \(a-b\), mediante
+  </p>
+  \[
+    a-b:=a+(-b),
+  \]
+  <p>
+    donde \(-b\) es el inverso aditivo de \(b\).
+    Si además \(b\neq 0\), se define el <b>cociente</b> de \(a\)
+    entre \(b\), denotado por \(\displaystyle \frac{a}{b}\), mediante
+  </p>
+  \[
+    \frac{a}{b}:=a\cdot b^{-1},
+  \]
+  <p>
+    donde \(b^{-1}\) es el inverso multiplicativo de \(b\).
+  </p>
+</div>
+      <div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c\in\mathbb{R}\). Demuestra las siguientes propiedades
+    de las fracciones. Justifica cada paso mediante los axiomas de campo,
+    la definición de cociente o los resultados previamente establecidos.
+  </p>
+  <ol>
+    <li>
+      \(\displaystyle \frac{a}{1}=a\).
+      
+    </li>
+    <li>
+      Si \(b\neq 0\), entonces
+      \(\displaystyle \frac{a}{b}=a\cdot\left(\frac{1}{b}\right)\).
+      
+    </li>
+    <li>
+      Si \(b\neq 0\), entonces $-b^{-1} = (-b)^{-1}$.
+      
+    </li>
+    <li>
+      Si \(b\neq 0\), entonces
+      \(\displaystyle -\frac{a}{b}=\frac{-a}{b}=\frac{a}{-b}\).
+      
+    </li>
+    <li>
+      Si \(b\neq 0\), entonces
+      \(\displaystyle \frac{-a}{-b}=\frac{a}{b}\).
+      
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      \(\displaystyle \frac{0}{a}=0\).
+      
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      \(\displaystyle \frac{a}{a}=1\).
+      
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      \(\displaystyle a\cdot\left(\frac{b}{a}\right)=b\).
+      
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      \(\displaystyle a\cdot\left(\frac{1}{a}\right)=1\).
+      
+    </li>
+    <li>
+      Si \(c\neq 0\), entonces
+      \(\displaystyle \frac{a\cdot b}{c}
+      =\left(\frac{a}{c}\right)\cdot b
+      =a\cdot\left(\frac{b}{c}\right)\).
+      
+    </li>
+    <li>
+      Si \(b\neq 0\) y \(c\neq 0\), entonces
+      \(\displaystyle \frac{a}{b\cdot c}
+      =\left(\frac{a}{b}\right)\cdot\left(\frac{1}{c}\right)
+      =\left(\frac{1}{b}\right)\cdot\left(\frac{a}{c}\right)\).
+    </li>
+  </ol>
+</div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
@@ -319,7 +388,7 @@
           <li>
             Si además \(c\neq 0\), entonces
             \[
-              \frac{\frac{a}{b}}{\frac{c}{d}}=\frac{a\cdot d}{b\cdot c}.
+              \frac{\displaystyle{\left( \frac{a}{b}\right)}}{\displaystyle{\left(\frac{c}{d}\right)}}=\frac{a\cdot d}{b\cdot c}.
             \]
             Explica por qué la condición \(c\neq 0\) es necesaria.
           </li>
@@ -339,7 +408,7 @@
             \]
           </li>
           <li>
-            Prueba que \(\displaystyle \frac{1}{a}=\frac{1}{b}\) si y sólo si \(a=b\).<br><br>
+            Prueba que \(\displaystyle \frac{1}{a}=\frac{1}{b}\) si y sólo si \(a=b\).
           </li>
           <li>
             Si además \(a+b\neq 0\), prueba primero que \(\displaystyle \frac{1}{a}+\frac{1}{b}\neq 0\) y después
@@ -352,7 +421,7 @@
         </ol>
       </div>
 
-      <div class="ejercicio-box">
+      <!-- <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
           Sean \(a,b\in\mathbb{R}\). Para cada expresión, determina primero para qué valores de
@@ -361,13 +430,13 @@
         </p>
         <ol class="two-column">
           <li>
-            \(\displaystyle \frac{(x-a)\cdot (x-b)}{x-a}\).<br><br>
+            \(\displaystyle \frac{(x-a)\cdot (x-b)}{x-a}\).
           </li>
           <li>
-            \(\displaystyle \frac{x^2-a^2}{x-a}\).<br><br>
+            \(\displaystyle \frac{x^2-a^2}{x-a}\).
           </li>
           <li>
-            \(\displaystyle \frac{x^2-a^2}{x+a}\).<br><br>
+            \(\displaystyle \frac{x^2-a^2}{x+a}\).
           </li>
           <li>
             \(\displaystyle \frac{x^3-a^3}{x-a}\).
@@ -403,7 +472,7 @@
             \]
           </li>
         </ol>
-      </div>
+      </div> -->
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
@@ -413,33 +482,33 @@
           \[
             \frac{a+b}{a+c}=\frac{b}{c}.
           \]
-          ¿Se puede «cancelar» un sumando común en el numerador y el denominador en todos los casos?
-          Justifica tu respuesta.
+          <!-- ¿Se puede «cancelar» un sumando común en el numerador y el denominador en todos los casos?
+          Justifica tu respuesta. -->
         </p>
       </div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
-          Decide si cada afirmación es verdadera o falsa para números reales. Si es verdadera,
+          Determina si cada afirmación es verdadera o falsa en $\mathbb{R}$. Si es verdadera,
           demuéstrala; si es falsa, presenta un contraejemplo.
         </p>
         <ol>
           <li>
             Para cualesquiera \(a,b,c\in\mathbb{R}\), si \(a+b=a+c\), entonces
-            \(b=c\).<br><br>
+            \(b=c\).
           </li>
           <li>
             Para cualesquiera \(a,b,c\in\mathbb{R}\), si \(a\cdot b=a\cdot c\), entonces
-            \(b=c\).<br><br>
+            \(b=c\).
           </li>
           <li>
             Si \(a,b\in\mathbb{R}\), \(b\neq 0\) y \(\displaystyle \frac{a}{b}=0\), entonces
-            \(a=0\).<br><br>
+            \(a=0\).
           </li>
           <li>
             Para cualesquiera \(a,b\in\mathbb{R}\), si \(a+b=0\), entonces
-            \(a=0\) o \(b=0\).<br><br>
+            \(a=0\) o \(b=0\).
           </li>
           <li>
             Si \(a,b\in\mathbb{R}\), \(a\neq 0\) y \(b\neq 0\), entonces
@@ -451,19 +520,19 @@
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
-          Un estudiante afirma que, para cualesquiera \(a,b\in\mathbb{R}\) con \(a\neq 0\)
-          y \(b\neq 0\), se tiene
+          Un estudiante de la UMAR Huatulco que no estudia Actuaría, afirma que, para cualesquiera \(a,b\in\mathbb{R}\) con \(a\neq 0\)
+          y \(b\neq 0\), se satisface la siguiente igualdad:
           \[
             (a+b)\cdot \left(\frac{1}{a}+\frac{1}{b}\right)
             =a\cdot \left(\frac{1}{a}\right)+b\cdot \left(\frac{1}{b}\right)
-            =1+1.
+            =1+1 = 2.
           \]
-          Explica qué transformación no está justificada y escribe el desarrollo correcto. Da un
-          contraejemplo a la igualdad propuesta.
+          Explica qué paso no está justificado  correctamente y escribe el desarrollo correcto. Da un
+          contraejemplo a la igualdad propuesta el estudiante.
         </p>
       </div>
 
-      <div class="ejercicio-box">
+      <!-- <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
           Sean \(a,b\in\mathbb{R}\) con \(a\neq b\).
@@ -486,9 +555,9 @@
             \]
           </li>
         </ol>
-      </div>
+      </div> -->
 
-      <div class="ejercicio-box">
+      <!-- <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
           Sean \(a,b,c\in\mathbb{R}\) distintos dos a dos. Prueba que todos los denominadores de la
@@ -509,7 +578,7 @@
         </p>
         <ol>
           <li>
-            Demuestra que \(y\neq 1\).<br><br>
+            Demuestra que \(y\neq 1\).
           </li>
           <li>
             Despeja \(x\) en términos de \(y\). Después prueba que
@@ -533,6 +602,7 @@
           \(x\neq y\).
         </p>
       </div>
+       -->
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
@@ -963,7 +1033,8 @@
           <button class="respButton hvr-grow" type="button" aria-controls="respuesta-1" aria-expanded="false">Respuesta para el supremo</button>
 
           <div class="resp-box flexbox" id="respuesta-1" hidden>
-            <iframe class="video" src="https://www.youtube.com/embed/Q_pPfMeg_eI?si=5mHbmZNlbVM7tdGc" title="YouTube video player" allowfullscreen loading="lazy"></iframe>
+            <!-- width="95%" height="90%" -->
+            <iframe  class="video" src="https://www.youtube.com/embed/Q_pPfMeg_eI?si=5mHbmZNlbVM7tdGc" title="YouTube video player" allowfullscreen loading="lazy"></iframe>
           </div>
         </div>
       </div>
