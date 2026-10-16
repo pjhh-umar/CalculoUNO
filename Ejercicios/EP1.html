@@ -110,6 +110,28 @@
     <body class="fondo-body" ><h1 class="page-title-practica"> Ejercicios propuestos primer examen parcial</h1>   
  
 <div class="definicion-box">
+  <h1 class="title-practica">Definición</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Se define la <b>diferencia</b> de \(a\)
+    y \(b\), denotada por \(a-b\), mediante
+  </p>
+  \[
+    a-b:=a+(-b),
+  \]
+  <p>
+    donde \(-b\) es el inverso aditivo de \(b\).
+    Si además \(b\neq 0\), se define el <b>cociente</b> de \(a\)
+    entre \(b\), denotado por \(\displaystyle \frac{a}{b}\), mediante
+  </p>
+  \[
+    \frac{a}{b}:=a\cdot b^{-1},
+  \]
+  <p>
+    donde \(b^{-1}\) es el inverso multiplicativo de \(b\).
+  </p>
+</div>
+
+      <div class="definicion-box">
         <h1 class="title-practica">Definición</h1>
         <p>
           Sea \(a\in\mathbb{R}\) y sea \(n\) un número natural con
@@ -185,6 +207,15 @@
             Si \(b\neq 0\) y \(c\neq 0\), entonces \(\displaystyle{\frac{a}{b} = \frac{a\cdot c}{b\cdot c}}\).
           </li>
         </ol>
+      </div>
+
+      
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(a\in \mathbb{R}\) tal que \(a\cdot a = a\). Prueba que \(a=0\) o
+          bien \(a=1\)
+        </p>
       </div>
 
       <div class="ejercicio-box">
@@ -275,6 +306,65 @@
         <p><b>Hint:</b> Use una <i>factorización</i></p>
       </div>
 
+          
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Usando los axiomas de campo encuentra (en caso de existir) las soluciones a las siguientes
+          ecuaciones:
+        </p>
+        <ol class="two-column">
+          <li>
+            \(2\cdot x+5=1\)<br>
+          </li>
+          <li>
+            \(6\cdot x-2=7\cdot x+4\)<br>
+          </li>
+          <li>
+            \(\displaystyle{\frac{5\cdot x+2}{6\cdot x-2}=3}\)<br>
+          </li>
+          <li>
+            \(\displaystyle{\frac{1-x}{x-4}=4}\)<br>
+          </li>
+          <li>
+            \(\displaystyle{\frac{1-x}{1+x}=a}\)<br>
+          </li>
+          <li>
+            \(x^2 - 3\cdot x + 2 = 0\)<br>
+          </li>
+        </ol>
+      </div>
+            <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b \in \mathbb{R}\). Usa los axiomas de los números reales para demostrar las
+          siguientes identidades:
+        </p>
+        <ol>
+          <li>
+            <b>Diferencia de cuadrados</b>:
+            \[
+              b^2-a^2=(b-a)\cdot (b+a).
+            \]
+          </li>
+          <li>
+            <b>Diferencia de cubos</b>:
+            \[
+              b^3-a^3=(b-a)\cdot (a^2+a\cdot b+b^2).
+            \]
+          </li>
+        </ol>
+      </div>
+  
+      
+            <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(x,y\) números reales cualesquiera. Prueba que \(x^2 + y^2 = 0\) si
+          y sólo si \(x=0\) y \(y=0\)
+        </p>
+      </div>
+
       <!-- <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
@@ -285,27 +375,7 @@
           Indica qué términos se cancelan al desarrollar el lado izquierdo.
         </p>
       </div> -->
-<div class="definicion-box">
-  <h1 class="title-practica">Definición</h1>
-  <p>
-    Sean \(a,b\in\mathbb{R}\). Se define la <b>diferencia</b> de \(a\)
-    y \(b\), denotada por \(a-b\), mediante
-  </p>
-  \[
-    a-b:=a+(-b),
-  \]
-  <p>
-    donde \(-b\) es el inverso aditivo de \(b\).
-    Si además \(b\neq 0\), se define el <b>cociente</b> de \(a\)
-    entre \(b\), denotado por \(\displaystyle \frac{a}{b}\), mediante
-  </p>
-  \[
-    \frac{a}{b}:=a\cdot b^{-1},
-  \]
-  <p>
-    donde \(b^{-1}\) es el inverso multiplicativo de \(b\).
-  </p>
-</div>
+
       <div class="ejercicio-box">
   <h1 class="number-title-practica">Ejercicio</h1>
   <p>
@@ -441,7 +511,7 @@
       $
     </li>
     <li>
-      Si \(a\neq 0\) y \(n\in\mathbb{N}\), con \(n\geq 1\), entonces
+      Si \(a\neq 0\) y \(n\in\mathbb{N}\), entonces
       $
         (-a)^{-n}=(-1)^n\cdot a^{-n}.
       $
@@ -453,7 +523,7 @@
       $
     </li>
     <li>
-      Si \(a\neq 0\), \(b\neq 0\) y \(n\in\mathbb{N}\), con \(n\geq 1\),
+      Si \(a\neq 0\), \(b\neq 0\) y \(n\in\mathbb{N}\),
       entonces
       $
         \left(\displaystyle{\frac{a}{b}}\right)^{-n}
@@ -564,7 +634,7 @@
         </ol>
       </div> -->
 
-      <div class="ejercicio-box">
+      <!-- <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
           Sean \(a,b,c\in\mathbb{R}\), con \(c\neq 0\) y \(a+c\neq 0\). Determina
@@ -572,53 +642,55 @@
           \[
             \frac{a+b}{a+c}=\frac{b}{c}.
           \]
-          <!-- ¿Se puede «cancelar» un sumando común en el numerador y el denominador en todos los casos?
-          Justifica tu respuesta. -->
+          
         </p>
-      </div>
-
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Determina si cada afirmación es verdadera o falsa en $\mathbb{R}$. Si es verdadera,
-          demuéstrala; si es falsa, presenta un contraejemplo.
-        </p>
-        <ol>
-          <li>
-            Para cualesquiera \(a,b,c\in\mathbb{R}\), si \(a+b=a+c\), entonces
-            \(b=c\).
-          </li>
-          <li>
-            Para cualesquiera \(a,b,c\in\mathbb{R}\), si \(a\cdot b=a\cdot c\), entonces
-            \(b=c\).
-          </li>
-          <li>
-            Si \(a,b\in\mathbb{R}\), \(b\neq 0\) y \(\displaystyle \frac{a}{b}=0\), entonces
-            \(a=0\).
-          </li>
-          <li>
-            Para cualesquiera \(a,b\in\mathbb{R}\), si \(a+b=0\), entonces
-            \(a=0\) o \(b=0\).
-          </li>
-          <li>
-            Si \(a,b\in\mathbb{R}\), \(a\neq 0\) y \(b\neq 0\), entonces
-            \(a+b\neq 0\).
-          </li>
-        </ol>
-      </div>
+      </div> -->
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Determina si cada afirmación es verdadera o falsa en $\mathbb{R}$.
+    Si es verdadera, demuéstrala; si es falsa, presenta un contraejemplo.
+    En cada demostración, justifica apropiadamente cada paso utilizando
+    los axiomas de campo.
+  </p>
+  <ol>
+    <li>
+      Para cualesquiera \(a,b,c\in\mathbb{R}\), si \(a+b=a+c\), entonces
+      \(b=c\).
+    </li>
+    <li>
+      Para cualesquiera \(a,b,c\in\mathbb{R}\), si \(a\cdot b=a\cdot c\),
+      entonces \(b=c\).
+    </li>
+    <li>
+      Si \(a,b\in\mathbb{R}\), \(b\neq 0\) y
+      \(\displaystyle \frac{a}{b}=0\), entonces \(a=0\).
+    </li>
+    <li>
+      Para cualesquiera \(a,b\in\mathbb{R}\), si \(a+b=0\), entonces
+      \(a=0\) o \(b=0\).
+    </li>
+    <li>
+      Si \(a,b\in\mathbb{R}\), \(a\neq 0\) y \(b\neq 0\), entonces
+      \(a+b\neq 0\).
+    </li>
+  </ol>
+</div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
           Un estudiante de la UMAR Huatulco que no estudia Actuaría, afirma que, para cualesquiera \(a,b\in\mathbb{R}\) con \(a\neq 0\)
-          y \(b\neq 0\), se satisface la siguiente igualdad:
-          \[
-            (a+b)\cdot \left(\frac{1}{a}+\frac{1}{b}\right)
-            =a\cdot \left(\frac{1}{a}\right)+b\cdot \left(\frac{1}{b}\right)
-            =1+1 = 2.
-          \]
+          y \(b\neq 0\), se satisface las siguientes igualdades:
+          \begin{align}
+            (a+b)\cdot\left(\frac{1}{a}+\frac{1}{b}\right)
+              &= a\cdot\left(\frac{1}{a}\right)
+                + b\cdot\left(\frac{1}{b}\right) \\
+              &= 1+1 \\
+              &= 2.
+          \end{align}
           Explica qué paso no está justificado  correctamente y escribe el desarrollo correcto. Da un
-          contraejemplo a la igualdad propuesta el estudiante.
+          contraejemplo a la igualdad propuesta por el estudiante y que no se cumple.
         </p>
       </div>
 
@@ -694,35 +766,6 @@
       </div>
        -->
 
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sea \(a\in \mathbb{R}\) tal que \(a\cdot a = a\). Prueba que \(a=0\) o
-          bien \(a=1\)
-        </p>
-      </div>
-
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(a,b \in \mathbb{R}\). Usa los axiomas de los números reales para demostrar las
-          siguientes identidades:
-        </p>
-        <ol>
-          <li>
-            <b>Diferencia de cuadrados</b>:
-            \[
-              b^2-a^2=(b-a)\cdot (b+a).
-            \]
-          </li>
-          <li>
-            <b>Diferencia de cubos</b>:
-            \[
-              b^3-a^3=(b-a)\cdot (a^2+a\cdot b+b^2).
-            \]
-          </li>
-        </ol>
-      </div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
@@ -739,6 +782,146 @@
           \(\displaystyle{\frac{a}{b} = \frac{c}{d}}\) si y sólo si \(a\cdot d=b\cdot c\). ¿Cuándo \(\displaystyle{\frac{a}{b} = \frac{b}{a}}\)?
         </p>
       </div>
+<!-- <div class="nota-box">
+  <h2 class="number-title">Axiomas de orden</h2>
+  <p>
+    Se postula la existencia de un subconjunto
+    \(\mathbb{R}_{+}\subseteq\mathbb{R}\), llamado conjunto de los
+    números reales positivos, que satisface los siguientes axiomas:
+  </p>
+  <ul>
+    <li>
+      Si \(x,y\in\mathbb{R}_{+}\), entonces
+      \(x+y\in\mathbb{R}_{+}\) y \(x\cdot y\in\mathbb{R}_{+}\).
+    </li>
+    <li>
+      Para todo \(x\in\mathbb{R}\) con \(x\neq 0\), se cumple
+      exactamente una de las siguientes condiciones:
+      \(x\in\mathbb{R}_{+}\) o \(-x\in\mathbb{R}_{+}\).
+    </li>
+    <li>
+      \(0\notin\mathbb{R}_{+}\).
+    </li>
+  </ul>
+</div> -->
+
+<div class="definicion-box">
+  <h1 class="title-practica">Definición</h1>
+  <p>
+    A partir del conjunto \(\mathbb{R}_{+}\) de los axiomas de orden,
+    se establecen las siguientes definiciones y notaciones.
+    Sean \(x,y\in\mathbb{R}\).
+  </p>
+  <ol>
+    
+    <li>
+      Se escribe \(x &gt; y\), y se lee <b>«\(x\) es mayor que \(y\)»</b>,
+      si \(x-y\in\mathbb{R}_{+}\). Es decir,
+      \[
+        x &gt; y
+        \quad\Longleftrightarrow\quad
+        x-y\in\mathbb{R}_{+}.
+      \]
+    </li>
+    <li>
+      Se escribe \(x &lt; y\), y se lee <b>«\(x\) es menor que \(y\)»</b>,
+      si \(y-x\in\mathbb{R}_{+}\). Es decir,
+      \[
+        x &lt; y
+        \quad\Longleftrightarrow\quad
+        y-x\in\mathbb{R}_{+}.
+      \]
+      Las desigualdades escritas con los signos \(&lt;\) y \(&gt;\)
+      se llaman <b>desigualdades estrictas</b>.
+    </li>
+     <li>
+      Se dice que un número real \(x\) es <b>positivo</b> si \(x\in\mathbb{R}_{+}\) ,
+      es decir, si \(x &gt; 0\).
+    </li>
+    <li>
+      Se dice que un número real \(x\) es <b>negativo</b> si  \(-x\in\mathbb{R}_{+}\),
+      es decir, si \(x &lt; 0\).
+    </li>
+    
+    <li>
+      Se escribe \(x\geq y\), y se lee
+      <b>«\(x\) es mayor o igual que \(y\)»</b>, si \(x &gt; y\)
+      o \(x=y\). Es decir,
+      \[
+        x\geq y
+        \quad\Longleftrightarrow\quad
+        x &gt; y\ \text{o}\ x=y.
+      \]
+    </li>
+    <li>
+      Se escribe \(x\leq y\), y se lee
+      <b>«\(x\) es menor o igual que \(y\)»</b>, si \(x &lt; y\)
+      o \(x=y\). Es decir,
+      \[
+        x\leq y
+        \quad\Longleftrightarrow\quad
+        x &lt; y\ \text{o}\ x=y.
+      \]
+      <!-- Las desigualdades escritas con los signos \(\leq\) y \(\geq\)
+      se llaman <b>desigualdades no estrictas</b>. -->
+    </li>
+    <li>
+      Se dice que un número real \(x\) es <b>no negativo</b> si \(x\geq 0\),
+      es decir, si \(x &gt; 0\) o \(x=0\).
+    </li>
+    <li>
+      Se dice que un número real \(x\) es <b>no positivo</b> si \(x\leq 0\),
+      es decir, si \(x &lt; 0\) o \(x=0\).
+    </li>
+  </ol> 
+</div>
+
+<div class="observacion-box">
+  <h2 class="title-observacion">Observación</h2>
+  <p>
+    El número \(0\) es no negativo y no positivo, pues
+    \(0\geq 0\) y \(0\leq 0\). Sin embargo, no es positivo
+    ni negativo. En particular,
+  </p>
+  \[
+    0\notin\mathbb{R}^{+},
+    \qquad
+    0\notin\mathbb{R}^{-}.
+  \]
+</div>
+
+
+<div class="notacion-box">
+  <h2 class="title-notacion">Notación</h2>  <p>
+  Para \(a,b,c\in\mathbb{R}\), se utiliza la siguiente
+  <b>notación abreviada</b> para expresar que dos desigualdades
+  se cumplen simultáneamente:
+</p>
+  \[
+    a &lt; b &lt; c
+    \quad\Longleftrightarrow\quad
+    a &lt; b\ \text{y}\ b &lt; c,
+  \]
+  \[
+    a\leq b\leq c
+    \quad\Longleftrightarrow\quad
+    a\leq b\ \text{y}\ b\leq c,
+  \]
+  \[
+    a\leq b &lt; c
+    \quad\Longleftrightarrow\quad
+    a\leq b\ \text{y}\ b &lt; c,
+  \]
+  \[
+    a &lt; b\leq c
+    \quad\Longleftrightarrow\quad
+    a &lt; b\ \text{y}\ b\leq c.
+  \]
+  <p>
+    Las cadenas con \(&gt;\) o \(\geq\) se interpretan de manera
+    análoga.
+  </p>
+</div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
@@ -792,26 +975,31 @@
         </p>
       </div>
 
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(a,b,c \in \mathbb{R}\). Demostrar las siguientes propiedades:
-        </p>
-        <ol>
-          <li>
-            Si \(a &gt; b\) y \(b &gt; c\), entonces \(a &gt; c\).
-          </li>
-          <li>
-            Si \(a &gt; b\), entonces \(a + c &gt; b + c\).
-          </li>
-          <li>
-            Si \(a &gt; b\) y \(c &gt; 0\), entonces \(a \cdot c &gt; b \cdot c\).
-          </li>
-          <li>
-            Si \(a &gt; b\) y \(c &lt; 0\), entonces \(a \cdot c &lt; b \cdot c\).
-          </li>
-        </ol>
-      </div>
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c\in\mathbb{R}\). Demuestra las siguientes propiedades
+    de las desigualdades, bajo las hipótesis indicadas en cada inciso.
+    Justifica apropiadamente cada paso utilizando los axiomas de campo
+    y de orden de los números reales.
+  </p>
+  <ol>
+    <li>
+      Si \(a &gt; b\) y \(b &gt; c\), entonces \(a &gt; c\).
+    </li>
+    <li>
+      Si \(a &gt; b\), entonces \(a+c &gt; b+c\).
+    </li>
+    <li>
+      Si \(a &gt; b\) y \(c &gt; 0\), entonces
+      \(a\cdot c &gt; b\cdot c\).
+    </li>
+    <li>
+      Si \(a &gt; b\) y \(c &lt; 0\), entonces
+      \(a\cdot c &lt; b\cdot c\).
+    </li>
+  </ol>
+</div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
@@ -829,66 +1017,87 @@
         </p>
       </div>
 
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(a,b,c \in \mathbb{R}\). Demostrar las siguientes propiedades:
-        </p>
-        <ol>
-          <li>
-            Si \(a &lt; b\) y \(c &lt; d\), entonces \(a + c &lt; b + d\).
-          </li>
-          <li>
-            Si \(a &lt; b\) y \(c \leq d\), entonces \(a + c &lt; b + d\).
-          </li>
-          <li>
-            Si \(a &lt; b\), entonces \(-b &lt; -a\).
-          </li>
-          <li>
-            Si \(a &lt; b\) y \(c &gt; d\), entonces \(a - c &lt; b - d\).
-          </li>
-          <li>
-            Si \(a &lt; b\) y \(c &gt; 0\), entonces \(a\cdot c &lt; b\cdot c\).
-          </li>
-          <li>
-            Si \(0 \leq a \leq b\) y \(c &gt; 0\), entonces \(0 \leq a\cdot c \leq b\cdot c\).
-          </li>
-          <li>
-            Si \(a &lt; b\) y \(c &lt; 0\), entonces \(a\cdot c &gt; b\cdot c\).
-          </li>
-          <li>
-            Si \(a &gt; 1\), entonces \(a^2 &gt; a\).
-          </li>
-          <li>
-            Si \(0 &lt; a &lt; 1\), entonces \(a^2 &lt; a\).
-          </li>
-          <li>
-            Si \(0 \leq a &lt; b\) y \(0 \leq c &lt; d\), entonces \(a\cdot c &lt; b\cdot d\).
-          </li>
-          <li>
-            Si \(0 \leq a &lt; b\), entonces \(a^2 &lt; b^2\). .
-          </li>
-          <li>
-            Si \(a, b \geq 0\) y \(a^2 &lt; b^2\), entonces \(a &lt; b\).
-          </li>
-          <li>
-            Si \(a\cdot b &lt; 0\) entonces \(a &gt; 0\) y \(b &lt; 0\) o bien
-            \(a &lt; 0\) y \(b &gt; 0\)
-          </li>
-          <li>
-            Si \(0 \leq a &lt; b\) entonces \(a^{2} \leq a\cdot b &lt; b^{2}\). Demuestra con un ejemplo que no
-            se satisface \(a^{2} &lt; a\cdot b &lt; b^{2}\)
-          </li>
-        </ol>
-      </div>
+     <div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c,d\in\mathbb{R}\). Demuestra las siguientes propiedades
+    de las desigualdades estrictas, bajo las hipótesis indicadas en cada
+    inciso. Justifica apropiadamente cada paso utilizando los axiomas
+    de campo y de orden de los números reales.
+  </p>
+  <ol>
+    <li>
+      Si \(a &lt; b\) y \(c &lt; d\), entonces \(a+c &lt; b+d\).
+    </li>
+    <li>
+      Si \(a &lt; b\), entonces \(-b &lt; -a\).
+    </li>
+    <li>
+      Si \(a &lt; b\) y \(c &gt; d\), entonces \(a-c &lt; b-d\).
+    </li>
+    <li>
+      Si \(a &lt; b\) y \(c &gt; 0\), entonces
+      \(a\cdot c &lt; b\cdot c\).
+    </li>
+    <li>
+      Si \(a &lt; b\) y \(c &lt; 0\), entonces
+      \(a\cdot c &gt; b\cdot c\).
+    </li>
+    <li>
+      Si \(a &gt; 1\), entonces \(a^2 &gt; a\).
+    </li>
+    <li>
+      Si \(0 &lt; a &lt; 1\), entonces \(a^2 &lt; a\).
+    </li>
+    <li>
+      Si \(a\cdot b &lt; 0\), entonces \(a &gt; 0\) y \(b &lt; 0\),
+      o bien \(a &lt; 0\) y \(b &gt; 0\).
+    </li>
+  </ol>
+</div>
 
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(x,y\) números reales cualesquiera. Prueba que \(x^2 + y^2 = 0\) si
-          y sólo si \(x=0\) y \(y=0\)
-        </p>
-      </div>
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c,d\in\mathbb{R}\). Demuestra las siguientes propiedades,
+    en las que intervienen desigualdades no estrictas. Justifica
+    apropiadamente cada paso utilizando los axiomas de campo y de orden
+    de los números reales.
+  </p>
+  <ol>
+    <li>
+      Si \(a &lt; b\) y \(c\leq d\), entonces \(a+c &lt; b+d\).
+    </li>
+    <li>
+      Si \(0\leq a\leq b\) y \(c &gt; 0\), entonces
+      \(0\leq a\cdot c\leq b\cdot c\).
+    </li>
+    <li>
+      Si \(0\leq a &lt; b\) y \(0\leq c &lt; d\), entonces
+      \(a\cdot c &lt; b\cdot d\).
+    </li>
+    <li>
+      Si \(0\leq a &lt; b\), entonces \(a^2 &lt; b^2\).
+    </li>
+    <li>
+      Si \(a\geq 0\), \(b\geq 0\) y \(a^2 &lt; b^2\), entonces
+      \(a &lt; b\).
+    </li>
+    <li>
+      Si \(0\leq a &lt; b\), entonces
+      \[
+        a^2\leq a\cdot b &lt; b^2.
+      \]
+      Presenta un contraejemplo que muestre que, bajo estas mismas
+      hipótesis, no siempre se cumple
+      \[
+        a^2 &lt; a\cdot b &lt; b^2.
+      \]
+    </li>
+  </ol>
+</div>
+
+
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
@@ -970,33 +1179,6 @@
         </p>
       </div>
 
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Usando los axiomas de campo encuentra (en caso de existir) las soluciones a las siguientes
-          ecuaciones:
-        </p>
-        <ol class="two-column">
-          <li>
-            \(2\cdot x+5=1\)<br>
-          </li>
-          <li>
-            \(6\cdot x-2=7\cdot x+4\)<br>
-          </li>
-          <li>
-            \(\displaystyle{\frac{5\cdot x+2}{6\cdot x-2}=3}\)<br>
-          </li>
-          <li>
-            \(\displaystyle{\frac{1-x}{x-4}=4}\)<br>
-          </li>
-          <li>
-            \(\displaystyle{\frac{1-x}{1+x}=a}\)<br>
-          </li>
-          <li>
-            \(x^2 - 3\cdot x + 2 = 0\)<br>
-          </li>
-        </ol>
-      </div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
