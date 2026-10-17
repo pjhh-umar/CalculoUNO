@@ -1097,18 +1097,6 @@
   </ol>
 </div>
 
-
-
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Prueba que \(n&gt;0\) para todo \(n\in \mathbb{N}\).
-        </p>
-        <p>
-          <b>Sugerencia:</b> Utiliza el principio de inducción matemática.
-        </p>
-      </div>
-
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
@@ -1177,44 +1165,169 @@
           Sean \(a,b\in \mathbb{R}\) y \(n\in \mathbb{N}\). Prueba que si \(0 &lt; a &lt; b\),
           entonces \(a^n &lt; b^n\).
         </p>
+         <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
       </div>
 
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\) y sea \(n\in\mathbb{N}\) con
+    \(n\geq 1\). Prueba que, si \(0 &lt; a &lt; b\), entonces
+    \(a^n &lt; b^n\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\) tales que \(a &lt; 0\) y
+    \(b &lt; 0\). Prueba que \(a+b &lt; 0\); es decir, que la
+    suma de dos números reales negativos es un número negativo.
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c\in\mathbb{R}\) tales que \(a\leq b\),
+    \(b\leq c\) y \(a=c\). Prueba que \(b=c\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Prueba que
+    \(a^2+b^2\geq 0\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Prueba que
+    \(2\cdot a\cdot b\leq a^2+b^2\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Prueba que
+    \(a\cdot b\leq a^2+b^2\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="definicion-box">
+  <h1 class="title-practica">Principio de inducción matemática</h1>
+  <p>
+    Sea \(P(n)\) una afirmación que depende de un número natural
+    \(n\geq 1\). Para demostrar mediante el <b>principio de inducción
+    matemática</b> que \(P(n)\) es verdadera para todo número natural
+    \(n\geq 1\), se procede de la siguiente manera:
+  </p>
+  <ol>
+    <li>
+      <b>Caso base:</b> se demuestra que \(P(1)\) es verdadera;
+      es decir, se verifica la afirmación para \(n=1\).
+    </li>
+    <li>
+      <b>Hipótesis de inducción:</b> se toma un número natural
+      \(k\geq 1\) arbitrario y se supone que \(P(k)\) es verdadera.
+      Esta suposición se utiliza para demostrar el paso siguiente.
+    </li>
+    <li>
+      <b>Paso inductivo:</b> bajo la hipótesis de inducción,
+      se demuestra que \(P(k+1)\) también es verdadera; es decir,
+      se prueba la afirmación para el siguiente número natural.
+    </li>
+  </ol>
+  <p>
+    Una vez verificado el caso base y demostrado el paso inductivo,
+    el principio de inducción matemática permite concluir que
+    \(P(n)\) es verdadera para todo número natural \(n\geq 1\).
+  </p>
+</div>
+
+<div class="observacion-box">
+  <h1 class="title-practica">Observación</h1>
+  <p>
+    El caso base puede corresponder a un valor distinto de \(n=1\),
+    según el rango para el cual se desea demostrar la afirmación.
+    Por ejemplo, para demostrar que \(P(n)\) es verdadera para
+    todo número natural \(n\geq 2\), se procede así:
+  </p>
+  <ol>
+    <li>
+      <b>Caso base:</b> se demuestra que \(P(2)\) es verdadera.
+    </li>
+    <li>
+      <b>Hipótesis de inducción:</b> se toma un número natural
+      \(k\geq 2\) arbitrario y se supone que \(P(k)\) es verdadera.
+    </li>
+    <li>
+      <b>Paso inductivo:</b> bajo esta suposición, se demuestra
+      que \(P(k+1)\) también es verdadera.
+    </li>
+  </ol>
+  <p>
+    Se concluye que \(P(n)\) es verdadera para todo número natural
+    \(n\geq 2\). Si también se desea incluir el caso \(n=1\),
+    este debe comprobarse por separado.
+  </p>
+  <p>
+    En general, si se comienza en un número natural \(n_0\),
+    se verifica \(P(n_0)\) y se demuestra el paso inductivo para
+    un número natural arbitrario \(k\geq n_0\). La conclusión
+    será válida para todos los números naturales \(n\geq n_0\).
+  </p>
+</div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>
-          Prueba que la suma de dos números reales negativos es un número negativo.
+          Prueba que \(n&gt;0\) para todo \(n\in \mathbb{N}\).
+        </p>
+        <p>
+          <b>Sugerencia:</b> Utiliza el principio de inducción matemática.
         </p>
       </div>
 
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(a,b,c \in \mathbb{R}\). Prueba que si \(a\leq b\), \(b\leq c\), y
-          \(a=c\), entonces \(b=c\)
-        </p>
-      </div>
-
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(a,b,c \in \mathbb{R}\). Prueba que \(a^2 + b^2 \geq 0\)
-        </p>
-      </div>
-
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(a,b,c \in \mathbb{R}\). Prueba que \(2\cdot a\cdot b \leq a^2 + b^2\)
-        </p>
-      </div>
-
-      <div class="ejercicio-box">
-        <h1 class="number-title-practica">Ejercicio</h1>
-        <p>
-          Sean \(a,b,c \in \mathbb{R}\). Prueba que \(a\cdot b \leq a^2 + b^2\)
-        </p>
-      </div>
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
@@ -1227,6 +1340,32 @@
           .
         </p>
       </div>
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>Sea \(a\in\mathbb{R}\).</p>
+  <ol>
+    <li>
+      Demuestra por inducción la identidad
+      \[
+        (a-1)\cdot\sum_{k=1}^{n}a^k=a^{n+1}-a.
+      \]
+    </li>
+    <li>
+      Deduce que, si \(a\neq 1\), entonces
+      \[
+        \sum_{k=1}^{n}a^k=\frac{a^{n+1}-a}{a-1}.
+      \]
+      <!-- ¿Cuál es el valor de la suma cuando \(a=1\)? -->
+    </li>
+    <!-- <li>
+      Demuestra que, si \(0 &lt; a &lt; 1\), entonces
+      \[
+        0 &lt; \sum_{k=1}^{n}a^k &lt; \frac{a}{1-a}.
+      \]
+    </li> -->
+  </ol>
+</div>
+
 
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
