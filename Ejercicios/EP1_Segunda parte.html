@@ -1,0 +1,1812 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1],
+            id: "\\operatorname{id}",
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+      /* body.number-title
+      {
+      counter-reset: temaCounter 1 subsectioncounter ;
+      } */
+      body.fondo-body{
+        counter-reset: temaCounter 1 sectionCounter resueltoCounter;
+      }
+
+
+      h1.tema-number-title
+          {
+          counter-reset: sectionCounter 0;
+          } 
+
+      h1.number-title
+      {
+      counter-reset: subsectionCounter;
+      /* counter-reset: subsectionCounter; */
+      }
+
+    </style>
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Cálculo I</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría</div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+          <div class="logo_superior_umar">
+            <a href="https://www.umar.mx" target="_blank"><img src="../Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Informacion_General.html"> Información</a> </li>
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Notas.html"> Notas  </a> </li> -->
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Quizes.html"> Quizes  </a> </li>-->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Ejercicios.html">Ejercicios</a></li> 
+            <!-- <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Examenes.html"> Archivos </a> </li> -->
+            <li> <a href="https://pjhh-umar.github.io/CalculoUNO/Links.html"> Links</a> </li>
+          </ul>
+          </nav>
+        
+        
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Ejercicios propuestos primer examen parcial</title>
+      </head>  
+
+
+
+    <body class="fondo-body" ><h1 class="page-title-practica"> Ejercicios propuestos primer examen parcial</h1>   
+ 
+<div class="definicion-box">
+  <h1 class="title-practica">Definición</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Se define la <b>diferencia</b> de \(a\)
+    y \(b\), denotada por \(a-b\), mediante
+  </p>
+  \[
+    a-b:=a+(-b),
+  \]
+  <p>
+    donde \(-b\) es el inverso aditivo de \(b\).
+    Si además \(b\neq 0\), se define el <b>cociente</b> de \(a\)
+    entre \(b\), denotado por \(\displaystyle \frac{a}{b}\), mediante
+  </p>
+  \[
+    \frac{a}{b}:=a\cdot b^{-1},
+  \]
+  <p>
+    donde \(b^{-1}\) es el inverso multiplicativo de \(b\).
+  </p>
+</div>
+
+      <div class="definicion-box">
+        <h1 class="title-practica">Definición</h1>
+        <p>
+          Sea \(a\in\mathbb{R}\) y sea \(n\) un número natural con
+          \(n\geq 1\). La <b>potencia de base \(a\) y exponente
+          \(n\)</b>, denotada por \(a^n\), se define como el producto de
+          \(n\) factores iguales a \(a\):
+        </p>
+        \[
+          a^n:=\underbrace{a\cdot a\cdots a}_{n\text{ factores}}.
+        \]
+        <p>
+          En particular, \(a^1=a\). Si \(a\neq 0\), se definen además las
+          potencias de exponente cero y de exponente entero negativo como
+        </p>
+        \[
+          a^0:=1,
+          \qquad
+          a^{-n}:=(a^{-1})^n=\frac{1}{a^n},
+          \quad n\geq 1.
+        \]
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c \in \mathbb{R}\). Prueba que las siguientes propiedades. Justifica cada paso
+          mediante los axiomas de campo, la notación o los resultados previamente establecidos.
+        </p>
+        <ol>
+          <li>
+            \(a\cdot 0=0\).
+          </li>
+          <li>
+            \(a\cdot b=0\) si y sólo si \(a=0\) o \(b=0\).
+          </li>
+          <li>
+            \(-0=0\).
+          </li>
+          <li>
+            Si \(a\neq 0\) y \(b\neq 0\), entonces \((a\cdot b)^{-1}=b^{-1}\cdot a^{-1}\).
+          </li>
+          <li>
+            \(1^{-1}=1\).
+          </li>
+          <li>
+            \(-0=0\).
+          </li>
+          <li>
+            \(-(-a)=a\).
+          </li>
+          <li>
+            \((-a)^2 = a^2\).
+          </li>
+          <li>
+            \((a\cdot b)^2 = a^2 \cdot b^2\).
+          </li>
+          <li>
+            Si \((a)^{-1} = 1\), entonces \(a=1\).
+          </li>
+          <li>
+            Si \(a\not=0\), entonces \((a^{-1})^{-1}=a\).
+          </li>
+          <li>
+            Si \(a\not=0\), entonces \(a^{-1} \neq 0\) y \((-a)^{-1}=- a^{-1}\).
+          </li>
+          <li>
+            Si \(a\not=0\) y \(a\cdot x = a\), entonces \(x=1\).
+          </li>
+          <li>
+            \((-a)\cdot b=-(a\cdot b)\) y \((-a)\cdot (-b)=a\cdot b\).
+          </li>
+          <li>
+            Si \(b\neq 0\) y \(c\neq 0\), entonces \(\displaystyle{\frac{a}{b} = \frac{a\cdot c}{b\cdot c}}\).
+          </li>
+        </ol>
+      </div>
+
+      
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(a\in \mathbb{R}\) tal que \(a\cdot a = a\). Prueba que \(a=0\) o
+          bien \(a=1\)
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c\in\mathbb{R}\). Demuestra las siguientes identidades. Justifica cada paso
+          mediante los axiomas de campo o los resultados previamente establecidos.
+        </p>
+        <ol class="two-column">
+          <li>
+            \(a-(b+c)=(a-b)-c\).
+          </li>
+          <li>
+            \(a-(b-c)=(a-b)+c\).
+          </li>
+          <li>
+            \((a-b)+(b-c)=a-c\).
+          </li>
+          <li>
+            \((a-b)\cdot c=a\cdot c-b\cdot c\).
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c,d\in\mathbb{R}\). Determina todos los números reales \(x\) que
+          satisfacen la ecuación
+          \[
+            a\cdot x+b=c\cdot x+d.
+          \]
+          ¿En qué casos existe una única solución, no existe solución o todo número real es
+          solución? Justifica detalladamente tu respuesta.
+        </p>
+      </div>
+
+      <!-- <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Para cada \(t\in\mathbb{R}\), determina todas las soluciones \(x\in\mathbb{R}\) de las
+          siguientes ecuaciones. Explica cómo cambia el conjunto de soluciones según el valor del
+          parámetro \(t\).
+        </p>
+        <ol>
+          <li>
+            \((t-1)\cdot x=t-1\).
+          </li>
+          <li>
+            \((t-1)\cdot x=1\).
+          </li>
+          <li>
+            \((t-1)\cdot x=t\).
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Describe todos los pares \((a,b)\in\mathbb{R}^2\) que satisfacen cada una de las siguientes
+          condiciones. Justifica que no hay otros casos.
+        </p>
+        <ol>
+          <li>
+            \(a\cdot b=a\).
+          </li>
+          <li>
+            \(a\cdot b=b\).
+          </li>
+          <li>
+            \(a\cdot b=a\) y \(a\cdot b=b\) simultáneamente.
+          </li>
+        </ol>
+      </div> 
+      -->
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b\in\mathbb{R}\) arbitrarios pero fijos. Encuentra todos los números reales \(x\) que
+          satisfacen
+          \[
+            x^2-(a+b)\cdot x+a\cdot b=0.
+          \]
+         ¿Cuántas soluciones distintas hay cuando \(a=b\)? ¿Y cuando \(a\neq b\)?
+        </p>
+        <p><b>Hint:</b> Use una <i>factorización</i></p>
+      </div>
+
+          
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Usando los axiomas de campo encuentra (en caso de existir) las soluciones a las siguientes
+          ecuaciones:
+        </p>
+        <ol class="two-column">
+          <li>
+            \(2\cdot x+5=1\)<br>
+          </li>
+          <li>
+            \(6\cdot x-2=7\cdot x+4\)<br>
+          </li>
+          <li>
+            \(\displaystyle{\frac{5\cdot x+2}{6\cdot x-2}=3}\)<br>
+          </li>
+          <li>
+            \(\displaystyle{\frac{1-x}{x-4}=4}\)<br>
+          </li>
+          <li>
+            \(\displaystyle{\frac{1-x}{1+x}=a}\)<br>
+          </li>
+          <li>
+            \(x^2 - 3\cdot x + 2 = 0\)<br>
+          </li>
+        </ol>
+      </div>
+            <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b \in \mathbb{R}\). Usa los axiomas de los números reales para demostrar las
+          siguientes identidades:
+        </p>
+        <ol>
+          <li>
+            <b>Diferencia de cuadrados</b>:
+            \[
+              b^2-a^2=(b-a)\cdot (b+a).
+            \]
+          </li>
+          <li>
+            <b>Diferencia de cubos</b>:
+            \[
+              b^3-a^3=(b-a)\cdot (a^2+a\cdot b+b^2).
+            \]
+          </li>
+        </ol>
+      </div>
+  
+      
+            <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(x,y\) números reales cualesquiera. Prueba que \(x^2 + y^2 = 0\) si
+          y sólo si \(x=0\) y \(y=0\)
+        </p>
+      </div>
+
+      <!-- <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c,d\in\mathbb{R}\). Demuestra que
+          \[
+            (a-b)\cdot (c-d)+(a-d)\cdot (b-c)=(a-c)\cdot (b-d).
+          \]
+          Indica qué términos se cancelan al desarrollar el lado izquierdo.
+        </p>
+      </div> -->
+
+      <div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c\in\mathbb{R}\). Demuestra las siguientes propiedades
+    de las fracciones. Justifica cada paso mediante los axiomas de campo,
+    la definición de cociente o los resultados previamente establecidos.
+  </p>
+  <ol>
+    <li>
+      \(\displaystyle \frac{a}{1}=a\).
+      
+    </li>
+    <li>
+      Si \(b\neq 0\), entonces
+      \(\displaystyle \frac{a}{b}=a\cdot\left(\frac{1}{b}\right)\).
+      
+    </li>
+    <li>
+      Si \(b\neq 0\), entonces $-b^{-1} = (-b)^{-1}$.
+      
+    </li>
+    <li>
+      Si \(b\neq 0\), entonces
+      \(\displaystyle -\frac{a}{b}=\frac{-a}{b}=\frac{a}{-b}\).
+      
+    </li>
+    <li>
+      Si \(b\neq 0\), entonces
+      \(\displaystyle \frac{-a}{-b}=\frac{a}{b}\).
+      
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      \(\displaystyle \frac{0}{a}=0\).
+      
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      \(\displaystyle \frac{a}{a}=1\).
+      
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      \(\displaystyle a\cdot\left(\frac{b}{a}\right)=b\).
+      
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      \(\displaystyle a\cdot\left(\frac{1}{a}\right)=1\).
+      
+    </li>
+    <li>
+      Si \(c\neq 0\), entonces
+      \(\displaystyle \frac{a\cdot b}{c}
+      =\left(\frac{a}{c}\right)\cdot b
+      =a\cdot\left(\frac{b}{c}\right)\).
+      
+    </li>
+    <li>
+      Si \(b\neq 0\) y \(c\neq 0\), entonces
+      \(\displaystyle \frac{a}{b\cdot c}
+      =\left(\frac{a}{b}\right)\cdot\left(\frac{1}{c}\right)
+      =\left(\frac{1}{b}\right)\cdot\left(\frac{a}{c}\right)\).
+    </li>
+  </ol>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Demuestra las siguientes propiedades
+    bajo las hipótesis indicadas en cada inciso. Justifica que todos
+    los inversos y cocientes que aparecen están bien definidos.
+  </p>
+  <ol>
+    <li>
+      Si \(a\neq b\), entonces
+      $
+        (a-b)^{-1}=-(b-a)^{-1}.
+      $
+    </li>
+    <li>
+      Si \(a\neq 0\) y \(b\neq 0\), entonces
+      $
+        \left(-\displaystyle{\frac{a}{b}}\right)^{-1}=-\displaystyle{\frac{b}{a}}.
+      $
+    </li>
+    <li>
+      Sean \(a\neq 0\) y \(b\neq 0\). Prueba que
+      $
+        a^{-1}=-b^{-1}
+        \quad\text{si y sólo si}\quad a=-b.
+      $
+      </li>
+      <li>
+      Sean \(a\neq 0\) y \(b\neq 0\). Prueba que $a^{-1}+b^{-1}=0
+        \quad\text{si y sólo si}\quad a+b=0.
+      $
+    </li>
+    <li>
+      Si \(a\neq 0\), entonces
+      $
+        a^{-1}=a
+        \quad\text{si y sólo si}\quad
+        a=1\ \text{o}\ a=-1.
+      $
+    </li>
+    <li>
+      Si \(a\neq 0\), \(b\neq 0\) y \(a+b\neq 0\), entonces
+      $
+        \left(a^{-1}+b^{-1}\right)^{-1}
+        =\displaystyle{\frac{a\cdot b}{a+b}}.
+      $
+    </li>
+    <li>
+      Si \(a\neq 0\), \(b\neq 0\) y \(a\neq b\), entonces
+      $
+        \left(a^{-1}-b^{-1}\right)^{-1}
+        =-\displaystyle{\frac{a\cdot b}{a-b}}
+        =\displaystyle{\frac{a\cdot b}{b-a}}.
+      $
+    </li>
+    <li>
+      Si \(a+b\neq 0\) y \(a-b\neq 0\), entonces
+      $
+        \displaystyle{\frac{1}{a+b}+\frac{1}{a-b}
+        =\frac{2\cdot a}{a^2-b^2}}
+      $
+      y
+      $
+        \displaystyle{\frac{1}{a-b}-\frac{1}{a+b}
+        =\frac{2\cdot b}{a^2-b^2}}.
+      $
+    </li>
+    <li>
+      Si \(a\neq 0\) y \(n\in\mathbb{N}\), entonces
+      $
+        (-a)^{-n}=(-1)^n\cdot a^{-n}.
+      $
+      En particular, deduce que
+      $
+        (-a)^{-2}=a^{-2}
+        \qquad\text{y}\qquad
+        (-a)^{-3}=-a^{-3}.
+      $
+    </li>
+    <li>
+      Si \(a\neq 0\), \(b\neq 0\) y \(n\in\mathbb{N}\),
+      entonces
+      $
+        \left(\displaystyle{\frac{a}{b}}\right)^{-n}
+        =\left(\displaystyle{\frac{b}{a}}\right)^n.
+      $
+    </li>
+  </ol>
+</div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c,d\in\mathbb{R}\), con \(b\neq 0\) y \(d\neq 0\). Demuestra
+          las siguientes reglas de operación con fracciones:
+        </p>
+        <ol>
+          <li>
+            \[
+              \frac{a}{b}-\frac{c}{d}=\frac{a\cdot d-b\cdot c}{b\cdot d}.
+            \]
+          </li>
+          <li>
+            Si además \(c\neq 0\), entonces
+            \[
+              \frac{\displaystyle{\left( \frac{a}{b}\right)}}{\displaystyle{\left(\frac{c}{d}\right)}}=\frac{a\cdot d}{b\cdot c}.
+            \]
+            Explica por qué la condición \(c\neq 0\) es necesaria.
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b\in\mathbb{R}\), con \(a\neq 0\) y \(b\neq 0\).
+        </p>
+        <ol>
+          <li>
+            Demuestra que
+            \[
+              \frac{1}{a}-\frac{1}{b}=\frac{b-a}{a\cdot b}.
+            \]
+          </li>
+          <li>
+            Prueba que \(\displaystyle \frac{1}{a}=\frac{1}{b}\) si y sólo si \(a=b\).
+          </li>
+          <li>
+            Si además \(a+b\neq 0\), prueba primero que \(\displaystyle \frac{1}{a}+\frac{1}{b}\neq 0\) y después
+            demuestra que
+            \[
+              \left(\frac{1}{a}+\frac{1}{b}\right)^{-1}
+              =\frac{a\cdot b}{a+b}.
+            \]
+          </li>
+        </ol>
+      </div>
+
+      <!-- <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b\in\mathbb{R}\). Para cada expresión, determina primero para qué valores de
+          \(x\in\mathbb{R}\) está definida y después simplifícala. Conserva las restricciones de la
+          expresión original.
+        </p>
+        <ol class="two-column">
+          <li>
+            \(\displaystyle \frac{(x-a)\cdot (x-b)}{x-a}\).
+          </li>
+          <li>
+            \(\displaystyle \frac{x^2-a^2}{x-a}\).
+          </li>
+          <li>
+            \(\displaystyle \frac{x^2-a^2}{x+a}\).
+          </li>
+          <li>
+            \(\displaystyle \frac{x^3-a^3}{x-a}\).
+          </li>
+        </ol>
+        <p>
+          ¿La expresión simplificada puede estar definida en valores donde la expresión original no lo
+          está? Explica con uno de los incisos.
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(x,y\in\mathbb{R}\). Determina las condiciones necesarias para que cada expresión esté
+          definida y después simplifícala. Revisa tanto los denominadores interiores como el denominador
+          exterior.
+        </p>
+        <ol>
+          <li>
+            \[
+              \frac{\frac{1}{x}+\frac{1}{y}}{\frac{1}{x}-\frac{1}{y}}.
+            \]
+          </li>
+          <li>
+            \[
+              \frac{\frac{x}{y}-1}{\frac{x}{y}+1}.
+            \]
+          </li>
+          <li>
+            \[
+              \frac{\frac{1}{x}}{\frac{1}{x}+\frac{1}{y}}.
+            \]
+          </li>
+        </ol>
+      </div> -->
+
+      <!-- <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c\in\mathbb{R}\), con \(c\neq 0\) y \(a+c\neq 0\). Determina
+          exactamente cuándo se cumple
+          \[
+            \frac{a+b}{a+c}=\frac{b}{c}.
+          \]
+          
+        </p>
+      </div> -->
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Determina si cada afirmación es verdadera o falsa en $\mathbb{R}$.
+    Si es verdadera, demuéstrala; si es falsa, presenta un contraejemplo.
+    En cada demostración, justifica apropiadamente cada paso utilizando
+    los axiomas de campo.
+  </p>
+  <ol>
+    <li>
+      Para cualesquiera \(a,b,c\in\mathbb{R}\), si \(a+b=a+c\), entonces
+      \(b=c\).
+    </li>
+    <li>
+      Para cualesquiera \(a,b,c\in\mathbb{R}\), si \(a\cdot b=a\cdot c\),
+      entonces \(b=c\).
+    </li>
+    <li>
+      Si \(a,b\in\mathbb{R}\), \(b\neq 0\) y
+      \(\displaystyle \frac{a}{b}=0\), entonces \(a=0\).
+    </li>
+    <li>
+      Para cualesquiera \(a,b\in\mathbb{R}\), si \(a+b=0\), entonces
+      \(a=0\) o \(b=0\).
+    </li>
+    <li>
+      Si \(a,b\in\mathbb{R}\), \(a\neq 0\) y \(b\neq 0\), entonces
+      \(a+b\neq 0\).
+    </li>
+  </ol>
+</div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Un estudiante de la UMAR Huatulco que no estudia Actuaría, afirma que, para cualesquiera \(a,b\in\mathbb{R}\) con \(a\neq 0\)
+          y \(b\neq 0\), se satisface las siguientes igualdades:
+          \begin{align}
+            (a+b)\cdot\left(\frac{1}{a}+\frac{1}{b}\right)
+              &= a\cdot\left(\frac{1}{a}\right)
+                + b\cdot\left(\frac{1}{b}\right) \\
+              &= 1+1 \\
+              &= 2.
+          \end{align}
+          Explica qué paso no está justificado  correctamente y escribe el desarrollo correcto. Da un
+          contraejemplo a la igualdad propuesta por el estudiante y que no se cumple.
+        </p>
+      </div>
+
+      <!-- <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b\in\mathbb{R}\) con \(a\neq b\).
+        </p>
+        <ol>
+          <li>
+            Determina \(A,B\in\mathbb{R}\) tales que la identidad
+            \[
+              1=A\cdot (x-b)+B\cdot (x-a)
+            \]
+            sea válida para todo \(x\in\mathbb{R}\). Justifica que esos valores de
+            \(A\) y \(B\) son únicos.
+          </li>
+          <li>
+            Con los valores obtenidos, demuestra que, para \(x\neq a\) y
+            \(x\neq b\),
+            \[
+              \frac{1}{(x-a)\cdot (x-b)}
+              =\frac{A}{x-a}+\frac{B}{x-b}.
+            \]
+          </li>
+        </ol>
+      </div> -->
+
+      <!-- <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c\in\mathbb{R}\) distintos dos a dos. Prueba que todos los denominadores de la
+          siguiente expresión son distintos de cero y demuestra la identidad
+          \[
+            \frac{1}{(a-b)\cdot (a-c)}
+            +\frac{1}{(b-a)\cdot (b-c)}
+            +\frac{1}{(c-a)\cdot (c-b)}=0.
+          \]
+          Puedes comenzar utilizando el denominador común \((a-b)\cdot (b-c)\cdot (c-a)\).
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(x\in\mathbb{R}\), con \(x\neq -1\), y define \(\displaystyle y=\frac{x}{1+x}\).
+        </p>
+        <ol>
+          <li>
+            Demuestra que \(y\neq 1\).
+          </li>
+          <li>
+            Despeja \(x\) en términos de \(y\). Después prueba que
+            para cada \(y\in\mathbb{R}\) con \(y\neq 1\) existe un único
+            \(x\neq -1\) que satisface la igualdad anterior.
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c,d\in\mathbb{R}\) tales que \(a\cdot d-b\cdot c\neq 0\). Sean \(x,y\in\mathbb{R}\) con
+          \(c\cdot x+d\neq 0\) y \(c\cdot y+d\neq 0\). Demuestra que
+          \[
+            \frac{a\cdot x+b}{c\cdot x+d}=\frac{a\cdot y+b}{c\cdot y+d}
+            \quad\text{si y sólo si}\quad x=y.
+          \]
+          Explica en qué paso utilizas la condición \(a\cdot d-b\cdot c\neq 0\). Construye un ejemplo que
+          muestre que, al eliminar esa condición, la igualdad de las fracciones puede cumplirse con
+          \(x\neq y\).
+        </p>
+      </div>
+       -->
+
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b \in \mathbb{R}\). Prueba que si \(a^2 = b^2\), entonces
+          \(a=b\) o bien \(a=-b\).
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b,c,d \in \mathbb{R}\) con \(c\neq 0\) y \(d\neq 0\). Prueba que
+          \(\displaystyle{\frac{a}{b} = \frac{c}{d}}\) si y sólo si \(a\cdot d=b\cdot c\). ¿Cuándo \(\displaystyle{\frac{a}{b} = \frac{b}{a}}\)?
+        </p>
+      </div>
+<!-- <div class="nota-box">
+  <h2 class="number-title">Axiomas de orden</h2>
+  <p>
+    Se postula la existencia de un subconjunto
+    \(\mathbb{R}_{+}\subseteq\mathbb{R}\), llamado conjunto de los
+    números reales positivos, que satisface los siguientes axiomas:
+  </p>
+  <ul>
+    <li>
+      Si \(x,y\in\mathbb{R}_{+}\), entonces
+      \(x+y\in\mathbb{R}_{+}\) y \(x\cdot y\in\mathbb{R}_{+}\).
+    </li>
+    <li>
+      Para todo \(x\in\mathbb{R}\) con \(x\neq 0\), se cumple
+      exactamente una de las siguientes condiciones:
+      \(x\in\mathbb{R}_{+}\) o \(-x\in\mathbb{R}_{+}\).
+    </li>
+    <li>
+      \(0\notin\mathbb{R}_{+}\).
+    </li>
+  </ul>
+</div> -->
+
+<div class="definicion-box">
+  <h1 class="title-practica">Definición</h1>
+  <p>
+    A partir del conjunto \(\mathbb{R}_{+}\) de los axiomas de orden,
+    se establecen las siguientes definiciones y notaciones.
+    Sean \(x,y\in\mathbb{R}\).
+  </p>
+  <ol>
+    
+    <li>
+      Se escribe \(x &gt; y\), y se lee <b>«\(x\) es mayor que \(y\)»</b>,
+      si \(x-y\in\mathbb{R}_{+}\). Es decir,
+      \[
+        x &gt; y
+        \quad\Longleftrightarrow\quad
+        x-y\in\mathbb{R}_{+}.
+      \]
+    </li>
+    <li>
+      Se escribe \(x &lt; y\), y se lee <b>«\(x\) es menor que \(y\)»</b>,
+      si \(y-x\in\mathbb{R}_{+}\). Es decir,
+      \[
+        x &lt; y
+        \quad\Longleftrightarrow\quad
+        y-x\in\mathbb{R}_{+}.
+      \]
+      Las desigualdades escritas con los signos \(&lt;\) y \(&gt;\)
+      se llaman <b>desigualdades estrictas</b>.
+    </li>
+     <li>
+      Se dice que un número real \(x\) es <b>positivo</b> si \(x\in\mathbb{R}_{+}\) ,
+      es decir, si \(x &gt; 0\).
+    </li>
+    <li>
+      Se dice que un número real \(x\) es <b>negativo</b> si  \(-x\in\mathbb{R}_{+}\),
+      es decir, si \(x &lt; 0\).
+    </li>
+    
+    <li>
+      Se escribe \(x\geq y\), y se lee
+      <b>«\(x\) es mayor o igual que \(y\)»</b>, si \(x &gt; y\)
+      o \(x=y\). Es decir,
+      \[
+        x\geq y
+        \quad\Longleftrightarrow\quad
+        x &gt; y\ \text{o}\ x=y.
+      \]
+    </li>
+    <li>
+      Se escribe \(x\leq y\), y se lee
+      <b>«\(x\) es menor o igual que \(y\)»</b>, si \(x &lt; y\)
+      o \(x=y\). Es decir,
+      \[
+        x\leq y
+        \quad\Longleftrightarrow\quad
+        x &lt; y\ \text{o}\ x=y.
+      \]
+      <!-- Las desigualdades escritas con los signos \(\leq\) y \(\geq\)
+      se llaman <b>desigualdades no estrictas</b>. -->
+    </li>
+    <li>
+      Se dice que un número real \(x\) es <b>no negativo</b> si \(x\geq 0\),
+      es decir, si \(x &gt; 0\) o \(x=0\).
+    </li>
+    <li>
+      Se dice que un número real \(x\) es <b>no positivo</b> si \(x\leq 0\),
+      es decir, si \(x &lt; 0\) o \(x=0\).
+    </li>
+  </ol> 
+</div>
+
+<div class="observacion-box">
+  <h2 class="title-observacion">Observación</h2>
+  <p>
+    El número \(0\) es no negativo y no positivo, pues
+    \(0\geq 0\) y \(0\leq 0\). Sin embargo, no es positivo
+    ni negativo. En particular,
+  </p>
+  \[
+    0\notin\mathbb{R}^{+},
+    \qquad
+    0\notin\mathbb{R}^{-}.
+  \]
+</div>
+
+
+<div class="notacion-box">
+  <h2 class="title-notacion">Notación</h2>  <p>
+  Para \(a,b,c\in\mathbb{R}\), se utiliza la siguiente
+  <b>notación abreviada</b> para expresar que dos desigualdades
+  se cumplen simultáneamente:
+</p>
+  \[
+    a &lt; b &lt; c
+    \quad\Longleftrightarrow\quad
+    a &lt; b\ \text{y}\ b &lt; c,
+  \]
+  \[
+    a\leq b\leq c
+    \quad\Longleftrightarrow\quad
+    a\leq b\ \text{y}\ b\leq c,
+  \]
+  \[
+    a\leq b &lt; c
+    \quad\Longleftrightarrow\quad
+    a\leq b\ \text{y}\ b &lt; c,
+  \]
+  \[
+    a &lt; b\leq c
+    \quad\Longleftrightarrow\quad
+    a &lt; b\ \text{y}\ b\leq c.
+  \]
+  <p>
+    Las cadenas con \(&gt;\) o \(\geq\) se interpretan de manera
+    análoga.
+  </p>
+</div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b \in \mathbb{R}_{+}\). Prueba que si \(a^2 = b^2\), entonces
+          \(a=b\).
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Hallar el error en la "demostración" de la siguiente afirmación:
+        </p>
+        <p>
+          <b>Afirmación:</b> Si \(a \in \mathbb{R}\), entonces \(a = 0\).
+        </p>
+        <p>
+          <i>Demostración:</i>
+          \[
+            \begin{aligned}
+              a \in \mathbb{R} &amp;\Rightarrow a^2 = a^2 \\
+              &amp;\Rightarrow a^2 - a^2 = a^2 - a^2 \\
+              &amp;\Rightarrow (a - a)\cdot (a + a) = a\cdot (a - a) \\
+              &amp;\Rightarrow a + a = a \\
+              &amp;\Rightarrow a = 0
+            \end{aligned}
+          \]
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          ¿Dónde está el error en la siguiente "demostración"?
+        </p>
+        <p>
+          Sean \(x,y\in \mathbb{R}\) tales que \(x = y\), entonces
+        </p>
+        <p>
+          \[
+            \begin{aligned}
+              x = y &amp;\Rightarrow  x^2 = x\cdot y, \\
+              &amp;\Rightarrow  x^2 - y^2 = x\cdot y - y^2, \\
+              &amp;\Rightarrow  (x + y)\cdot (x - y) = y\cdot (x - y), \\
+              &amp;\Rightarrow  x + y = y, \\
+              &amp;\Rightarrow  2\cdot y = y, \\
+              &amp;\Rightarrow  2 = 1.
+            \end{aligned}
+          \]
+        </p>
+      </div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c\in\mathbb{R}\). Demuestra las siguientes propiedades
+    de las desigualdades, bajo las hipótesis indicadas en cada inciso.
+    Justifica apropiadamente cada paso utilizando los axiomas de campo
+    y de orden de los números reales.
+  </p>
+  <ol>
+    <li>
+      Si \(a &gt; b\) y \(b &gt; c\), entonces \(a &gt; c\).
+    </li>
+    <li>
+      Si \(a &gt; b\), entonces \(a+c &gt; b+c\).
+    </li>
+    <li>
+      Si \(a &gt; b\) y \(c &gt; 0\), entonces
+      \(a\cdot c &gt; b\cdot c\).
+    </li>
+    <li>
+      Si \(a &gt; b\) y \(c &lt; 0\), entonces
+      \(a\cdot c &lt; b\cdot c\).
+    </li>
+  </ol>
+</div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(x,y\) números reales cualesquiera con \(x &lt; y\). Demuestra
+          que \(x&lt; \displaystyle{\frac{x+y}{2}} &lt; y\).
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(x,y\) números reales cualesquiera con \(x &lt; y\). Demuestra
+          que existe al menos un número real \(z\) tal que \(x&lt; z &lt; y\).
+        </p>
+      </div>
+
+     <div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c,d\in\mathbb{R}\). Demuestra las siguientes propiedades
+    de las desigualdades estrictas, bajo las hipótesis indicadas en cada
+    inciso. Justifica apropiadamente cada paso utilizando los axiomas
+    de campo y de orden de los números reales.
+  </p>
+  <ol>
+    <li>
+      Si \(a &lt; b\) y \(c &lt; d\), entonces \(a+c &lt; b+d\).
+    </li>
+    <li>
+      Si \(a &lt; b\), entonces \(-b &lt; -a\).
+    </li>
+    <li>
+      Si \(a &lt; b\) y \(c &gt; d\), entonces \(a-c &lt; b-d\).
+    </li>
+    <li>
+      Si \(a &lt; b\) y \(c &gt; 0\), entonces
+      \(a\cdot c &lt; b\cdot c\).
+    </li>
+    <li>
+      Si \(a &lt; b\) y \(c &lt; 0\), entonces
+      \(a\cdot c &gt; b\cdot c\).
+    </li>
+    <li>
+      Si \(a &gt; 1\), entonces \(a^2 &gt; a\).
+    </li>
+    <li>
+      Si \(0 &lt; a &lt; 1\), entonces \(a^2 &lt; a\).
+    </li>
+    <li>
+      Si \(a\cdot b &lt; 0\), entonces \(a &gt; 0\) y \(b &lt; 0\),
+      o bien \(a &lt; 0\) y \(b &gt; 0\).
+    </li>
+  </ol>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c,d\in\mathbb{R}\). Demuestra las siguientes propiedades,
+    en las que intervienen desigualdades no estrictas. Justifica
+    apropiadamente cada paso utilizando los axiomas de campo y de orden
+    de los números reales.
+  </p>
+  <ol>
+    <li>
+      Si \(a &lt; b\) y \(c\leq d\), entonces \(a+c &lt; b+d\).
+    </li>
+    <li>
+      Si \(0\leq a\leq b\) y \(c &gt; 0\), entonces
+      \(0\leq a\cdot c\leq b\cdot c\).
+    </li>
+    <li>
+      Si \(0\leq a &lt; b\) y \(0\leq c &lt; d\), entonces
+      \(a\cdot c &lt; b\cdot d\).
+    </li>
+    <li>
+      Si \(0\leq a &lt; b\), entonces \(a^2 &lt; b^2\).
+    </li>
+    <li>
+      Si \(a\geq 0\), \(b\geq 0\) y \(a^2 &lt; b^2\), entonces
+      \(a &lt; b\).
+    </li>
+    <li>
+      Si \(0\leq a &lt; b\), entonces
+      \[
+        a^2\leq a\cdot b &lt; b^2.
+      \]
+      Presenta un contraejemplo que muestre que, bajo estas mismas
+      hipótesis, no siempre se cumple
+      \[
+        a^2 &lt; a\cdot b &lt; b^2.
+      \]
+    </li>
+  </ol>
+</div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,k\in \mathbb{R}\) tales que \(a&gt;0\) y \(k&gt;1\). Prueba
+          que \(0 &lt; \displaystyle{\frac{a}{k} &lt; a}\)
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b\in \mathbb{R}\). Prueba que si \(a \leq b +\epsilon\) para todo
+          \(\epsilon &gt; 0\), entonces \(a\leq b\)
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b\in \mathbb{R}\). Prueba que \(\left( \displaystyle{\frac{a+b}{2}}\right)^{2} \leq \displaystyle{\frac{a^2+b^2}{2}}\)
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a\in \mathbb{R}\). Prueba que las siguientes proposiciones:
+        </p>
+        <ol>
+          <li>
+            Si \(0 &lt; a &lt; 1\), entonces \(0 &lt; a^2 &lt; a &lt; 1\)
+          </li>
+          <li>
+            Si \(1 &lt; a\), entonces \(1 &lt; a &lt; a^2\)
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a\in \mathbb{R}\). Prueba que las siguientes proposiciones:
+        </p>
+        <ol>
+          <li>
+            Si \(a &gt; 1\), entonces \(a^n \geq a\) para todo \(n \in \mathbb{N}\)
+          </li>
+          <li>
+            Si \(a &gt; 1\), entonces \(a^n &gt; a\) para todo \(n \in \mathbb{N}\)
+            con \(n &gt;1\)
+          </li>
+          <li>
+            Si \(0 &lt; a &lt; 1\), entonces \(a^n \leq a\) para todo \(n \in \mathbb{N}\)
+            con \(n &gt;1\)
+          </li>
+          <li>
+            Si \(0 &lt; a &lt; 1\), entonces \(a^n &lt; a\) para todo \(n \in \mathbb{N}\)
+            con \(n &gt;1\)
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b\in \mathbb{R}\) y \(n\in \mathbb{N}\). Prueba que si \(0 &lt; a &lt; b\),
+          entonces \(a^n &lt; b^n\).
+        </p>
+         <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+      </div>
+
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\) y sea \(n\in\mathbb{N}\) con
+    \(n\geq 1\). Prueba que, si \(0 &lt; a &lt; b\), entonces
+    \(a^n &lt; b^n\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\) tales que \(a &lt; 0\) y
+    \(b &lt; 0\). Prueba que \(a+b &lt; 0\); es decir, que la
+    suma de dos números reales negativos es un número negativo.
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b,c\in\mathbb{R}\) tales que \(a\leq b\),
+    \(b\leq c\) y \(a=c\). Prueba que \(b=c\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Prueba que
+    \(a^2+b^2\geq 0\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Prueba que
+    \(2\cdot a\cdot b\leq a^2+b^2\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>
+    Sean \(a,b\in\mathbb{R}\). Prueba que
+    \(a\cdot b\leq a^2+b^2\).
+  </p>
+  <p>
+    Justifica cada paso utilizando, según corresponda, los axiomas
+    de campo, los axiomas de orden o los resultados previamente
+    demostrados en clase. Indica explícitamente cuáles aplicas.
+  </p>
+</div>
+
+<div class="definicion-box">
+  <h1 class="title-practica">Principio de inducción matemática</h1>
+  <p>
+    Sea \(P(n)\) una afirmación que depende de un número natural
+    \(n\geq 1\). Para demostrar mediante el <b>principio de inducción
+    matemática</b> que \(P(n)\) es verdadera para todo número natural
+    \(n\geq 1\), se procede de la siguiente manera:
+  </p>
+  <ol>
+    <li>
+      <b>Caso base:</b> se demuestra que \(P(1)\) es verdadera;
+      es decir, se verifica la afirmación para \(n=1\).
+    </li>
+    <li>
+      <b>Hipótesis de inducción:</b> se toma un número natural
+      \(k\geq 1\) arbitrario y se supone que \(P(k)\) es verdadera.
+      Esta suposición se utiliza para demostrar el paso siguiente.
+    </li>
+    <li>
+      <b>Paso inductivo:</b> bajo la hipótesis de inducción,
+      se demuestra que \(P(k+1)\) también es verdadera; es decir,
+      se prueba la afirmación para el siguiente número natural.
+    </li>
+  </ol>
+  <p>
+    Una vez verificado el caso base y demostrado el paso inductivo,
+    el principio de inducción matemática permite concluir que
+    \(P(n)\) es verdadera para todo número natural \(n\geq 1\).
+  </p>
+</div>
+
+<div class="observacion-box">
+  <h1 class="title-practica">Observación</h1>
+  <p>
+    El caso base puede corresponder a un valor distinto de \(n=1\),
+    según el rango para el cual se desea demostrar la afirmación.
+    Por ejemplo, para demostrar que \(P(n)\) es verdadera para
+    todo número natural \(n\geq 2\), se procede así:
+  </p>
+  <ol>
+    <li>
+      <b>Caso base:</b> se demuestra que \(P(2)\) es verdadera.
+    </li>
+    <li>
+      <b>Hipótesis de inducción:</b> se toma un número natural
+      \(k\geq 2\) arbitrario y se supone que \(P(k)\) es verdadera.
+    </li>
+    <li>
+      <b>Paso inductivo:</b> bajo esta suposición, se demuestra
+      que \(P(k+1)\) también es verdadera.
+    </li>
+  </ol>
+  <p>
+    Se concluye que \(P(n)\) es verdadera para todo número natural
+    \(n\geq 2\). Si también se desea incluir el caso \(n=1\),
+    este debe comprobarse por separado.
+  </p>
+  <p>
+    En general, si se comienza en un número natural \(n_0\),
+    se verifica \(P(n_0)\) y se demuestra el paso inductivo para
+    un número natural arbitrario \(k\geq n_0\). La conclusión
+    será válida para todos los números naturales \(n\geq n_0\).
+  </p>
+</div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Prueba que \(n&gt;0\) para todo \(n\in \mathbb{N}\).
+        </p>
+        <p>
+          <b>Sugerencia:</b> Utiliza el principio de inducción matemática.
+        </p>
+      </div>
+
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(a\in \mathbb{R}_{+}\) arbitrario pero fijo. Utiliza el principio de inducción para probar
+          que para todo \(n\in \mathbb{N}\), se satisface la desigualdad:
+          \[
+            a&lt;(1+a)^n
+          \]
+          .
+        </p>
+      </div>
+<div class="ejercicio-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>Sea \(a\in\mathbb{R}\).</p>
+  <ol>
+    <li>
+      Demuestra por inducción la identidad
+      \[
+        (a-1)\cdot\sum_{k=1}^{n}a^k=a^{n+1}-a.
+      \]
+    </li>
+    <li>
+      Deduce que, si \(a\neq 1\), entonces
+      \[
+        \sum_{k=1}^{n}a^k=\frac{a^{n+1}-a}{a-1}.
+      \]
+      <!-- ¿Cuál es el valor de la suma cuando \(a=1\)? -->
+    </li>
+    <!-- <li>
+      Demuestra que, si \(0 &lt; a &lt; 1\), entonces
+      \[
+        0 &lt; \sum_{k=1}^{n}a^k &lt; \frac{a}{1-a}.
+      \]
+    </li> -->
+  </ol>
+</div>
+
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Si \(A,B \subseteq \mathbb{R}\) son conjuntos no vacios acotados superiormente y
+          \(\gamma \in \mathbb{R}\) arbitrario pero fijo, prueba que los siguientes conjuntos son acotados
+          superiormente.
+        </p>
+        <ol>
+          <li>
+            \(A \cup B\)
+          </li>
+          <li>
+            \(A \cap B\)
+          </li>
+          <li>
+            \(\gamma + B :=\left\{\gamma + b\, \big|\,b \in B \right\}\).
+          </li>
+          <li>
+            Para \(\gamma \in \mathbb{R}_{+} \cup \{0\}\), \(\gamma \cdot B :=\left\{ \gamma \cdot b\, \big|\,b \in B \right\}\). ¿Podemos concluir lo mismo si
+            \(\gamma &lt; 0\)?
+          </li>
+          <li>
+            \(A + B :=\left\{ a + b\, \big|\,a\in A, b\in B\right\}\)
+          </li>
+          <!-- <li>\(A \cdot B \colon =\left\{a\cdot b\, \big|\,a\in A, b\in B \right\}\)</li> -->
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Si \(A,B \subseteq \mathbb{R}\) son conjuntos no vacios acotados inferiormente y
+          \(\gamma \in \mathbb{R}\) arbitrario pero fijo, prueba que los siguientes conjuntos son acotados
+          inferiormente.
+        </p>
+        <ol>
+          <li>
+            \(A \cup B\)
+          </li>
+          <li>
+            \(A \cap B\)
+          </li>
+          <li>
+            \(\gamma + B :=\left\{\gamma + b\, \big|\,b \in B \right\}\).
+          </li>
+          <li>
+            Para \(\gamma \in \mathbb{R}_{+}\cup \{0\}\), \(\gamma \cdot B :=\left\{ \gamma \cdot b\, \big|\,b \in B \right\}\). ¿Podemos concluir lo mismo si
+            \(\gamma &lt; 0\)?
+          </li>
+          <li>
+            \(A + B :=\left\{ a + b\, \big|\,a\in A, b\in B\right\}\)
+          </li>
+          <!-- <li>\(A \cdot B \colon =\left\{a\cdot b\, \big|\,a\in A, b\in B \right\}\)</li> -->
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Si \(A,B \subseteq \mathbb{R}\) son conjuntos no vacios acotados superiormente. ¿Qué puedes decir de
+          \(A\setminus B\)
+        </p>
+      </div>
+
+      <div class="ejercicio-resuelto-box">
+        <h1 class="title-practica">Ejercicio resuelto</h1>
+        <p>
+          Prueba que el supremo (infimo) de un conjunto (en caso de existir) es único, es decir,
+          demuestra que si \(\alpha\) y \(\beta\) son dos números que
+          satisfacen las dos condiciones de la definición del supremo (infimo) de un conjunto
+          \(A\) entonces \(\alpha=\beta\).
+        </p>
+
+        <div class="respuesta-contenedor">
+          <button class="respButton hvr-grow" type="button" aria-controls="respuesta-1" aria-expanded="false">Respuesta para el supremo</button>
+
+          <div class="resp-box flexbox" id="respuesta-1" hidden>
+            <!-- width="95%" height="90%" -->
+            <iframe  class="video" src="https://www.youtube.com/embed/Q_pPfMeg_eI?si=5mHbmZNlbVM7tdGc" title="YouTube video player" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(A = \left\{ x\in \mathbb{R}\,\big| \, x \geq 0 \right\}\).
+        </p>
+        <ol>
+          <li>
+            Prueba que \(A\) es acotado inferiormente pero no es acotado superiormente.
+          </li>
+          <li>
+            Prueba que \(\inf(A)\) existe y que \(\inf(A) = 0\).
+          </li>
+        </ol>
+        <p>
+          Justifica clara y detalladamente tu respuesta.
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(A = \left\{ x\in \mathbb{R}\,\big| \, x &gt; 0 \right\}\).
+        </p>
+        <ol>
+          <li>
+            ¿\(A\) es acotado inferiormente?
+          </li>
+          <li>
+            ¿\(A\) es acotado superiormente?
+          </li>
+          <li>
+            ¿Existe \(\inf(A)\) ? En caso de existir darlo.
+          </li>
+          <li>
+            ¿Existe \(\sup(A)\)?
+          </li>
+        </ol>
+        <p>
+          Justifica clara y detalladamente tu respuesta.
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        Determine si el conjunto \(\left\{ x\in \mathbb{R}\,\big| \, x^{2} - x + 1 &lt; 0\right\}\) esta acotado superior o inferiormente.
+        Justificar clara y detalladamente tu respuesta.
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        Determine si el conjunto \(\left\{ x\in \mathbb{R} \, \big|\, 3\cdot x + 5 &lt; 4\cdot x -7 \right\}\) esta acotado superior o inferiormente.
+        Justificar clara y detalladamente tu respuesta.
+      </div>
+
+      <div class="ejercicio-resuelto-box">
+        <h1 class="title-practica">Ejercicio resuelto</h1>
+        <p>
+          Considera el conjunto
+          \[
+            A=\left\{ \frac{1}{n}: n=1,2,\dots \right\}
+          \]
+          Demuestra que \(\inf(A)=0\).
+          <!-- Sugerencia: usa el <a href="#Ejer:LemaInfimo1/n">Ejercicio 2.12</a>. -->
+        </p>
+
+        <div class="respuesta-contenedor">
+          <button class="respButton hvr-grow" type="button" aria-controls="respuesta-2" aria-expanded="false">Demostración</button>
+
+          <div class="resp-box flexbox" id="respuesta-2" hidden>
+            <iframe class="video" src="https://www.youtube.com/embed/niIVPTI8r3c?si=Zyqs5cYV8ZhtPodc" title="YouTube video player" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(A\colon = \displaystyle{\left \{ \frac{1}{2\cdot n} \,\, \big|\,\, n \in \mathbb{N} \right\}} \subseteq \mathbb{R}\). Prueba que \(\inf(A) = 0\)
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(A\colon = \displaystyle{\left \{ 1 + \frac{1}{n} \,\, \big|\,\, n \in \mathbb{N} \right\}} \subseteq \mathbb{R}\). Prueba que \(\inf(A) = 1\)
+        </p>
+      </div>
+
+      <div class="ejercicio-resuelto-box">
+        <h1 class="title-practica">Ejercicio resuelto</h1>
+        <p>
+          Usando el axioma del supremo demuestra que \(\mathbb{N}\) no tiene cota superior.
+        </p>
+
+        <div class="respuesta-contenedor">
+          <button class="respButton hvr-grow" type="button" aria-controls="respuesta-3" aria-expanded="false">Demostración</button>
+
+          <div class="resp-box flexbox" id="respuesta-3" hidden>
+            <iframe class="video" src="https://www.youtube.com/embed/NOLZOPFQYaY?si=OLR2GyGHRTwfJcWG" title="YouTube video player" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(A\) un subconjunto no vacio de \(\mathbb{R}\) acotado
+          superiormente. Si existe \(M\in A\) tal que \(M\) es una cota
+          superior de \(A\), prueba que \(\sup(A) = M\).
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(A\) un subconjunto no vacio de \(\mathbb{R}\) acotado
+          inferiormente. Si existe \(m\in A\) tal que \(m\) es una cota
+          inferior de \(A\), prueba que \(\inf(A) = m\).
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Demuestra que el supremo e infimo de un conjunto (en caso de existir) no necesariamente
+          pertenecen al conjunto. (Da un ejemplo)
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(a,b \in \mathbb{R}\) con \(a &lt; b\). Prueba que \(\inf((a,b)), \sup((a,b))\)
+          existen y que \(\inf((a,b)) = a\) y \(\sup((a,b)) = b\)
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(A\) un subconjunto no vacio de \(\mathbb{R}\) y
+          \(u \in \mathbb{R}\). Prueba que las siguientes proposiciones son equivalentes.
+        </p>
+        <ol>
+          <li>
+            \(u\) es una cota superior de \(A\)
+          </li>
+          <li>
+            Si \(t \in \mathbb{R}\) con \(t&gt;u\), entonces \(t \not \in A\)
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(A,B \subseteq \mathbb{R}\) dos conjuntos no vacios tales que que \(A \subseteq B\).
+          Prueba las siguientes proposiciones
+        </p>
+        <ol>
+          <li>
+            Si \(B\) está acotado superiormente también \(A\) y
+            \(\sup(A) \leq \sup(B)\).
+          </li>
+          <li>
+            Si \(B\) está acotado inferiormente también \(A\) y
+            \(\inf(B)\leq \inf(A).\)
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(A, B \subseteq \mathbb{R}\) dos conjuntos no vacíos y acotados superior e inferiormente. Si
+          \(\inf(A)= \inf(B)\) y \(\sup(A) = \sup(B)\), ¿Es cierto que \(A=B\)?
+          Pruebalo o da un contraejemplo.
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(A\) un subconjunto no vacio de \(\mathbb{R}\) acotado
+          inferiormente. Si \(\inf(A) &gt; 0\) prueba las siguientes proposiciones
+        </p>
+        <ol>
+          <li>
+            El conjunto \(\tilde{A} := \left\{ \displaystyle{\frac{1}{a}}\, \big|\,a \in A \right\}\) esta bien definido. Esto es, prueba que
+            \(a\not = 0\) para todo \(a \in A\).
+          </li>
+          <!-- <li>El conjunto \(\tilde{A}\) esta acotado superiormente.</li> <li>Existe \(\sup(\tilde{A})\).</li> -->
+          <li>
+            \(\sup{(\tilde{A})} = \displaystyle{\frac{1}{\inf(A)}}\)
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sea \(B\colon = \displaystyle{\left \{ \frac{n}{n+1} \,\, \big|\,\, n \in \mathbb{N} \right\}} \subseteq \mathbb{R}\). Prueba que \(\sup(B) = 1\)
+        </p>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(A,B \subseteq \mathbb{R}\) no vacios, \(\gamma \in \mathbb{R}\) y \(\beta \in \mathbb{R}^+\),
+          arbitrarios pero fijos. Prueba las siguientes proposiciones:
+        </p>
+        <ol>
+          <li>
+            Si \(A\) está acotado superiormente, entonces \(\beta \cdot A\)
+            también esta acotado superiormente, existe \(\sup(\beta \cdot A)\) y
+            \[
+              \sup(\beta \cdot A) = \beta\cdot \sup(A)
+            \]
+          </li>
+          <li>
+            Si \(A\) está acotado superiormente, entonces \(\gamma + A\)
+            también esta acotado superiormente, existe \(\sup(\gamma + A)\) y
+            \[
+              \sup(\gamma + A) = \gamma + \sup(A)
+            \]
+          </li>
+          <li>
+            Si \(A\) y \(B\) están acotados superiormente, entonces
+            \(A +B\) también esta acotado superiormente, existe \(\sup(A + B)\) y
+            \[
+              \sup( A + B) = \sup(A) + \sup(B)
+            \]
+          </li>
+          <li>
+            Si \(A\) y \(B\) están acotados superiormente, entonces
+            \(A \cup B\) también esta acotado superiormente, existe \(\sup(A \cup B)\) y
+            \[
+              \sup( A \cup B) = \max\{\sup(A), \sup(B)\}
+            \]
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(A \subseteq \mathbb{R}\) no vacio y \(\lambda \in \mathbb{R}\), arbitrario pero fijo. Prueba
+          que
+        </p>
+        \[
+          \sup(\lambda\cdot A) = \begin{cases}
+            \lambda\cdot \sup A &amp; \text{si } \lambda \geq 0, \\
+            \lambda\cdot \inf A &amp; \text{si } \lambda &lt; 0.
+          \end{cases}
+        \]
+      </div>
+
+      <div class="ejercicio-box">
+        <h1 class="number-title-practica">Ejercicio</h1>
+        <p>
+          Sean \(A,B \subseteq \mathbb{R}\) no vacios, \(\gamma \in \mathbb{R}\) y \(\beta \in \mathbb{R}^+\),
+          arbitrarios pero fijos. Prueba las siguientes proposiciones:
+        </p>
+        <ol>
+          <li>
+            Si \(A\) está acotado inferiormente, entonces \(\beta \cdot A\)
+            también esta acotado inferiormente, existe \(\inf(\beta \cdot A)\) y
+            \[
+              \inf(\beta \cdot A) = \beta\cdot \inf(A)
+            \]
+          </li>
+          <li>
+            Si \(A\) está acotado inferiormente, entonces \(\gamma + A\)
+            también esta acotado inferiormente, existe \(\inf(\gamma + A)\) y
+            \[
+              \inf(\gamma + A) = \gamma + \inf(A)
+            \]
+          </li>
+          <li>
+            Si \(A\) y \(B\) están acotados inferiormente, entonces
+            \(A +B\) también esta acotado inferiormente, existe \(\inf(A + B)\) y
+            \[
+              \inf( A + B) = \inf(A) + \inf(B)
+            \]
+          </li>
+          <li>
+            Si \(A\) y \(B\) están acotados inferiormente, entonces
+            \(A \cup B\) también esta acotado inferiormente, existe \(\inf(A \cup B)\) y
+            \[
+              \inf(A \cup B) = \min\{\inf A, \inf B\}
+            \]
+          </li>
+        </ol>
+      </div>
+
+      <div class="ejercicio-resuelto-box">
+        <h1 class="title-practica" id="Ejer:unicidad_raiz_cuadrada_positivo">Ejercicio resuelto</h1>
+        <p>
+          Sea \(a&gt;0\). Prueba que existe un único \(\alpha &gt;0\) tal que
+          \(\alpha^2=a\). Esto es, todo número real positivo tiene una única raíz cuadrada no
+          negativa.
+        </p>
+
+        <div class="respuesta-contenedor">
+          <button class="respButton hvr-grow" type="button" aria-controls="respuesta-4" aria-expanded="false">Demostración</button>
+
+          <div class="resp-box flexbox" id="respuesta-4" hidden>
+            <iframe class="video" src="https://www.youtube.com/embed/EtfvdikwfPo?si=rTqlaekrrhcVmCj2" title="YouTube video player" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+
+<!-- 
+  <div class="ejercicio-box">
+  <h1 class="number-title-practica"> Ejercicio</h1>
+  Si $A,B$ y $C$ son conjuntos arbitrarios, use Diagramas de Ven para simplificar:
+  <ol>
+    <li> $[(A^{c} \cap B^{c} ) \cup A^{c}]^{c}$</li>
+    <li>$[A^{c} \cup  (B^{c} \cap A)]^{c}$</li>
+  </ol>
+</div> 
+
+<div class="ejercicio-box">
+  <h1 class="number-title-practica"> Ejercicio</h1>
+<p>
+  Sean $A$ y $B$ subconjuntos arbitrarios de un conjunto universo $U$. Demuestre que si $A \subseteq$ B, entonces $A \cup B = B$  
+  las siguientes propiedades:
+ </p>
+</div>
+-->
+<!-- Donde aparecerá la fecha de la última modificación -->
+<footer>
+  <center>
+   <p id="ultima-actualizacion"></p>
+  </center>
+</footer>
+<script>
+// Obtenemos la fecha y hora de la última modificación del documento
+const fechaModificacion = new Date(document.lastModified);
+
+// Opciones para formatear la fecha (por ejemplo, DD/MM/AAAA)
+const opcionesFecha = { day: '2-digit', month: '2-digit', year: 'numeric' };
+const fechaFormateada = fechaModificacion.toLocaleDateString('es-ES', opcionesFecha);
+
+// Obtenemos la hora (HH:MM:SS)
+const horaFormateada = fechaModificacion.toLocaleTimeString('es-ES', {
+    hour: '2-digit', minute: '2-digit'
+});
+
+// Insertamos la fecha y la hora en el elemento con el ID "ultima-modificacion"
+document.getElementById("ultima-actualizacion").textContent = `Última actualización: ${fechaFormateada}`;
+</script>
+
+
+
+
+   
+    </body>
+
+</html>
