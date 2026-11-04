@@ -667,7 +667,51 @@
         <p>A $\sqrt{ab}$ se le llama el <b>Media Geométrica</b> de $a$ y $b$, y a 
           $ \displaystyle{\frac{a + b}{2}}$ se le llama el <b>media Aritmética</b> de $a$ y $b$.</p>
       </div>
-      
+    
+
+      <div class="definicion-box">
+  <h1 class="title-practica">Definición</h1>
+  <p>
+    Sea \(n\in\mathbb{N}\) con \(n\geq 2\) y sean
+    \(a_1,a_2,\ldots,a_n\in\mathbb{R}\).
+    Se define la <b>media aritmética</b> de estos números
+    como la suma de todos ellos dividida entre \(n\):
+  </p>
+  \[
+    M_A(a_1,\ldots,a_n)
+    :=\frac{a_1+a_2+\cdots+a_n}{n}.
+  \]
+  <p>
+    En particular, la media aritmética de dos números reales
+    \(a\) y \(b\) es
+  </p>
+  \[
+    M_A(a,b)=\frac{a+b}{2}.
+  \]
+</div>
+
+<div class="definicion-box">
+  <h1 class="title-practica">Definición</h1>
+  <p>
+    Sea \(n\in\mathbb{N}\) con \(n\geq 2\) y sean
+    \(a_1,a_2,\ldots,a_n\) números reales no negativos.
+    Se define la <b>media geométrica</b> de estos números
+    como la raíz enésima de su producto:
+  </p>
+  \[
+    M_G(a_1,\ldots,a_n)
+    :=\sqrt[n]{a_1\cdot a_2\cdot \ldots\cdot a_n}.
+  \]
+  <p>
+    En particular, la media geométrica de dos números reales
+    no negativos \(a\) y \(b\) es
+  </p>
+  \[
+    M_G(a,b)=\sqrt{a\cdot b}.
+  \]
+</div>
+
+
       <div class="ejercicio-box">
         <h1 class="number-title-practica">Ejercicio</h1>
         <p>Sean $a,b,c,d \in \mathbb{R}^{+}$ tales que $\displaystyle{\frac{a}{b} < \frac{c}{d}}$. Prueba que 
@@ -682,6 +726,73 @@
       </div>
 
       
+<!-- 
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>
+         Demuestra que si $a,b,c\in \mathbb{R}^+$ satisfacen $abc=8$ entonces
+         $a+b+ c\geq 6$ y $ab+bc+ac\geq 12$.
+       </p>
+       <p>
+         <b>Sugerencia:</b> Utiliza la desigualdad de Korovkin.
+       </p>
+       </div>
+
+
+      <div class="ejercicio-box"><h1 class="number-title-practica"> Ejercicio</h1>
+        <p>Demuestra que si $b_1, \cdots, b_n \in \mathbb{R}^+$ entonces
+  
+            \[
+            \frac{b_1}{b_2}+\frac{b_2}{b_3}+\frac{b_3}{b_4}+ \cdots+ \frac{b_{n-1}}{b_n}+\frac{b_n}{b_1}\geq n
+            \]
+          </p>
+          <p>
+            <b>Sugerencia:</b> Usa la desigualdad de Korovkin.
+          </p>
+        </div>
+
+
+        <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+          <p>
+           Las estimaciones usando desigualdades pueden usarse
+           para resolver problemas de máximos y mínimos. La derivada
+           ayudará a resolver estos problemas de una mejor manera,
+           pero este es una muestra de los problemas que se abordaremos 
+           más adelante.
+         </p>
+         <p>
+           Prueba:
+         </p>
+         <ol>
+           <li>
+             para todo $x\in \mathbb{R}$
+             \[
+             \frac{x^2}{1+x^4}\leq \frac{1}{2}
+             \]
+   
+            <p><b>Sugerencia:</b> Reescribir
+             $\displaystyle{\frac{x^2}{1+x^4} = \frac{1}{\displaystyle{\frac{1}{x^2}}+ x^2}}$
+             y usar la desigualdad de Korovkin en el denominador.
+            </p>
+           </li>
+   
+           <li>
+             Considera la función
+             $f:\mathbb{R} \to \mathbb{R}$ dada por
+             $f(x)=\displaystyle{\frac{x^2}{1+x^4}}$. Encuentra los  puntos
+             $x_{0} \in \mathbb{R}$ donde la función alcanza su máximo,
+             es decir $x_{0}$ debe de satisfacer
+             \[
+             f(x) \leq f(x_{0}) \quad \textrm{ para todo $x\in \mathbb{R}$}
+             \]
+   
+             <p><b>Sugerencia:</b> Recuerda cuando se da la igualdad en
+             la desigualdad de Korovkin.
+             </p>
+           </li>
+         </ol>
+         </div> -->
+
+
       
    <!-- Donde aparecerá la fecha de la última modificación -->
    <footer>
