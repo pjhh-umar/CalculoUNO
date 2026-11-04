@@ -817,7 +817,7 @@ h1.title-ejercicio-resuelto::after{
 
 h1.title-practica{
   font-size: 160%;
-  margin-top: -1.75%;
+  margin-top: -5px;
   padding: 0.25%;
   text-align: center;
   font-weight: 800;
@@ -933,6 +933,7 @@ h2.title-observacion {
   color: black;
   border-radius: 20px;
   padding: 10px;
+  gap: 10px; /* Ajusta la separación en píxeles o rem */
   border: 0px solid  rgb(218,165,32);
   margin: auto;
   margin-top: 50px;
